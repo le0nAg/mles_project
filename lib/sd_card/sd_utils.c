@@ -8,6 +8,9 @@
 #include "pico/mutex.h"
 #include "hw_config.h"
 
+#define PATH_MAX_LEN 256
+
+
 /*
 The program is going to use always the core1 to write on the SD for two reasons:
 1) library limitations
@@ -91,18 +94,18 @@ static bool sd_init_and_mount(void)
     printf("SD: f_mount -> %s (%d)\r\n", FRESULT_str(fr), fr);
 
     // If no filesystem exists, create one
-    if (fr == FR_NO_FILESYSTEM) {
-        printf("SD: No filesystem found, creating FAT...\r\n");
-        BYTE work[4096];
-        MKFS_PARM opt = { FM_FAT | FM_SFD, 0, 0, 0, 0 };
-        fr = f_mkfs(g_drive, &opt, work, sizeof(work));
-        printf("SD: f_mkfs -> %s (%d)\r\n", FRESULT_str(fr), fr);
+    // if (fr == FR_NO_FILESYSTEM) {
+    //     printf("SD: No filesystem found, creating FAT...\r\n");
+    //     BYTE work[4096];
+    //     MKFS_PARM opt = { FM_FAT | FM_SFD, 0, 0, 0, 0 };
+    //     fr = f_mkfs(g_drive, &opt, work, sizeof(work));
+    //     printf("SD: f_mkfs -> %s (%d)\r\n", FRESULT_str(fr), fr);
         
-        if (fr == FR_OK) {
-            fr = f_mount(&fs, g_drive, 1);
-            printf("SD: f_mount (after mkfs) -> %s (%d)\r\n", FRESULT_str(fr), fr);
-        }
-    }
+    //     if (fr == FR_OK) {
+    //         fr = f_mount(&fs, g_drive, 1);
+    //         printf("SD: f_mount (after mkfs) -> %s (%d)\r\n", FRESULT_str(fr), fr);
+    //     }
+    // }
 
     if (fr != FR_OK) {
         printf("ERROR: Mount failed: %s (%d)\r\n", FRESULT_str(fr), fr);
@@ -188,20 +191,34 @@ static FRESULT sd_close_file(FIL *file)
 }
 
 // ============================================================================
-// WRITE IMPLEMENTATIONS (Using Separated Operations)
+// WRITE IMPLEMENTATIONS
 // ============================================================================
+
+static void join_path(char *out, size_t out_sz, const char *drive, const char *rel) {
+    // drive = "0:" or "0:/", ensure exactly one slash when joining
+    if (rel && rel[0] == '/') rel++; // avoid double slashes
+    if (drive && drive[strlen(drive) - 1] == '/')
+        snprintf(out, out_sz, "%s%s", drive, rel ? rel : "");
+    else
+        snprintf(out, out_sz, "%s/%s", drive, rel ? rel : "");
+}
+
 
 /**
  * Write bitmap as ASCII '0' and '1' characters
  */
-static bool write_on_sd(const uint8_t *bitmap, uint16_t width, uint16_t height, const char *filename)
+bool write_on_sd(const uint8_t *bitmap, uint16_t width, uint16_t height, const char *filename)
 {
     FIL fil;
     FRESULT fr;
     UINT bw;
 
     // Step 1: Create file
-    fr = sd_create_file(filename, &fil);
+    char path[PATH_MAX_LEN];
+
+    join_path(path, sizeof path, g_drive, "test3.txt");
+
+    fr = sd_create_file(path, &fil);
     if (fr != FR_OK) {
         return false;
     }
@@ -249,7 +266,7 @@ static bool write_on_sd(const uint8_t *bitmap, uint16_t width, uint16_t height, 
 /**
  * Write bitmap in bit-packed binary format
  */
-static bool write_on_sd_bit_pack(const uint8_t *bitmap, uint16_t width, uint16_t height, const char *filename)
+bool write_on_sd_bit_pack(const uint8_t *bitmap, uint16_t width, uint16_t height, const char *filename)
 {
     FIL fil;
     FRESULT fr;

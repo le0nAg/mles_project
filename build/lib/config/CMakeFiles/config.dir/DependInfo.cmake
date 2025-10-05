@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o"
-  "/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
-  "/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
-  "/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o"
-  "/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o"
-  "/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
-  "/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
-  "/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
-  "/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
-  "/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
-  "/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "/home/lcd_la/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+  "/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o"
+  "/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+  "/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+  "/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o"
+  "/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o"
+  "/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+  "/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+  "/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+  "/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+  "/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+  "/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "/home/mles_project/build/lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
   )
 
 # Preprocessor definitions for this target.
@@ -138,7 +138,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lcd_la/lib/config/DEV_Config.c" "lib/config/CMakeFiles/config.dir/DEV_Config.c.o" "gcc" "lib/config/CMakeFiles/config.dir/DEV_Config.c.o.d"
+  "/home/mles_project/lib/config/DEV_Config.c" "lib/config/CMakeFiles/config.dir/DEV_Config.c.o" "gcc" "lib/config/CMakeFiles/config.dir/DEV_Config.c.o.d"
   "/usr/local/picosdk/src/common/hardware_claim/claim.c" "lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o" "gcc" "lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o.d"
   "/usr/local/picosdk/src/common/pico_sync/critical_section.c" "lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o" "gcc" "lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o.d"
   "/usr/local/picosdk/src/common/pico_sync/lock_core.c" "lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o" "gcc" "lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o.d"

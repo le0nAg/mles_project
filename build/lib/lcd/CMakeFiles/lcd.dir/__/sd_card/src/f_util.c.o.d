@@ -1,0 +1,36 @@
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o: \
+ /home/mles_project/lib/sd_card/src/f_util.c \
+ /usr/arm-none-eabi/include/assert.h /usr/arm-none-eabi/include/_ansi.h \
+ /usr/arm-none-eabi/include/newlib.h \
+ /usr/arm-none-eabi/include/_newlib_version.h \
+ /usr/arm-none-eabi/include/sys/config.h \
+ /usr/arm-none-eabi/include/machine/ieeefp.h \
+ /usr/arm-none-eabi/include/sys/features.h \
+ /usr/arm-none-eabi/include/stdio.h \
+ /usr/arm-none-eabi/include/sys/cdefs.h \
+ /usr/arm-none-eabi/include/machine/_default_types.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h \
+ /usr/arm-none-eabi/include/sys/reent.h \
+ /usr/arm-none-eabi/include/_ansi.h \
+ /usr/arm-none-eabi/include/sys/_types.h \
+ /usr/arm-none-eabi/include/machine/_types.h \
+ /usr/arm-none-eabi/include/sys/lock.h \
+ /usr/arm-none-eabi/include/sys/types.h \
+ /usr/arm-none-eabi/include/sys/_stdint.h \
+ /usr/arm-none-eabi/include/machine/endian.h \
+ /usr/arm-none-eabi/include/machine/_endian.h \
+ /usr/arm-none-eabi/include/sys/select.h \
+ /usr/arm-none-eabi/include/sys/_sigset.h \
+ /usr/arm-none-eabi/include/sys/_timeval.h \
+ /usr/arm-none-eabi/include/sys/timespec.h \
+ /usr/arm-none-eabi/include/sys/_timespec.h \
+ /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
+ /usr/arm-none-eabi/include/sys/sched.h \
+ /usr/arm-none-eabi/include/machine/types.h \
+ /usr/arm-none-eabi/include/sys/stdio.h \
+ /home/mles_project/lib/sd_card/ff15/source/ff.h \
+ /home/mles_project/lib/sd_card/include/ffconf.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
+ /usr/arm-none-eabi/include/stdint.h \
+ /usr/arm-none-eabi/include/sys/_intsup.h

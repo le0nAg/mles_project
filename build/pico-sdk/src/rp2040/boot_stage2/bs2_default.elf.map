@@ -67,9 +67,9 @@ LOAD linker stubs
  .debug_line    0x0000000000000000       0xed CMakeFiles/bs2_default.dir/compile_time_choice.S.o
 
 .debug_line_str
-                0x0000000000000000       0xe5
+                0x0000000000000000       0xeb
  .debug_line_str
-                0x0000000000000000       0xe5 CMakeFiles/bs2_default.dir/compile_time_choice.S.o
+                0x0000000000000000       0xeb CMakeFiles/bs2_default.dir/compile_time_choice.S.o
 
 .debug_info     0x0000000000000000       0x25
  .debug_info    0x0000000000000000       0x25 CMakeFiles/bs2_default.dir/compile_time_choice.S.o
@@ -81,5 +81,5 @@ LOAD linker stubs
  .debug_aranges
                 0x0000000000000000       0x20 CMakeFiles/bs2_default.dir/compile_time_choice.S.o
 
-.debug_str      0x0000000000000000       0x79
- .debug_str     0x0000000000000000       0x79 CMakeFiles/bs2_default.dir/compile_time_choice.S.o
+.debug_str      0x0000000000000000       0x7f
+ .debug_str     0x0000000000000000       0x7f CMakeFiles/bs2_default.dir/compile_time_choice.S.o

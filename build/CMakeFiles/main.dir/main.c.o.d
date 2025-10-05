@@ -1,6 +1,6 @@
-CMakeFiles/main.dir/main.c.o: /home/lcd_la/main.c \
- /home/lcd_la/./lib/lcd/LCD_Driver.h \
- /home/lcd_la/./lib/config/DEV_Config.h \
+CMakeFiles/main.dir/main.c.o: /home/mles_project/main.c \
+ /home/mles_project/./lib/lcd/LCD_Driver.h \
+ /home/mles_project/./lib/config/DEV_Config.h \
  /usr/local/picosdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
@@ -18,9 +18,9 @@ CMakeFiles/main.dir/main.c.o: /home/lcd_la/main.c \
  /usr/arm-none-eabi/include/sys/_intsup.h \
  /usr/arm-none-eabi/include/sys/_stdint.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
- /home/lcd_la/build/generated/pico_base/pico/version.h \
+ /home/mles_project/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/lcd_la/build/generated/pico_base/pico/config_autogen.h \
+ /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
@@ -87,14 +87,15 @@ CMakeFiles/main.dir/main.c.o: /home/lcd_la/main.c \
  /usr/arm-none-eabi/include/sys/sched.h \
  /usr/arm-none-eabi/include/machine/types.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
- /home/lcd_la/./lib/lcd/LCD_Touch.h /home/lcd_la/./lib/lcd/LCD_Driver.h \
- /home/lcd_la/./lib/lcd/LCD_GUI.h /home/lcd_la/./lib/font/fonts.h \
- /usr/arm-none-eabi/include/math.h \
+ /home/mles_project/./lib/lcd/LCD_Touch.h \
+ /home/mles_project/./lib/lcd/LCD_Driver.h \
+ /home/mles_project/./lib/lcd/LCD_GUI.h \
+ /home/mles_project/./lib/font/fonts.h /usr/arm-none-eabi/include/math.h \
  /usr/local/picosdk/src/rp2_common/pico_float/include/pico/float.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/float.h \
  /usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom/sf_table.h \
- /home/lcd_la/./lib/lcd/LCD_GUI.h \
+ /home/mles_project/./lib/lcd/LCD_GUI.h \
  /usr/local/picosdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h \
- /home/lcd_la/./lib/sd_card/sd_utils.h
+ /home/mles_project/./lib/sd_card/sd_utils.h

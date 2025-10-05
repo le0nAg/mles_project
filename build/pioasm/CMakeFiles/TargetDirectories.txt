@@ -1,0 +1,7 @@
+/home/mles_project/build/pioasm/CMakeFiles/pioasm.dir
+/home/mles_project/build/pioasm/CMakeFiles/edit_cache.dir
+/home/mles_project/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/mles_project/build/pioasm/CMakeFiles/list_install_components.dir
+/home/mles_project/build/pioasm/CMakeFiles/install.dir
+/home/mles_project/build/pioasm/CMakeFiles/install/local.dir
+/home/mles_project/build/pioasm/CMakeFiles/install/strip.dir

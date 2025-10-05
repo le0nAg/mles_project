@@ -1,4 +1,4 @@
-# Install script for directory: /home/lcd_la/lib/font
+# Install script for directory: /home/mles_project/lib/font
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

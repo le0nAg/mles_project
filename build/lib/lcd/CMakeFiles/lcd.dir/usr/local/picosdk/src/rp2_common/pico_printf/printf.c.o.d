@@ -36,9 +36,9 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/assert.h \
  /usr/arm-none-eabi/include/assert.h \
- /home/lcd_la/build/generated/pico_base/pico/version.h \
+ /home/mles_project/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/lcd_la/build/generated/pico_base/pico/config_autogen.h \
+ /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \

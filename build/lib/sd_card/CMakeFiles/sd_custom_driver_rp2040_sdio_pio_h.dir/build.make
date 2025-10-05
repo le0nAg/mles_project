@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lcd_la
+CMAKE_SOURCE_DIR = /home/mles_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lcd_la/build
+CMAKE_BINARY_DIR = /home/mles_project/build
 
 # Utility rule file for sd_custom_driver_rp2040_sdio_pio_h.
 
@@ -68,9 +68,9 @@ include lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/progress.m
 
 lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h: lib/sd_card/rp2040_sdio.pio.h
 
-lib/sd_card/rp2040_sdio.pio.h: /home/lcd_la/lib/sd_card/sd_driver/SDIO/rp2040_sdio.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating rp2040_sdio.pio.h"
-	cd /home/lcd_la/build/lib/sd_card && ../../pioasm-install/pioasm/pioasm -o c-sdk -v 0 /home/lcd_la/lib/sd_card/sd_driver/SDIO/rp2040_sdio.pio /home/lcd_la/build/lib/sd_card/rp2040_sdio.pio.h
+lib/sd_card/rp2040_sdio.pio.h: /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.pio
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating rp2040_sdio.pio.h"
+	cd /home/mles_project/build/lib/sd_card && ../../pioasm-install/pioasm/pioasm -o c-sdk -v 0 /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.pio /home/mles_project/build/lib/sd_card/rp2040_sdio.pio.h
 
 sd_custom_driver_rp2040_sdio_pio_h: lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h
 sd_custom_driver_rp2040_sdio_pio_h: lib/sd_card/rp2040_sdio.pio.h
@@ -82,10 +82,10 @@ lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build: sd_custom_d
 .PHONY : lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build
 
 lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/clean:
-	cd /home/lcd_la/build/lib/sd_card && $(CMAKE_COMMAND) -P CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/cmake_clean.cmake
+	cd /home/mles_project/build/lib/sd_card && $(CMAKE_COMMAND) -P CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/cmake_clean.cmake
 .PHONY : lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/clean
 
 lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/depend:
-	cd /home/lcd_la/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lcd_la /home/lcd_la/lib/sd_card /home/lcd_la/build /home/lcd_la/build/lib/sd_card /home/lcd_la/build/lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mles_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mles_project /home/mles_project/lib/sd_card /home/mles_project/build /home/mles_project/build/lib/sd_card /home/mles_project/build/lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lcd_la
+CMAKE_SOURCE_DIR = /home/mles_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lcd_la/build
+CMAKE_BINARY_DIR = /home/mles_project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lcd_la/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lcd_la/build/CMakeFiles /home/lcd_la/build/lib/sd_card//CMakeFiles/progress.marks
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lcd_la/build/CMakeFiles 0
+	cd /home/mles_project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles /home/mles_project/build/lib/sd_card//CMakeFiles/progress.marks
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/clean
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/preinstall
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/preinstall
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lcd_la/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mles_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/rule:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/rule
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/rule
 .PHONY : lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ sd_custom_driver_rp2040_sdio_pio_h: lib/sd_card/CMakeFiles/sd_custom_driver_rp20
 
 # fast build rule for target.
 sd_custom_driver_rp2040_sdio_pio_h/fast:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build.make lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build.make lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build
 .PHONY : sd_custom_driver_rp2040_sdio_pio_h/fast
 
 # Help Target
@@ -150,6 +150,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lcd_la/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mles_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

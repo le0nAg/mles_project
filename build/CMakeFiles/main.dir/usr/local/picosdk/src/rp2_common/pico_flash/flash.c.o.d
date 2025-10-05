@@ -17,9 +17,9 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o: \
  /usr/arm-none-eabi/include/sys/_intsup.h \
  /usr/arm-none-eabi/include/sys/_stdint.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
- /home/lcd_la/build/generated/pico_base/pico/version.h \
+ /home/mles_project/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/lcd_la/build/generated/pico_base/pico/config_autogen.h \
+ /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
@@ -36,8 +36,16 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o: \
  /usr/local/picosdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
  /usr/local/picosdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
  /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
+ /usr/local/picosdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
+ /usr/local/picosdk/src/common/pico_sync/include/pico/sync.h \
+ /usr/local/picosdk/src/common/pico_sync/include/pico/sem.h \
+ /usr/local/picosdk/src/common/pico_sync/include/pico/lock_core.h \
  /usr/local/picosdk/src/common/pico_time/include/pico/time.h \
  /usr/local/picosdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
- /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h
+ /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+ /usr/local/picosdk/src/common/pico_sync/include/pico/mutex.h \
+ /usr/local/picosdk/src/common/pico_sync/include/pico/critical_section.h \
+ /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+ /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h

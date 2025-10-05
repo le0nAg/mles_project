@@ -45,7 +45,7 @@ pico_enable_stdio_uart(${PROGRAM_NAME} 0)
 pico_add_extra_outputs(${PROGRAM_NAME})
 
 target_link_libraries(${PROGRAM_NAME} 
-                        sd_card
+                        sd_custom_driver
                         lcd 
                         font 
                         config 

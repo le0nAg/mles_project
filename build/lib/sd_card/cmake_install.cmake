@@ -1,4 +1,4 @@
-# Install script for directory: /home/lcd_la/lib/sd_card
+# Install script for directory: /home/mles_project/lib/sd_card
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

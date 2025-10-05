@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lcd_la
+CMAKE_SOURCE_DIR = /home/mles_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lcd_la/build
+CMAKE_BINARY_DIR = /home/mles_project/build
 
 # Include any dependencies generated for this target.
 include lib/lcd/CMakeFiles/lcd.dir/depend.make
@@ -70,177 +70,177 @@ include lib/lcd/CMakeFiles/lcd.dir/progress.make
 include lib/lcd/CMakeFiles/lcd.dir/flags.make
 
 lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
-lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o: /home/lcd_la/lib/lcd/LCD_Driver.c
+lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o: /home/mles_project/lib/lcd/LCD_Driver.c
 lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o -MF CMakeFiles/lcd.dir/LCD_Driver.c.o.d -o CMakeFiles/lcd.dir/LCD_Driver.c.o -c /home/lcd_la/lib/lcd/LCD_Driver.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o -MF CMakeFiles/lcd.dir/LCD_Driver.c.o.d -o CMakeFiles/lcd.dir/LCD_Driver.c.o -c /home/mles_project/lib/lcd/LCD_Driver.c
 
 lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/LCD_Driver.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lcd_la/lib/lcd/LCD_Driver.c > CMakeFiles/lcd.dir/LCD_Driver.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/lcd/LCD_Driver.c > CMakeFiles/lcd.dir/LCD_Driver.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/LCD_Driver.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lcd_la/lib/lcd/LCD_Driver.c -o CMakeFiles/lcd.dir/LCD_Driver.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/lcd/LCD_Driver.c -o CMakeFiles/lcd.dir/LCD_Driver.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
-lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o: /home/lcd_la/lib/lcd/LCD_GUI.c
+lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o: /home/mles_project/lib/lcd/LCD_GUI.c
 lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o -MF CMakeFiles/lcd.dir/LCD_GUI.c.o.d -o CMakeFiles/lcd.dir/LCD_GUI.c.o -c /home/lcd_la/lib/lcd/LCD_GUI.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.o -MF CMakeFiles/lcd.dir/LCD_GUI.c.o.d -o CMakeFiles/lcd.dir/LCD_GUI.c.o -c /home/mles_project/lib/lcd/LCD_GUI.c
 
 lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/LCD_GUI.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lcd_la/lib/lcd/LCD_GUI.c > CMakeFiles/lcd.dir/LCD_GUI.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/lcd/LCD_GUI.c > CMakeFiles/lcd.dir/LCD_GUI.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/LCD_GUI.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/LCD_GUI.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lcd_la/lib/lcd/LCD_GUI.c -o CMakeFiles/lcd.dir/LCD_GUI.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/lcd/LCD_GUI.c -o CMakeFiles/lcd.dir/LCD_GUI.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
-lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o: /home/lcd_la/lib/lcd/LCD_Touch.c
+lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o: /home/mles_project/lib/lcd/LCD_Touch.c
 lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o -MF CMakeFiles/lcd.dir/LCD_Touch.c.o.d -o CMakeFiles/lcd.dir/LCD_Touch.c.o -c /home/lcd_la/lib/lcd/LCD_Touch.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o -MF CMakeFiles/lcd.dir/LCD_Touch.c.o.d -o CMakeFiles/lcd.dir/LCD_Touch.c.o -c /home/mles_project/lib/lcd/LCD_Touch.c
 
 lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/LCD_Touch.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lcd_la/lib/lcd/LCD_Touch.c > CMakeFiles/lcd.dir/LCD_Touch.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/lcd/LCD_Touch.c > CMakeFiles/lcd.dir/LCD_Touch.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/LCD_Touch.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lcd_la/lib/lcd/LCD_Touch.c -o CMakeFiles/lcd.dir/LCD_Touch.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/lcd/LCD_Touch.c -o CMakeFiles/lcd.dir/LCD_Touch.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o: /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o: /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o -c /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o -c /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o: /usr/local/picosdk/src/rp2040/pico_platform/platform.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o -c /usr/local/picosdk/src/rp2040/pico_platform/platform.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o -c /usr/local/picosdk/src/rp2040/pico_platform/platform.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2040/pico_platform/platform.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2040/pico_platform/platform.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2040/pico_platform/platform.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2040/pico_platform/platform.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o: /usr/local/picosdk/src/rp2_common/pico_platform_common/common.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o -c /usr/local/picosdk/src/rp2_common/pico_platform_common/common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o -c /usr/local/picosdk/src/rp2_common/pico_platform_common/common.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_platform_common/common.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_platform_common/common.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_platform_common/common.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_platform_common/common.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o: /usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o -c /usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o -c /usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o: /usr/local/picosdk/src/common/hardware_claim/claim.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o -c /usr/local/picosdk/src/common/hardware_claim/claim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o -c /usr/local/picosdk/src/common/hardware_claim/claim.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/hardware_claim/claim.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/hardware_claim/claim.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/hardware_claim/claim.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/hardware_claim/claim.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o: /usr/local/picosdk/src/rp2_common/hardware_sync/sync.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o -c /usr/local/picosdk/src/rp2_common/hardware_sync/sync.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o -c /usr/local/picosdk/src/rp2_common/hardware_sync/sync.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o: /usr/local/picosdk/src/rp2_common/hardware_irq/irq.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o -c /usr/local/picosdk/src/rp2_common/hardware_irq/irq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o -c /usr/local/picosdk/src/rp2_common/hardware_irq/irq.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_irq/irq.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_irq/irq.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i"
@@ -253,301 +253,301 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_han
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o: /usr/local/picosdk/src/common/pico_sync/sem.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o -c /usr/local/picosdk/src/common/pico_sync/sem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o -c /usr/local/picosdk/src/common/pico_sync/sem.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_sync/sem.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_sync/sem.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_sync/sem.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_sync/sem.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/sem.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o: /usr/local/picosdk/src/common/pico_sync/lock_core.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o -c /usr/local/picosdk/src/common/pico_sync/lock_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o -c /usr/local/picosdk/src/common/pico_sync/lock_core.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_sync/lock_core.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_sync/lock_core.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_sync/lock_core.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_sync/lock_core.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o: /usr/local/picosdk/src/common/pico_sync/mutex.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o -c /usr/local/picosdk/src/common/pico_sync/mutex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o -c /usr/local/picosdk/src/common/pico_sync/mutex.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_sync/mutex.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_sync/mutex.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_sync/mutex.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_sync/mutex.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o: /usr/local/picosdk/src/common/pico_sync/critical_section.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o -c /usr/local/picosdk/src/common/pico_sync/critical_section.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o -c /usr/local/picosdk/src/common/pico_sync/critical_section.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_sync/critical_section.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_sync/critical_section.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_sync/critical_section.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_sync/critical_section.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o: /usr/local/picosdk/src/common/pico_time/time.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o -c /usr/local/picosdk/src/common/pico_time/time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.o -c /usr/local/picosdk/src/common/pico_time/time.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_time/time.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_time/time.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_time/time.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_time/time.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/time.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o: /usr/local/picosdk/src/common/pico_time/timeout_helper.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o -c /usr/local/picosdk/src/common/pico_time/timeout_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o -c /usr/local/picosdk/src/common/pico_time/timeout_helper.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_time/timeout_helper.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_time/timeout_helper.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_time/timeout_helper.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_time/timeout_helper.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o: /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o -c /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o -c /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o: /usr/local/picosdk/src/common/pico_util/datetime.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o -c /usr/local/picosdk/src/common/pico_util/datetime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o -c /usr/local/picosdk/src/common/pico_util/datetime.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_util/datetime.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_util/datetime.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_util/datetime.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_util/datetime.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/datetime.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o: /usr/local/picosdk/src/common/pico_util/pheap.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o -c /usr/local/picosdk/src/common/pico_util/pheap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o -c /usr/local/picosdk/src/common/pico_util/pheap.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_util/pheap.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_util/pheap.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_util/pheap.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_util/pheap.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/pheap.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o: /usr/local/picosdk/src/common/pico_util/queue.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o -c /usr/local/picosdk/src/common/pico_util/queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.o -c /usr/local/picosdk/src/common/pico_util/queue.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_util/queue.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/common/pico_util/queue.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_util/queue.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/common/pico_util/queue.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/common/pico_util/queue.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o: /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o -c /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o -c /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o: /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o -c /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o -c /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o: /usr/local/picosdk/src/rp2_common/hardware_pll/pll.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o -c /usr/local/picosdk/src/rp2_common/hardware_pll/pll.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o -c /usr/local/picosdk/src/rp2_common/hardware_pll/pll.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o: /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o -c /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o -c /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o: /usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o: /usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o -c /usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o -c /usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o: /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o: /usr/local/picosdk/src/rp2_common/pico_flash/flash.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o -c /usr/local/picosdk/src/rp2_common/pico_flash/flash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o -c /usr/local/picosdk/src/rp2_common/pico_flash/flash.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_flash/flash.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_flash/flash.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_flash/flash.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_flash/flash.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o: /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o -c /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o -c /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o: /usr/local/picosdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o   -c /usr/local/picosdk/src/rp2_common/hardware_divider/divider.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o   -c /usr/local/picosdk/src/rp2_common/hardware_divider/divider.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.i"
@@ -560,63 +560,63 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_divider/div
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o: /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i"
@@ -628,8 +628,8 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o: /usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o   -c /usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o   -c /usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.i"
@@ -641,8 +641,8 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: /usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.i"
@@ -655,35 +655,35 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_a
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: /usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o: /usr/local/picosdk/src/rp2_common/pico_double/double_math.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o -c /usr/local/picosdk/src/rp2_common/pico_double/double_math.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o -c /usr/local/picosdk/src/rp2_common/pico_double/double_math.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_double/double_math.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_double/double_math.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_double/double_math.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_double/double_math.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: /usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i"
@@ -695,8 +695,8 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: /usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i"
@@ -708,8 +708,8 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: /usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.i"
@@ -722,35 +722,35 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aea
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: /usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o: /usr/local/picosdk/src/rp2_common/pico_float/float_math.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o -c /usr/local/picosdk/src/rp2_common/pico_float/float_math.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o -c /usr/local/picosdk/src/rp2_common/pico_float/float_math.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_float/float_math.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_float/float_math.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_float/float_math.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_float/float_math.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: /usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i"
@@ -763,21 +763,21 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o: /usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o -c /usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o -c /usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: /usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i"
@@ -790,63 +790,63 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o: /usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o -c /usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o -c /usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o: /usr/local/picosdk/src/rp2_common/pico_printf/printf.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o -c /usr/local/picosdk/src/rp2_common/pico_printf/printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o -c /usr/local/picosdk/src/rp2_common/pico_printf/printf.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_printf/printf.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_printf/printf.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_printf/printf.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_printf/printf.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o: /usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o   -c /usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building ASM object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o   -c /usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.i"
@@ -859,58 +859,436 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.s: 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o: /usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: /usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o: /usr/local/picosdk/src/rp2_common/hardware_spi/spi.c
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o -c /usr/local/picosdk/src/rp2_common/hardware_spi/spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o -c /usr/local/picosdk/src/rp2_common/hardware_spi/spi.c
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_spi/spi.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_spi/spi.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s"
-	cd /home/lcd_la/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o: /home/mles_project/lib/sd_card/ff15/source/ff.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o -MF CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o -c /home/mles_project/lib/sd_card/ff15/source/ff.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/ff15/source/ff.c > CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/ff15/source/ff.c -o CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.o: /home/mles_project/lib/sd_card/ff15/source/ffsystem.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.o -MF CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.o -c /home/mles_project/lib/sd_card/ff15/source/ffsystem.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/ff15/source/ffsystem.c > CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/ff15/source/ffsystem.c -o CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.o: /home/mles_project/lib/sd_card/ff15/source/ffunicode.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.o -MF CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.o -c /home/mles_project/lib/sd_card/ff15/source/ffunicode.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/ff15/source/ffunicode.c > CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/ff15/source/ffunicode.c -o CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.o: /home/mles_project/lib/sd_card/sd_driver/dma_interrupts.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.o -MF CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.o -c /home/mles_project/lib/sd_card/sd_driver/dma_interrupts.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/sd_driver/dma_interrupts.c > CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/sd_driver/dma_interrupts.c -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.o: /home/mles_project/lib/sd_card/sd_driver/sd_card.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.o -MF CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.o -c /home/mles_project/lib/sd_card/sd_driver/sd_card.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/sd_driver/sd_card.c > CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/sd_driver/sd_card.c -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.o: /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.o -MF CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.o -c /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c > CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.o: /home/mles_project/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.o -MF CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.o -c /home/mles_project/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c > CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.o: /home/mles_project/lib/sd_card/sd_driver/SPI/my_spi.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.o -MF CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.o -c /home/mles_project/lib/sd_card/sd_driver/SPI/my_spi.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/sd_driver/SPI/my_spi.c > CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/sd_driver/SPI/my_spi.c -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.o: /home/mles_project/lib/sd_card/sd_driver/SPI/sd_card_spi.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.o -MF CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.o -c /home/mles_project/lib/sd_card/sd_driver/SPI/sd_card_spi.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/sd_driver/SPI/sd_card_spi.c > CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/sd_driver/SPI/sd_card_spi.c -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o: /home/mles_project/lib/sd_card/sd_driver/SPI/sd_spi.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o -MF CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o -c /home/mles_project/lib/sd_card/sd_driver/SPI/sd_spi.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/sd_driver/SPI/sd_spi.c > CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/sd_driver/SPI/sd_spi.c -o CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o: /home/mles_project/lib/sd_card/src/crash.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o -c /home/mles_project/lib/sd_card/src/crash.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/crash.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/crash.c > CMakeFiles/lcd.dir/__/sd_card/src/crash.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/crash.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/crash.c -o CMakeFiles/lcd.dir/__/sd_card/src/crash.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o: /home/mles_project/lib/sd_card/src/crc.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o -c /home/mles_project/lib/sd_card/src/crc.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/crc.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/crc.c > CMakeFiles/lcd.dir/__/sd_card/src/crc.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/crc.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/crc.c -o CMakeFiles/lcd.dir/__/sd_card/src/crc.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o: /home/mles_project/lib/sd_card/src/f_util.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o -c /home/mles_project/lib/sd_card/src/f_util.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/f_util.c > CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/f_util.c -o CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o: /home/mles_project/lib/sd_card/src/ff_stdio.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o -c /home/mles_project/lib/sd_card/src/ff_stdio.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/ff_stdio.c > CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/ff_stdio.c -o CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.o: /home/mles_project/lib/sd_card/src/file_stream.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.o -c /home/mles_project/lib/sd_card/src/file_stream.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/file_stream.c > CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/file_stream.c -o CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o: /home/mles_project/lib/sd_card/src/glue.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o -c /home/mles_project/lib/sd_card/src/glue.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/glue.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/glue.c > CMakeFiles/lcd.dir/__/sd_card/src/glue.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/glue.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/glue.c -o CMakeFiles/lcd.dir/__/sd_card/src/glue.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o: /home/mles_project/lib/sd_card/src/my_debug.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o -c /home/mles_project/lib/sd_card/src/my_debug.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/my_debug.c > CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/my_debug.c -o CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.o: /home/mles_project/lib/sd_card/src/my_rtc.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.o -c /home/mles_project/lib/sd_card/src/my_rtc.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/my_rtc.c > CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/my_rtc.c -o CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o: /home/mles_project/lib/sd_card/src/sd_timeouts.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o -c /home/mles_project/lib/sd_card/src/sd_timeouts.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/sd_timeouts.c > CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/sd_timeouts.c -o CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.o: /home/mles_project/lib/sd_card/src/util.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.o -MF CMakeFiles/lcd.dir/__/sd_card/src/util.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/src/util.c.o -c /home/mles_project/lib/sd_card/src/util.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/src/util.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/util.c > CMakeFiles/lcd.dir/__/sd_card/src/util.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/src/util.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/util.c -o CMakeFiles/lcd.dir/__/sd_card/src/util.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: /home/mles_project/lib/sd_card/sd_utils.c
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o -MF CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o.d -o CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o -c /home/mles_project/lib/sd_card/sd_utils.c
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/sd_utils.c > CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/sd_utils.c -o CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o: /usr/local/picosdk/src/rp2_common/hardware_dma/dma.c
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o -c /usr/local/picosdk/src/rp2_common/hardware_dma/dma.c
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_dma/dma.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_dma/dma.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o: /usr/local/picosdk/src/rp2_common/hardware_pio/pio.c
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o -c /usr/local/picosdk/src/rp2_common/hardware_pio/pio.c
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_pio/pio.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_pio/pio.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o: /usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o -c /usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o: /usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o -c /usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o: /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o -c /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o: lib/lcd/CMakeFiles/lcd.dir/flags.make
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o: /usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o: lib/lcd/CMakeFiles/lcd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o -MF CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o.d -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o -c /usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c > CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s"
+	cd /home/mles_project/build/lib/lcd && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s
 
 # Object files for target lcd
 lcd_OBJECTS = \
@@ -974,7 +1352,34 @@ lcd_OBJECTS = \
 "CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o" \
 "CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o" \
 "CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o" \
-"CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o"
+"CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/src/util.c.o" \
+"CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o" \
+"CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o" \
+"CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o" \
+"CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o" \
+"CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o" \
+"CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o" \
+"CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o"
 
 # External object files for target lcd
 lcd_EXTERNAL_OBJECTS =
@@ -1040,22 +1445,49 @@ lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pi
 lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o
 lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffsystem.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ffunicode.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/dma_interrupts.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/sd_card.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/rp2040_sdio.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SDIO/sd_card_sdio.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/my_spi.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_card_spi.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/f_util.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/file_stream.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_rtc.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o
 lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/build.make
 lib/lcd/liblcd.a: /usr/local/picosdk/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 lib/lcd/liblcd.a: lib/lcd/CMakeFiles/lcd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lcd_la/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Linking CXX static library liblcd.a"
-	cd /home/lcd_la/build/lib/lcd && $(CMAKE_COMMAND) -P CMakeFiles/lcd.dir/cmake_clean_target.cmake
-	cd /home/lcd_la/build/lib/lcd && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lcd.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking CXX static library liblcd.a"
+	cd /home/mles_project/build/lib/lcd && $(CMAKE_COMMAND) -P CMakeFiles/lcd.dir/cmake_clean_target.cmake
+	cd /home/mles_project/build/lib/lcd && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lcd.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/lcd/CMakeFiles/lcd.dir/build: lib/lcd/liblcd.a
 .PHONY : lib/lcd/CMakeFiles/lcd.dir/build
 
 lib/lcd/CMakeFiles/lcd.dir/clean:
-	cd /home/lcd_la/build/lib/lcd && $(CMAKE_COMMAND) -P CMakeFiles/lcd.dir/cmake_clean.cmake
+	cd /home/mles_project/build/lib/lcd && $(CMAKE_COMMAND) -P CMakeFiles/lcd.dir/cmake_clean.cmake
 .PHONY : lib/lcd/CMakeFiles/lcd.dir/clean
 
 lib/lcd/CMakeFiles/lcd.dir/depend:
-	cd /home/lcd_la/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lcd_la /home/lcd_la/lib/lcd /home/lcd_la/build /home/lcd_la/build/lib/lcd /home/lcd_la/build/lib/lcd/CMakeFiles/lcd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mles_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mles_project /home/mles_project/lib/lcd /home/mles_project/build /home/mles_project/build/lib/lcd /home/mles_project/build/lib/lcd/CMakeFiles/lcd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/lcd/CMakeFiles/lcd.dir/depend
 

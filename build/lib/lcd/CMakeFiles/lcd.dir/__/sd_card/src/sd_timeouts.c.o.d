@@ -1,0 +1,10 @@
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/sd_timeouts.c.o: \
+ /home/mles_project/lib/sd_card/src/sd_timeouts.c \
+ /home/mles_project/lib/sd_card/include/sd_timeouts.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
+ /usr/arm-none-eabi/include/stdint.h \
+ /usr/arm-none-eabi/include/machine/_default_types.h \
+ /usr/arm-none-eabi/include/sys/features.h \
+ /usr/arm-none-eabi/include/_newlib_version.h \
+ /usr/arm-none-eabi/include/sys/_intsup.h \
+ /usr/arm-none-eabi/include/sys/_stdint.h

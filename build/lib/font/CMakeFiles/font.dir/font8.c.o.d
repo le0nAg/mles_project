@@ -1,5 +1,5 @@
-lib/font/CMakeFiles/font.dir/font8.c.o: /home/lcd_la/lib/font/font8.c \
- /home/lcd_la/lib/font/fonts.h \
+lib/font/CMakeFiles/font.dir/font8.c.o: \
+ /home/mles_project/lib/font/font8.c /home/mles_project/lib/font/fonts.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \

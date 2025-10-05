@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lcd_la
+CMAKE_SOURCE_DIR = /home/mles_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lcd_la/build
+CMAKE_BINARY_DIR = /home/mles_project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lcd_la/build/CMakeFiles /home/lcd_la/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles /home/mles_project/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lcd_la/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -258,6 +258,510 @@ font: cmake_check_build_system
 font/fast:
 	$(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/build
 .PHONY : font/fast
+
+lib/sd_card/ff15/source/ff.o: lib/sd_card/ff15/source/ff.c.o
+.PHONY : lib/sd_card/ff15/source/ff.o
+
+# target to build an object file
+lib/sd_card/ff15/source/ff.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ff.c.o
+.PHONY : lib/sd_card/ff15/source/ff.c.o
+
+lib/sd_card/ff15/source/ff.i: lib/sd_card/ff15/source/ff.c.i
+.PHONY : lib/sd_card/ff15/source/ff.i
+
+# target to preprocess a source file
+lib/sd_card/ff15/source/ff.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ff.c.i
+.PHONY : lib/sd_card/ff15/source/ff.c.i
+
+lib/sd_card/ff15/source/ff.s: lib/sd_card/ff15/source/ff.c.s
+.PHONY : lib/sd_card/ff15/source/ff.s
+
+# target to generate assembly for a file
+lib/sd_card/ff15/source/ff.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ff.c.s
+.PHONY : lib/sd_card/ff15/source/ff.c.s
+
+lib/sd_card/ff15/source/ffsystem.o: lib/sd_card/ff15/source/ffsystem.c.o
+.PHONY : lib/sd_card/ff15/source/ffsystem.o
+
+# target to build an object file
+lib/sd_card/ff15/source/ffsystem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffsystem.c.o
+.PHONY : lib/sd_card/ff15/source/ffsystem.c.o
+
+lib/sd_card/ff15/source/ffsystem.i: lib/sd_card/ff15/source/ffsystem.c.i
+.PHONY : lib/sd_card/ff15/source/ffsystem.i
+
+# target to preprocess a source file
+lib/sd_card/ff15/source/ffsystem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffsystem.c.i
+.PHONY : lib/sd_card/ff15/source/ffsystem.c.i
+
+lib/sd_card/ff15/source/ffsystem.s: lib/sd_card/ff15/source/ffsystem.c.s
+.PHONY : lib/sd_card/ff15/source/ffsystem.s
+
+# target to generate assembly for a file
+lib/sd_card/ff15/source/ffsystem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffsystem.c.s
+.PHONY : lib/sd_card/ff15/source/ffsystem.c.s
+
+lib/sd_card/ff15/source/ffunicode.o: lib/sd_card/ff15/source/ffunicode.c.o
+.PHONY : lib/sd_card/ff15/source/ffunicode.o
+
+# target to build an object file
+lib/sd_card/ff15/source/ffunicode.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffunicode.c.o
+.PHONY : lib/sd_card/ff15/source/ffunicode.c.o
+
+lib/sd_card/ff15/source/ffunicode.i: lib/sd_card/ff15/source/ffunicode.c.i
+.PHONY : lib/sd_card/ff15/source/ffunicode.i
+
+# target to preprocess a source file
+lib/sd_card/ff15/source/ffunicode.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffunicode.c.i
+.PHONY : lib/sd_card/ff15/source/ffunicode.c.i
+
+lib/sd_card/ff15/source/ffunicode.s: lib/sd_card/ff15/source/ffunicode.c.s
+.PHONY : lib/sd_card/ff15/source/ffunicode.s
+
+# target to generate assembly for a file
+lib/sd_card/ff15/source/ffunicode.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffunicode.c.s
+.PHONY : lib/sd_card/ff15/source/ffunicode.c.s
+
+lib/sd_card/sd_driver/SDIO/rp2040_sdio.o: lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.o
+.PHONY : lib/sd_card/sd_driver/SDIO/rp2040_sdio.o
+
+# target to build an object file
+lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.o
+.PHONY : lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.o
+
+lib/sd_card/sd_driver/SDIO/rp2040_sdio.i: lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.i
+.PHONY : lib/sd_card/sd_driver/SDIO/rp2040_sdio.i
+
+# target to preprocess a source file
+lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.i
+.PHONY : lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.i
+
+lib/sd_card/sd_driver/SDIO/rp2040_sdio.s: lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.s
+.PHONY : lib/sd_card/sd_driver/SDIO/rp2040_sdio.s
+
+# target to generate assembly for a file
+lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.s
+.PHONY : lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.s
+
+lib/sd_card/sd_driver/SDIO/sd_card_sdio.o: lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.o
+.PHONY : lib/sd_card/sd_driver/SDIO/sd_card_sdio.o
+
+# target to build an object file
+lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.o
+.PHONY : lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.o
+
+lib/sd_card/sd_driver/SDIO/sd_card_sdio.i: lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.i
+.PHONY : lib/sd_card/sd_driver/SDIO/sd_card_sdio.i
+
+# target to preprocess a source file
+lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.i
+.PHONY : lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.i
+
+lib/sd_card/sd_driver/SDIO/sd_card_sdio.s: lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.s
+.PHONY : lib/sd_card/sd_driver/SDIO/sd_card_sdio.s
+
+# target to generate assembly for a file
+lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.s
+.PHONY : lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.s
+
+lib/sd_card/sd_driver/SPI/my_spi.o: lib/sd_card/sd_driver/SPI/my_spi.c.o
+.PHONY : lib/sd_card/sd_driver/SPI/my_spi.o
+
+# target to build an object file
+lib/sd_card/sd_driver/SPI/my_spi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/my_spi.c.o
+.PHONY : lib/sd_card/sd_driver/SPI/my_spi.c.o
+
+lib/sd_card/sd_driver/SPI/my_spi.i: lib/sd_card/sd_driver/SPI/my_spi.c.i
+.PHONY : lib/sd_card/sd_driver/SPI/my_spi.i
+
+# target to preprocess a source file
+lib/sd_card/sd_driver/SPI/my_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/my_spi.c.i
+.PHONY : lib/sd_card/sd_driver/SPI/my_spi.c.i
+
+lib/sd_card/sd_driver/SPI/my_spi.s: lib/sd_card/sd_driver/SPI/my_spi.c.s
+.PHONY : lib/sd_card/sd_driver/SPI/my_spi.s
+
+# target to generate assembly for a file
+lib/sd_card/sd_driver/SPI/my_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/my_spi.c.s
+.PHONY : lib/sd_card/sd_driver/SPI/my_spi.c.s
+
+lib/sd_card/sd_driver/SPI/sd_card_spi.o: lib/sd_card/sd_driver/SPI/sd_card_spi.c.o
+.PHONY : lib/sd_card/sd_driver/SPI/sd_card_spi.o
+
+# target to build an object file
+lib/sd_card/sd_driver/SPI/sd_card_spi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_card_spi.c.o
+.PHONY : lib/sd_card/sd_driver/SPI/sd_card_spi.c.o
+
+lib/sd_card/sd_driver/SPI/sd_card_spi.i: lib/sd_card/sd_driver/SPI/sd_card_spi.c.i
+.PHONY : lib/sd_card/sd_driver/SPI/sd_card_spi.i
+
+# target to preprocess a source file
+lib/sd_card/sd_driver/SPI/sd_card_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_card_spi.c.i
+.PHONY : lib/sd_card/sd_driver/SPI/sd_card_spi.c.i
+
+lib/sd_card/sd_driver/SPI/sd_card_spi.s: lib/sd_card/sd_driver/SPI/sd_card_spi.c.s
+.PHONY : lib/sd_card/sd_driver/SPI/sd_card_spi.s
+
+# target to generate assembly for a file
+lib/sd_card/sd_driver/SPI/sd_card_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_card_spi.c.s
+.PHONY : lib/sd_card/sd_driver/SPI/sd_card_spi.c.s
+
+lib/sd_card/sd_driver/SPI/sd_spi.o: lib/sd_card/sd_driver/SPI/sd_spi.c.o
+.PHONY : lib/sd_card/sd_driver/SPI/sd_spi.o
+
+# target to build an object file
+lib/sd_card/sd_driver/SPI/sd_spi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_spi.c.o
+.PHONY : lib/sd_card/sd_driver/SPI/sd_spi.c.o
+
+lib/sd_card/sd_driver/SPI/sd_spi.i: lib/sd_card/sd_driver/SPI/sd_spi.c.i
+.PHONY : lib/sd_card/sd_driver/SPI/sd_spi.i
+
+# target to preprocess a source file
+lib/sd_card/sd_driver/SPI/sd_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_spi.c.i
+.PHONY : lib/sd_card/sd_driver/SPI/sd_spi.c.i
+
+lib/sd_card/sd_driver/SPI/sd_spi.s: lib/sd_card/sd_driver/SPI/sd_spi.c.s
+.PHONY : lib/sd_card/sd_driver/SPI/sd_spi.s
+
+# target to generate assembly for a file
+lib/sd_card/sd_driver/SPI/sd_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_spi.c.s
+.PHONY : lib/sd_card/sd_driver/SPI/sd_spi.c.s
+
+lib/sd_card/sd_driver/dma_interrupts.o: lib/sd_card/sd_driver/dma_interrupts.c.o
+.PHONY : lib/sd_card/sd_driver/dma_interrupts.o
+
+# target to build an object file
+lib/sd_card/sd_driver/dma_interrupts.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/dma_interrupts.c.o
+.PHONY : lib/sd_card/sd_driver/dma_interrupts.c.o
+
+lib/sd_card/sd_driver/dma_interrupts.i: lib/sd_card/sd_driver/dma_interrupts.c.i
+.PHONY : lib/sd_card/sd_driver/dma_interrupts.i
+
+# target to preprocess a source file
+lib/sd_card/sd_driver/dma_interrupts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/dma_interrupts.c.i
+.PHONY : lib/sd_card/sd_driver/dma_interrupts.c.i
+
+lib/sd_card/sd_driver/dma_interrupts.s: lib/sd_card/sd_driver/dma_interrupts.c.s
+.PHONY : lib/sd_card/sd_driver/dma_interrupts.s
+
+# target to generate assembly for a file
+lib/sd_card/sd_driver/dma_interrupts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/dma_interrupts.c.s
+.PHONY : lib/sd_card/sd_driver/dma_interrupts.c.s
+
+lib/sd_card/sd_driver/sd_card.o: lib/sd_card/sd_driver/sd_card.c.o
+.PHONY : lib/sd_card/sd_driver/sd_card.o
+
+# target to build an object file
+lib/sd_card/sd_driver/sd_card.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/sd_card.c.o
+.PHONY : lib/sd_card/sd_driver/sd_card.c.o
+
+lib/sd_card/sd_driver/sd_card.i: lib/sd_card/sd_driver/sd_card.c.i
+.PHONY : lib/sd_card/sd_driver/sd_card.i
+
+# target to preprocess a source file
+lib/sd_card/sd_driver/sd_card.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/sd_card.c.i
+.PHONY : lib/sd_card/sd_driver/sd_card.c.i
+
+lib/sd_card/sd_driver/sd_card.s: lib/sd_card/sd_driver/sd_card.c.s
+.PHONY : lib/sd_card/sd_driver/sd_card.s
+
+# target to generate assembly for a file
+lib/sd_card/sd_driver/sd_card.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/sd_card.c.s
+.PHONY : lib/sd_card/sd_driver/sd_card.c.s
+
+lib/sd_card/sd_utils.o: lib/sd_card/sd_utils.c.o
+.PHONY : lib/sd_card/sd_utils.o
+
+# target to build an object file
+lib/sd_card/sd_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_utils.c.o
+.PHONY : lib/sd_card/sd_utils.c.o
+
+lib/sd_card/sd_utils.i: lib/sd_card/sd_utils.c.i
+.PHONY : lib/sd_card/sd_utils.i
+
+# target to preprocess a source file
+lib/sd_card/sd_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_utils.c.i
+.PHONY : lib/sd_card/sd_utils.c.i
+
+lib/sd_card/sd_utils.s: lib/sd_card/sd_utils.c.s
+.PHONY : lib/sd_card/sd_utils.s
+
+# target to generate assembly for a file
+lib/sd_card/sd_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_utils.c.s
+.PHONY : lib/sd_card/sd_utils.c.s
+
+lib/sd_card/src/crash.o: lib/sd_card/src/crash.c.o
+.PHONY : lib/sd_card/src/crash.o
+
+# target to build an object file
+lib/sd_card/src/crash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crash.c.o
+.PHONY : lib/sd_card/src/crash.c.o
+
+lib/sd_card/src/crash.i: lib/sd_card/src/crash.c.i
+.PHONY : lib/sd_card/src/crash.i
+
+# target to preprocess a source file
+lib/sd_card/src/crash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crash.c.i
+.PHONY : lib/sd_card/src/crash.c.i
+
+lib/sd_card/src/crash.s: lib/sd_card/src/crash.c.s
+.PHONY : lib/sd_card/src/crash.s
+
+# target to generate assembly for a file
+lib/sd_card/src/crash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crash.c.s
+.PHONY : lib/sd_card/src/crash.c.s
+
+lib/sd_card/src/crc.o: lib/sd_card/src/crc.c.o
+.PHONY : lib/sd_card/src/crc.o
+
+# target to build an object file
+lib/sd_card/src/crc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crc.c.o
+.PHONY : lib/sd_card/src/crc.c.o
+
+lib/sd_card/src/crc.i: lib/sd_card/src/crc.c.i
+.PHONY : lib/sd_card/src/crc.i
+
+# target to preprocess a source file
+lib/sd_card/src/crc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crc.c.i
+.PHONY : lib/sd_card/src/crc.c.i
+
+lib/sd_card/src/crc.s: lib/sd_card/src/crc.c.s
+.PHONY : lib/sd_card/src/crc.s
+
+# target to generate assembly for a file
+lib/sd_card/src/crc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crc.c.s
+.PHONY : lib/sd_card/src/crc.c.s
+
+lib/sd_card/src/f_util.o: lib/sd_card/src/f_util.c.o
+.PHONY : lib/sd_card/src/f_util.o
+
+# target to build an object file
+lib/sd_card/src/f_util.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/f_util.c.o
+.PHONY : lib/sd_card/src/f_util.c.o
+
+lib/sd_card/src/f_util.i: lib/sd_card/src/f_util.c.i
+.PHONY : lib/sd_card/src/f_util.i
+
+# target to preprocess a source file
+lib/sd_card/src/f_util.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/f_util.c.i
+.PHONY : lib/sd_card/src/f_util.c.i
+
+lib/sd_card/src/f_util.s: lib/sd_card/src/f_util.c.s
+.PHONY : lib/sd_card/src/f_util.s
+
+# target to generate assembly for a file
+lib/sd_card/src/f_util.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/f_util.c.s
+.PHONY : lib/sd_card/src/f_util.c.s
+
+lib/sd_card/src/ff_stdio.o: lib/sd_card/src/ff_stdio.c.o
+.PHONY : lib/sd_card/src/ff_stdio.o
+
+# target to build an object file
+lib/sd_card/src/ff_stdio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/ff_stdio.c.o
+.PHONY : lib/sd_card/src/ff_stdio.c.o
+
+lib/sd_card/src/ff_stdio.i: lib/sd_card/src/ff_stdio.c.i
+.PHONY : lib/sd_card/src/ff_stdio.i
+
+# target to preprocess a source file
+lib/sd_card/src/ff_stdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/ff_stdio.c.i
+.PHONY : lib/sd_card/src/ff_stdio.c.i
+
+lib/sd_card/src/ff_stdio.s: lib/sd_card/src/ff_stdio.c.s
+.PHONY : lib/sd_card/src/ff_stdio.s
+
+# target to generate assembly for a file
+lib/sd_card/src/ff_stdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/ff_stdio.c.s
+.PHONY : lib/sd_card/src/ff_stdio.c.s
+
+lib/sd_card/src/file_stream.o: lib/sd_card/src/file_stream.c.o
+.PHONY : lib/sd_card/src/file_stream.o
+
+# target to build an object file
+lib/sd_card/src/file_stream.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/file_stream.c.o
+.PHONY : lib/sd_card/src/file_stream.c.o
+
+lib/sd_card/src/file_stream.i: lib/sd_card/src/file_stream.c.i
+.PHONY : lib/sd_card/src/file_stream.i
+
+# target to preprocess a source file
+lib/sd_card/src/file_stream.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/file_stream.c.i
+.PHONY : lib/sd_card/src/file_stream.c.i
+
+lib/sd_card/src/file_stream.s: lib/sd_card/src/file_stream.c.s
+.PHONY : lib/sd_card/src/file_stream.s
+
+# target to generate assembly for a file
+lib/sd_card/src/file_stream.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/file_stream.c.s
+.PHONY : lib/sd_card/src/file_stream.c.s
+
+lib/sd_card/src/glue.o: lib/sd_card/src/glue.c.o
+.PHONY : lib/sd_card/src/glue.o
+
+# target to build an object file
+lib/sd_card/src/glue.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/glue.c.o
+.PHONY : lib/sd_card/src/glue.c.o
+
+lib/sd_card/src/glue.i: lib/sd_card/src/glue.c.i
+.PHONY : lib/sd_card/src/glue.i
+
+# target to preprocess a source file
+lib/sd_card/src/glue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/glue.c.i
+.PHONY : lib/sd_card/src/glue.c.i
+
+lib/sd_card/src/glue.s: lib/sd_card/src/glue.c.s
+.PHONY : lib/sd_card/src/glue.s
+
+# target to generate assembly for a file
+lib/sd_card/src/glue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/glue.c.s
+.PHONY : lib/sd_card/src/glue.c.s
+
+lib/sd_card/src/my_debug.o: lib/sd_card/src/my_debug.c.o
+.PHONY : lib/sd_card/src/my_debug.o
+
+# target to build an object file
+lib/sd_card/src/my_debug.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_debug.c.o
+.PHONY : lib/sd_card/src/my_debug.c.o
+
+lib/sd_card/src/my_debug.i: lib/sd_card/src/my_debug.c.i
+.PHONY : lib/sd_card/src/my_debug.i
+
+# target to preprocess a source file
+lib/sd_card/src/my_debug.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_debug.c.i
+.PHONY : lib/sd_card/src/my_debug.c.i
+
+lib/sd_card/src/my_debug.s: lib/sd_card/src/my_debug.c.s
+.PHONY : lib/sd_card/src/my_debug.s
+
+# target to generate assembly for a file
+lib/sd_card/src/my_debug.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_debug.c.s
+.PHONY : lib/sd_card/src/my_debug.c.s
+
+lib/sd_card/src/my_rtc.o: lib/sd_card/src/my_rtc.c.o
+.PHONY : lib/sd_card/src/my_rtc.o
+
+# target to build an object file
+lib/sd_card/src/my_rtc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_rtc.c.o
+.PHONY : lib/sd_card/src/my_rtc.c.o
+
+lib/sd_card/src/my_rtc.i: lib/sd_card/src/my_rtc.c.i
+.PHONY : lib/sd_card/src/my_rtc.i
+
+# target to preprocess a source file
+lib/sd_card/src/my_rtc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_rtc.c.i
+.PHONY : lib/sd_card/src/my_rtc.c.i
+
+lib/sd_card/src/my_rtc.s: lib/sd_card/src/my_rtc.c.s
+.PHONY : lib/sd_card/src/my_rtc.s
+
+# target to generate assembly for a file
+lib/sd_card/src/my_rtc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_rtc.c.s
+.PHONY : lib/sd_card/src/my_rtc.c.s
+
+lib/sd_card/src/sd_timeouts.o: lib/sd_card/src/sd_timeouts.c.o
+.PHONY : lib/sd_card/src/sd_timeouts.o
+
+# target to build an object file
+lib/sd_card/src/sd_timeouts.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/sd_timeouts.c.o
+.PHONY : lib/sd_card/src/sd_timeouts.c.o
+
+lib/sd_card/src/sd_timeouts.i: lib/sd_card/src/sd_timeouts.c.i
+.PHONY : lib/sd_card/src/sd_timeouts.i
+
+# target to preprocess a source file
+lib/sd_card/src/sd_timeouts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/sd_timeouts.c.i
+.PHONY : lib/sd_card/src/sd_timeouts.c.i
+
+lib/sd_card/src/sd_timeouts.s: lib/sd_card/src/sd_timeouts.c.s
+.PHONY : lib/sd_card/src/sd_timeouts.s
+
+# target to generate assembly for a file
+lib/sd_card/src/sd_timeouts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/sd_timeouts.c.s
+.PHONY : lib/sd_card/src/sd_timeouts.c.s
+
+lib/sd_card/src/util.o: lib/sd_card/src/util.c.o
+.PHONY : lib/sd_card/src/util.o
+
+# target to build an object file
+lib/sd_card/src/util.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/util.c.o
+.PHONY : lib/sd_card/src/util.c.o
+
+lib/sd_card/src/util.i: lib/sd_card/src/util.c.i
+.PHONY : lib/sd_card/src/util.i
+
+# target to preprocess a source file
+lib/sd_card/src/util.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/util.c.i
+.PHONY : lib/sd_card/src/util.c.i
+
+lib/sd_card/src/util.s: lib/sd_card/src/util.c.s
+.PHONY : lib/sd_card/src/util.s
+
+# target to generate assembly for a file
+lib/sd_card/src/util.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/util.c.s
+.PHONY : lib/sd_card/src/util.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -979,6 +1483,30 @@ usr/local/picosdk/src/rp2040/pico_platform/platform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
 
+usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.o: usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+
+usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.i: usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i
+
+usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.s: usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s
+
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.o: usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.o
 
@@ -1034,6 +1562,30 @@ usr/local/picosdk/src/rp2_common/hardware_divider/divider.o: usr/local/picosdk/s
 usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
+
+usr/local/picosdk/src/rp2_common/hardware_dma/dma.o: usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
+
+usr/local/picosdk/src/rp2_common/hardware_dma/dma.i: usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i
+
+usr/local/picosdk/src/rp2_common/hardware_dma/dma.s: usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_flash/flash.o: usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.o
@@ -1115,6 +1667,30 @@ usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
+usr/local/picosdk/src/rp2_common/hardware_pio/pio.o: usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_pio/pio.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o
+
+usr/local/picosdk/src/rp2_common/hardware_pio/pio.i: usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i
+
+usr/local/picosdk/src/rp2_common/hardware_pio/pio.s: usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s
+
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.o: usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pll/pll.o
 
@@ -1138,6 +1714,30 @@ usr/local/picosdk/src/rp2_common/hardware_pll/pll.s: usr/local/picosdk/src/rp2_c
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
+
+usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.o: usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o
+
+usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.i: usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i
+
+usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.s: usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.o: usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_spi/spi.o
@@ -1378,6 +1978,30 @@ usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.s: usr/local/picosdk/src/rp2
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
+
+usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.o: usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o
+
+usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.i: usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i
+
+usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.s: usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s
 
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.o: usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_atomic/atomic.o
@@ -1739,6 +2363,30 @@ usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
+usr/local/picosdk/src/rp2_common/pico_multicore/multicore.o: usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_multicore/multicore.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o
+
+usr/local/picosdk/src/rp2_common/pico_multicore/multicore.i: usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i
+
+usr/local/picosdk/src/rp2_common/pico_multicore/multicore.s: usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s
+
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.o: usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_common/common.o
 
@@ -2094,6 +2742,69 @@ help:
 	@echo "... font"
 	@echo "... lcd"
 	@echo "... main"
+	@echo "... lib/sd_card/ff15/source/ff.o"
+	@echo "... lib/sd_card/ff15/source/ff.i"
+	@echo "... lib/sd_card/ff15/source/ff.s"
+	@echo "... lib/sd_card/ff15/source/ffsystem.o"
+	@echo "... lib/sd_card/ff15/source/ffsystem.i"
+	@echo "... lib/sd_card/ff15/source/ffsystem.s"
+	@echo "... lib/sd_card/ff15/source/ffunicode.o"
+	@echo "... lib/sd_card/ff15/source/ffunicode.i"
+	@echo "... lib/sd_card/ff15/source/ffunicode.s"
+	@echo "... lib/sd_card/sd_driver/SDIO/rp2040_sdio.o"
+	@echo "... lib/sd_card/sd_driver/SDIO/rp2040_sdio.i"
+	@echo "... lib/sd_card/sd_driver/SDIO/rp2040_sdio.s"
+	@echo "... lib/sd_card/sd_driver/SDIO/sd_card_sdio.o"
+	@echo "... lib/sd_card/sd_driver/SDIO/sd_card_sdio.i"
+	@echo "... lib/sd_card/sd_driver/SDIO/sd_card_sdio.s"
+	@echo "... lib/sd_card/sd_driver/SPI/my_spi.o"
+	@echo "... lib/sd_card/sd_driver/SPI/my_spi.i"
+	@echo "... lib/sd_card/sd_driver/SPI/my_spi.s"
+	@echo "... lib/sd_card/sd_driver/SPI/sd_card_spi.o"
+	@echo "... lib/sd_card/sd_driver/SPI/sd_card_spi.i"
+	@echo "... lib/sd_card/sd_driver/SPI/sd_card_spi.s"
+	@echo "... lib/sd_card/sd_driver/SPI/sd_spi.o"
+	@echo "... lib/sd_card/sd_driver/SPI/sd_spi.i"
+	@echo "... lib/sd_card/sd_driver/SPI/sd_spi.s"
+	@echo "... lib/sd_card/sd_driver/dma_interrupts.o"
+	@echo "... lib/sd_card/sd_driver/dma_interrupts.i"
+	@echo "... lib/sd_card/sd_driver/dma_interrupts.s"
+	@echo "... lib/sd_card/sd_driver/sd_card.o"
+	@echo "... lib/sd_card/sd_driver/sd_card.i"
+	@echo "... lib/sd_card/sd_driver/sd_card.s"
+	@echo "... lib/sd_card/sd_utils.o"
+	@echo "... lib/sd_card/sd_utils.i"
+	@echo "... lib/sd_card/sd_utils.s"
+	@echo "... lib/sd_card/src/crash.o"
+	@echo "... lib/sd_card/src/crash.i"
+	@echo "... lib/sd_card/src/crash.s"
+	@echo "... lib/sd_card/src/crc.o"
+	@echo "... lib/sd_card/src/crc.i"
+	@echo "... lib/sd_card/src/crc.s"
+	@echo "... lib/sd_card/src/f_util.o"
+	@echo "... lib/sd_card/src/f_util.i"
+	@echo "... lib/sd_card/src/f_util.s"
+	@echo "... lib/sd_card/src/ff_stdio.o"
+	@echo "... lib/sd_card/src/ff_stdio.i"
+	@echo "... lib/sd_card/src/ff_stdio.s"
+	@echo "... lib/sd_card/src/file_stream.o"
+	@echo "... lib/sd_card/src/file_stream.i"
+	@echo "... lib/sd_card/src/file_stream.s"
+	@echo "... lib/sd_card/src/glue.o"
+	@echo "... lib/sd_card/src/glue.i"
+	@echo "... lib/sd_card/src/glue.s"
+	@echo "... lib/sd_card/src/my_debug.o"
+	@echo "... lib/sd_card/src/my_debug.i"
+	@echo "... lib/sd_card/src/my_debug.s"
+	@echo "... lib/sd_card/src/my_rtc.o"
+	@echo "... lib/sd_card/src/my_rtc.i"
+	@echo "... lib/sd_card/src/my_rtc.s"
+	@echo "... lib/sd_card/src/sd_timeouts.o"
+	@echo "... lib/sd_card/src/sd_timeouts.i"
+	@echo "... lib/sd_card/src/sd_timeouts.s"
+	@echo "... lib/sd_card/src/util.o"
+	@echo "... lib/sd_card/src/util.i"
+	@echo "... lib/sd_card/src/util.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -2184,6 +2895,9 @@ help:
 	@echo "... usr/local/picosdk/src/rp2040/pico_platform/platform.o"
 	@echo "... usr/local/picosdk/src/rp2040/pico_platform/platform.i"
 	@echo "... usr/local/picosdk/src/rp2040/pico_platform/platform.s"
+	@echo "... usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.o"
+	@echo "... usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.i"
+	@echo "... usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.s"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.s"
@@ -2191,6 +2905,9 @@ help:
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_divider/divider.o"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_dma/dma.o"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_dma/dma.i"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_dma/dma.s"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_flash/flash.o"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_flash/flash.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_flash/flash.s"
@@ -2201,9 +2918,15 @@ help:
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_irq/irq.s"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.o"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_pio/pio.o"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_pio/pio.i"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_pio/pio.s"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_pll/pll.o"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_pll/pll.s"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.o"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.i"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.s"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_spi/spi.o"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_spi/spi.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_spi/spi.s"
@@ -2234,6 +2957,9 @@ help:
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.o"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.s"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.o"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.i"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.s"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_atomic/atomic.o"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_atomic/atomic.i"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_atomic/atomic.s"
@@ -2279,6 +3005,9 @@ help:
 	@echo "... usr/local/picosdk/src/rp2_common/pico_malloc/malloc.i"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_malloc/malloc.s"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_multicore/multicore.o"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_platform_common/common.o"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_platform_common/common.i"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_platform_common/common.s"

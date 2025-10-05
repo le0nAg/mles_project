@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lcd_la
+CMAKE_SOURCE_DIR = /home/mles_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lcd_la/build
+CMAKE_BINARY_DIR = /home/mles_project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lcd_la/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lcd_la/build/CMakeFiles /home/lcd_la/build/lib/config//CMakeFiles/progress.marks
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lcd_la/build/CMakeFiles 0
+	cd /home/mles_project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles /home/mles_project/build/lib/config//CMakeFiles/progress.marks
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/clean
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/preinstall
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/preinstall
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lcd_la/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mles_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/config/CMakeFiles/config.dir/rule:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/CMakeFiles/config.dir/rule
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/config/CMakeFiles/config.dir/rule
 .PHONY : lib/config/CMakeFiles/config.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ config: lib/config/CMakeFiles/config.dir/rule
 
 # fast build rule for target.
 config/fast:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/build
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/build
 .PHONY : config/fast
 
 DEV_Config.o: DEV_Config.c.o
@@ -135,7 +135,7 @@ DEV_Config.o: DEV_Config.c.o
 
 # target to build an object file
 DEV_Config.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/DEV_Config.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/DEV_Config.c.o
 .PHONY : DEV_Config.c.o
 
 DEV_Config.i: DEV_Config.c.i
@@ -143,7 +143,7 @@ DEV_Config.i: DEV_Config.c.i
 
 # target to preprocess a source file
 DEV_Config.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/DEV_Config.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/DEV_Config.c.i
 .PHONY : DEV_Config.c.i
 
 DEV_Config.s: DEV_Config.c.s
@@ -151,7 +151,7 @@ DEV_Config.s: DEV_Config.c.s
 
 # target to generate assembly for a file
 DEV_Config.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/DEV_Config.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/DEV_Config.c.s
 .PHONY : DEV_Config.c.s
 
 usr/local/picosdk/src/common/hardware_claim/claim.o: usr/local/picosdk/src/common/hardware_claim/claim.c.o
@@ -159,7 +159,7 @@ usr/local/picosdk/src/common/hardware_claim/claim.o: usr/local/picosdk/src/commo
 
 # target to build an object file
 usr/local/picosdk/src/common/hardware_claim/claim.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o
 .PHONY : usr/local/picosdk/src/common/hardware_claim/claim.c.o
 
 usr/local/picosdk/src/common/hardware_claim/claim.i: usr/local/picosdk/src/common/hardware_claim/claim.c.i
@@ -167,7 +167,7 @@ usr/local/picosdk/src/common/hardware_claim/claim.i: usr/local/picosdk/src/commo
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/hardware_claim/claim.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.i
 .PHONY : usr/local/picosdk/src/common/hardware_claim/claim.c.i
 
 usr/local/picosdk/src/common/hardware_claim/claim.s: usr/local/picosdk/src/common/hardware_claim/claim.c.s
@@ -175,7 +175,7 @@ usr/local/picosdk/src/common/hardware_claim/claim.s: usr/local/picosdk/src/commo
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/hardware_claim/claim.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.s
 .PHONY : usr/local/picosdk/src/common/hardware_claim/claim.c.s
 
 usr/local/picosdk/src/common/pico_sync/critical_section.o: usr/local/picosdk/src/common/pico_sync/critical_section.c.o
@@ -183,7 +183,7 @@ usr/local/picosdk/src/common/pico_sync/critical_section.o: usr/local/picosdk/src
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_sync/critical_section.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o
 .PHONY : usr/local/picosdk/src/common/pico_sync/critical_section.c.o
 
 usr/local/picosdk/src/common/pico_sync/critical_section.i: usr/local/picosdk/src/common/pico_sync/critical_section.c.i
@@ -191,7 +191,7 @@ usr/local/picosdk/src/common/pico_sync/critical_section.i: usr/local/picosdk/src
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_sync/critical_section.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.i
 .PHONY : usr/local/picosdk/src/common/pico_sync/critical_section.c.i
 
 usr/local/picosdk/src/common/pico_sync/critical_section.s: usr/local/picosdk/src/common/pico_sync/critical_section.c.s
@@ -199,7 +199,7 @@ usr/local/picosdk/src/common/pico_sync/critical_section.s: usr/local/picosdk/src
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_sync/critical_section.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.s
 .PHONY : usr/local/picosdk/src/common/pico_sync/critical_section.c.s
 
 usr/local/picosdk/src/common/pico_sync/lock_core.o: usr/local/picosdk/src/common/pico_sync/lock_core.c.o
@@ -207,7 +207,7 @@ usr/local/picosdk/src/common/pico_sync/lock_core.o: usr/local/picosdk/src/common
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_sync/lock_core.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o
 .PHONY : usr/local/picosdk/src/common/pico_sync/lock_core.c.o
 
 usr/local/picosdk/src/common/pico_sync/lock_core.i: usr/local/picosdk/src/common/pico_sync/lock_core.c.i
@@ -215,7 +215,7 @@ usr/local/picosdk/src/common/pico_sync/lock_core.i: usr/local/picosdk/src/common
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_sync/lock_core.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.i
 .PHONY : usr/local/picosdk/src/common/pico_sync/lock_core.c.i
 
 usr/local/picosdk/src/common/pico_sync/lock_core.s: usr/local/picosdk/src/common/pico_sync/lock_core.c.s
@@ -223,7 +223,7 @@ usr/local/picosdk/src/common/pico_sync/lock_core.s: usr/local/picosdk/src/common
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_sync/lock_core.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.s
 .PHONY : usr/local/picosdk/src/common/pico_sync/lock_core.c.s
 
 usr/local/picosdk/src/common/pico_sync/mutex.o: usr/local/picosdk/src/common/pico_sync/mutex.c.o
@@ -231,7 +231,7 @@ usr/local/picosdk/src/common/pico_sync/mutex.o: usr/local/picosdk/src/common/pic
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_sync/mutex.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o
 .PHONY : usr/local/picosdk/src/common/pico_sync/mutex.c.o
 
 usr/local/picosdk/src/common/pico_sync/mutex.i: usr/local/picosdk/src/common/pico_sync/mutex.c.i
@@ -239,7 +239,7 @@ usr/local/picosdk/src/common/pico_sync/mutex.i: usr/local/picosdk/src/common/pic
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_sync/mutex.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.i
 .PHONY : usr/local/picosdk/src/common/pico_sync/mutex.c.i
 
 usr/local/picosdk/src/common/pico_sync/mutex.s: usr/local/picosdk/src/common/pico_sync/mutex.c.s
@@ -247,7 +247,7 @@ usr/local/picosdk/src/common/pico_sync/mutex.s: usr/local/picosdk/src/common/pic
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_sync/mutex.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.s
 .PHONY : usr/local/picosdk/src/common/pico_sync/mutex.c.s
 
 usr/local/picosdk/src/common/pico_sync/sem.o: usr/local/picosdk/src/common/pico_sync/sem.c.o
@@ -255,7 +255,7 @@ usr/local/picosdk/src/common/pico_sync/sem.o: usr/local/picosdk/src/common/pico_
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_sync/sem.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o
 .PHONY : usr/local/picosdk/src/common/pico_sync/sem.c.o
 
 usr/local/picosdk/src/common/pico_sync/sem.i: usr/local/picosdk/src/common/pico_sync/sem.c.i
@@ -263,7 +263,7 @@ usr/local/picosdk/src/common/pico_sync/sem.i: usr/local/picosdk/src/common/pico_
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_sync/sem.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/sem.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/sem.c.i
 .PHONY : usr/local/picosdk/src/common/pico_sync/sem.c.i
 
 usr/local/picosdk/src/common/pico_sync/sem.s: usr/local/picosdk/src/common/pico_sync/sem.c.s
@@ -271,7 +271,7 @@ usr/local/picosdk/src/common/pico_sync/sem.s: usr/local/picosdk/src/common/pico_
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_sync/sem.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/sem.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_sync/sem.c.s
 .PHONY : usr/local/picosdk/src/common/pico_sync/sem.c.s
 
 usr/local/picosdk/src/common/pico_time/time.o: usr/local/picosdk/src/common/pico_time/time.c.o
@@ -279,7 +279,7 @@ usr/local/picosdk/src/common/pico_time/time.o: usr/local/picosdk/src/common/pico
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_time/time.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/time.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/time.c.o
 .PHONY : usr/local/picosdk/src/common/pico_time/time.c.o
 
 usr/local/picosdk/src/common/pico_time/time.i: usr/local/picosdk/src/common/pico_time/time.c.i
@@ -287,7 +287,7 @@ usr/local/picosdk/src/common/pico_time/time.i: usr/local/picosdk/src/common/pico
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_time/time.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/time.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/time.c.i
 .PHONY : usr/local/picosdk/src/common/pico_time/time.c.i
 
 usr/local/picosdk/src/common/pico_time/time.s: usr/local/picosdk/src/common/pico_time/time.c.s
@@ -295,7 +295,7 @@ usr/local/picosdk/src/common/pico_time/time.s: usr/local/picosdk/src/common/pico
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_time/time.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/time.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/time.c.s
 .PHONY : usr/local/picosdk/src/common/pico_time/time.c.s
 
 usr/local/picosdk/src/common/pico_time/timeout_helper.o: usr/local/picosdk/src/common/pico_time/timeout_helper.c.o
@@ -303,7 +303,7 @@ usr/local/picosdk/src/common/pico_time/timeout_helper.o: usr/local/picosdk/src/c
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_time/timeout_helper.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o
 .PHONY : usr/local/picosdk/src/common/pico_time/timeout_helper.c.o
 
 usr/local/picosdk/src/common/pico_time/timeout_helper.i: usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
@@ -311,7 +311,7 @@ usr/local/picosdk/src/common/pico_time/timeout_helper.i: usr/local/picosdk/src/c
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_time/timeout_helper.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
 
 usr/local/picosdk/src/common/pico_time/timeout_helper.s: usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
@@ -319,7 +319,7 @@ usr/local/picosdk/src/common/pico_time/timeout_helper.s: usr/local/picosdk/src/c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_time/timeout_helper.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
 
 usr/local/picosdk/src/common/pico_util/datetime.o: usr/local/picosdk/src/common/pico_util/datetime.c.o
@@ -327,7 +327,7 @@ usr/local/picosdk/src/common/pico_util/datetime.o: usr/local/picosdk/src/common/
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_util/datetime.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o
 .PHONY : usr/local/picosdk/src/common/pico_util/datetime.c.o
 
 usr/local/picosdk/src/common/pico_util/datetime.i: usr/local/picosdk/src/common/pico_util/datetime.c.i
@@ -335,7 +335,7 @@ usr/local/picosdk/src/common/pico_util/datetime.i: usr/local/picosdk/src/common/
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_util/datetime.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/datetime.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/datetime.c.i
 .PHONY : usr/local/picosdk/src/common/pico_util/datetime.c.i
 
 usr/local/picosdk/src/common/pico_util/datetime.s: usr/local/picosdk/src/common/pico_util/datetime.c.s
@@ -343,7 +343,7 @@ usr/local/picosdk/src/common/pico_util/datetime.s: usr/local/picosdk/src/common/
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_util/datetime.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/datetime.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/datetime.c.s
 .PHONY : usr/local/picosdk/src/common/pico_util/datetime.c.s
 
 usr/local/picosdk/src/common/pico_util/pheap.o: usr/local/picosdk/src/common/pico_util/pheap.c.o
@@ -351,7 +351,7 @@ usr/local/picosdk/src/common/pico_util/pheap.o: usr/local/picosdk/src/common/pic
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_util/pheap.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o
 .PHONY : usr/local/picosdk/src/common/pico_util/pheap.c.o
 
 usr/local/picosdk/src/common/pico_util/pheap.i: usr/local/picosdk/src/common/pico_util/pheap.c.i
@@ -359,7 +359,7 @@ usr/local/picosdk/src/common/pico_util/pheap.i: usr/local/picosdk/src/common/pic
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_util/pheap.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/pheap.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/pheap.c.i
 .PHONY : usr/local/picosdk/src/common/pico_util/pheap.c.i
 
 usr/local/picosdk/src/common/pico_util/pheap.s: usr/local/picosdk/src/common/pico_util/pheap.c.s
@@ -367,7 +367,7 @@ usr/local/picosdk/src/common/pico_util/pheap.s: usr/local/picosdk/src/common/pic
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_util/pheap.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/pheap.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/pheap.c.s
 .PHONY : usr/local/picosdk/src/common/pico_util/pheap.c.s
 
 usr/local/picosdk/src/common/pico_util/queue.o: usr/local/picosdk/src/common/pico_util/queue.c.o
@@ -375,7 +375,7 @@ usr/local/picosdk/src/common/pico_util/queue.o: usr/local/picosdk/src/common/pic
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_util/queue.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/queue.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/queue.c.o
 .PHONY : usr/local/picosdk/src/common/pico_util/queue.c.o
 
 usr/local/picosdk/src/common/pico_util/queue.i: usr/local/picosdk/src/common/pico_util/queue.c.i
@@ -383,7 +383,7 @@ usr/local/picosdk/src/common/pico_util/queue.i: usr/local/picosdk/src/common/pic
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_util/queue.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/queue.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/queue.c.i
 .PHONY : usr/local/picosdk/src/common/pico_util/queue.c.i
 
 usr/local/picosdk/src/common/pico_util/queue.s: usr/local/picosdk/src/common/pico_util/queue.c.s
@@ -391,7 +391,7 @@ usr/local/picosdk/src/common/pico_util/queue.s: usr/local/picosdk/src/common/pic
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_util/queue.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/queue.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/common/pico_util/queue.c.s
 .PHONY : usr/local/picosdk/src/common/pico_util/queue.c.s
 
 usr/local/picosdk/src/rp2040/pico_platform/platform.o: usr/local/picosdk/src/rp2040/pico_platform/platform.c.o
@@ -399,7 +399,7 @@ usr/local/picosdk/src/rp2040/pico_platform/platform.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2040/pico_platform/platform.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o
 .PHONY : usr/local/picosdk/src/rp2040/pico_platform/platform.c.o
 
 usr/local/picosdk/src/rp2040/pico_platform/platform.i: usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
@@ -407,7 +407,7 @@ usr/local/picosdk/src/rp2040/pico_platform/platform.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2040/pico_platform/platform.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
 .PHONY : usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
 
 usr/local/picosdk/src/rp2040/pico_platform/platform.s: usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
@@ -415,7 +415,7 @@ usr/local/picosdk/src/rp2040/pico_platform/platform.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2040/pico_platform/platform.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.o: usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
@@ -423,7 +423,7 @@ usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.o: usr/local/picos
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.i: usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -431,7 +431,7 @@ usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.i: usr/local/picos
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.s: usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -439,7 +439,7 @@ usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.s: usr/local/picos
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.o: usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o
@@ -447,7 +447,7 @@ usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.o: usr/local/picosdk/src
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.i: usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -455,7 +455,7 @@ usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.i: usr/local/picosdk/src
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.s: usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -463,7 +463,7 @@ usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.s: usr/local/picosdk/src
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_divider/divider.o: usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
@@ -471,7 +471,7 @@ usr/local/picosdk/src/rp2_common/hardware_divider/divider.o: usr/local/picosdk/s
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
 
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.o: usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o
@@ -479,7 +479,7 @@ usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.i: usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -487,7 +487,7 @@ usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.s: usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -495,7 +495,7 @@ usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.o: usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o
@@ -503,7 +503,7 @@ usr/local/picosdk/src/rp2_common/hardware_irq/irq.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.i: usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
@@ -511,7 +511,7 @@ usr/local/picosdk/src/rp2_common/hardware_irq/irq.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.s: usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
@@ -519,7 +519,7 @@ usr/local/picosdk/src/rp2_common/hardware_irq/irq.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.o: usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -527,7 +527,7 @@ usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.o: usr/local/pic
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.o: usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o
@@ -535,7 +535,7 @@ usr/local/picosdk/src/rp2_common/hardware_pll/pll.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.i: usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
@@ -543,7 +543,7 @@ usr/local/picosdk/src/rp2_common/hardware_pll/pll.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.s: usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
@@ -551,7 +551,7 @@ usr/local/picosdk/src/rp2_common/hardware_pll/pll.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.o: usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
@@ -559,7 +559,7 @@ usr/local/picosdk/src/rp2_common/hardware_spi/spi.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.i: usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
@@ -567,7 +567,7 @@ usr/local/picosdk/src/rp2_common/hardware_spi/spi.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.s: usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
@@ -575,7 +575,7 @@ usr/local/picosdk/src/rp2_common/hardware_spi/spi.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.o: usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o
@@ -583,7 +583,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync/sync.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.i: usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
@@ -591,7 +591,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync/sync.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.s: usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
@@ -599,7 +599,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync/sync.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -607,7 +607,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: usr/l
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -615,7 +615,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: usr/l
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -623,7 +623,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: usr/l
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.o: usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o
@@ -631,7 +631,7 @@ usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.o: usr/local/picosdk/src/r
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.i: usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
@@ -639,7 +639,7 @@ usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.i: usr/local/picosdk/src/r
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.s: usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
@@ -647,7 +647,7 @@ usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.s: usr/local/picosdk/src/r
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.o: usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o
@@ -655,7 +655,7 @@ usr/local/picosdk/src/rp2_common/hardware_timer/timer.o: usr/local/picosdk/src/r
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.i: usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
@@ -663,7 +663,7 @@ usr/local/picosdk/src/rp2_common/hardware_timer/timer.i: usr/local/picosdk/src/r
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.s: usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
@@ -671,7 +671,7 @@ usr/local/picosdk/src/rp2_common/hardware_timer/timer.s: usr/local/picosdk/src/r
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.o: usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o
@@ -679,7 +679,7 @@ usr/local/picosdk/src/rp2_common/hardware_uart/uart.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.i: usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
@@ -687,7 +687,7 @@ usr/local/picosdk/src/rp2_common/hardware_uart/uart.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.s: usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
@@ -695,7 +695,7 @@ usr/local/picosdk/src/rp2_common/hardware_uart/uart.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.o: usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o
@@ -703,7 +703,7 @@ usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.i: usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -711,7 +711,7 @@ usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.s: usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -719,7 +719,7 @@ usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.o: usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -727,7 +727,7 @@ usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.o: usr/local/picosdk
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.i: usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -735,7 +735,7 @@ usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.i: usr/local/picosdk
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.s: usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -743,7 +743,7 @@ usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.s: usr/local/picosdk
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.o: usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o
@@ -751,7 +751,7 @@ usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.i: usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -759,7 +759,7 @@ usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.s: usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -767,7 +767,7 @@ usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.o: usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o
@@ -775,7 +775,7 @@ usr/local/picosdk/src/rp2_common/pico_atomic/atomic.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o
 
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.i: usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
@@ -783,7 +783,7 @@ usr/local/picosdk/src/rp2_common/pico_atomic/atomic.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
 
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.s: usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
@@ -791,7 +791,7 @@ usr/local/picosdk/src/rp2_common/pico_atomic/atomic.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
 
 usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -799,7 +799,7 @@ usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: usr/local/picosdk
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.o: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -807,7 +807,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.o: usr/local/picosdk/src/r
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.i: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -815,7 +815,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.i: usr/local/picosdk/src/r
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.s: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -823,7 +823,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.s: usr/local/picosdk/src/r
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.o: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -831,7 +831,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.o: usr/local/picosdk/
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.i: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -839,7 +839,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.i: usr/local/picosdk/
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.s: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -847,7 +847,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.s: usr/local/picosdk/
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.o: usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -855,7 +855,7 @@ usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.o: usr/loc
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.i: usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -863,7 +863,7 @@ usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.i: usr/loc
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.s: usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -871,7 +871,7 @@ usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.s: usr/loc
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 usr/local/picosdk/src/rp2_common/pico_crt0/crt0.o: usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -879,7 +879,7 @@ usr/local/picosdk/src/rp2_common/pico_crt0/crt0.o: usr/local/picosdk/src/rp2_com
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o
 
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.o: usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -887,7 +887,7 @@ usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.o: usr/local/picosd
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.i: usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -895,7 +895,7 @@ usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.i: usr/local/picosd
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.s: usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -903,7 +903,7 @@ usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.s: usr/local/picosd
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.o: usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o
@@ -911,7 +911,7 @@ usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.o: usr/local/pico
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o
 
 usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
@@ -919,7 +919,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: usr/local/pi
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
@@ -927,7 +927,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: usr/local
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
@@ -935,7 +935,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: usr/local
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
@@ -943,7 +943,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: usr/local
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
 usr/local/picosdk/src/rp2_common/pico_double/double_math.o: usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o
@@ -951,7 +951,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_math.o: usr/local/picosdk/sr
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o
 
 usr/local/picosdk/src/rp2_common/pico_double/double_math.i: usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
@@ -959,7 +959,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_math.i: usr/local/picosdk/sr
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
 
 usr/local/picosdk/src/rp2_common/pico_double/double_math.s: usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
@@ -967,7 +967,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_math.s: usr/local/picosdk/sr
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
 
 usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
@@ -975,7 +975,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: usr/lo
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
 usr/local/picosdk/src/rp2_common/pico_flash/flash.o: usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o
@@ -983,7 +983,7 @@ usr/local/picosdk/src/rp2_common/pico_flash/flash.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o
 
 usr/local/picosdk/src/rp2_common/pico_flash/flash.i: usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
@@ -991,7 +991,7 @@ usr/local/picosdk/src/rp2_common/pico_flash/flash.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
 
 usr/local/picosdk/src/rp2_common/pico_flash/flash.s: usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
@@ -999,7 +999,7 @@ usr/local/picosdk/src/rp2_common/pico_flash/flash.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
 
 usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
@@ -1007,7 +1007,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: usr/local/pico
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
@@ -1015,7 +1015,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: usr/local/p
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
@@ -1023,7 +1023,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: usr/local/p
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
@@ -1031,7 +1031,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: usr/local/p
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
 usr/local/picosdk/src/rp2_common/pico_float/float_math.o: usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o
@@ -1039,7 +1039,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_math.o: usr/local/picosdk/src/
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o
 
 usr/local/picosdk/src/rp2_common/pico_float/float_math.i: usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
@@ -1047,7 +1047,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_math.i: usr/local/picosdk/src/
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
 
 usr/local/picosdk/src/rp2_common/pico_float/float_math.s: usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
@@ -1055,7 +1055,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_math.s: usr/local/picosdk/src/
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
 
 usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
@@ -1063,7 +1063,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: usr/loca
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
 usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
@@ -1071,7 +1071,7 @@ usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: usr/loca
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.o: usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o
@@ -1079,7 +1079,7 @@ usr/local/picosdk/src/rp2_common/pico_malloc/malloc.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o
 
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.i: usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
@@ -1087,7 +1087,7 @@ usr/local/picosdk/src/rp2_common/pico_malloc/malloc.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
 
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.s: usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
@@ -1095,7 +1095,7 @@ usr/local/picosdk/src/rp2_common/pico_malloc/malloc.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
 
 usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
@@ -1103,7 +1103,7 @@ usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: usr/local/picosdk
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.o: usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
@@ -1111,7 +1111,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_common/common.o: usr/local/picosd
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
 
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.i: usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
@@ -1119,7 +1119,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_common/common.i: usr/local/picosd
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
 
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.s: usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
@@ -1127,7 +1127,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_common/common.s: usr/local/picosd
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
 
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.o: usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o
@@ -1135,7 +1135,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.o: usr/local/picosdk/
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.i: usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
@@ -1143,7 +1143,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.i: usr/local/picosdk/
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.s: usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
@@ -1151,7 +1151,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.s: usr/local/picosdk/
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 usr/local/picosdk/src/rp2_common/pico_printf/printf.o: usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o
@@ -1159,7 +1159,7 @@ usr/local/picosdk/src/rp2_common/pico_printf/printf.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o
 
 usr/local/picosdk/src/rp2_common/pico_printf/printf.i: usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
@@ -1167,7 +1167,7 @@ usr/local/picosdk/src/rp2_common/pico_printf/printf.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
 
 usr/local/picosdk/src/rp2_common/pico_printf/printf.s: usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
@@ -1175,7 +1175,7 @@ usr/local/picosdk/src/rp2_common/pico_printf/printf.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
 
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o: usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
@@ -1183,7 +1183,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o: usr/local/picosdk/src/r
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
 
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.i: usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1191,7 +1191,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime/runtime.i: usr/local/picosdk/src/r
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
 
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.s: usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1199,7 +1199,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime/runtime.s: usr/local/picosdk/src/r
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.o: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -1207,7 +1207,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.o: usr/local/pic
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.i: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -1215,7 +1215,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.i: usr/local/pic
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.s: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -1223,7 +1223,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.s: usr/local/pic
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -1231,7 +1231,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: usr/lo
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -1239,7 +1239,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: usr/lo
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -1247,7 +1247,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: usr/lo
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -1255,7 +1255,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: u
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -1263,7 +1263,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: u
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -1271,7 +1271,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: u
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -1279,7 +1279,7 @@ usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -1287,7 +1287,7 @@ usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -1295,7 +1295,7 @@ usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.o: usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o
@@ -1303,7 +1303,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio/stdio.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o
 
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.i: usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1311,7 +1311,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio/stdio.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
 
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.s: usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1319,7 +1319,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio/stdio.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
 
 usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
@@ -1327,7 +1327,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: usr/local/picosdk
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 
 usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1335,7 +1335,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: usr/local/picosdk
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1343,7 +1343,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: usr/local/picosdk
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.o: usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -1351,7 +1351,7 @@ usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.i: usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1359,7 +1359,7 @@ usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.s: usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1367,7 +1367,7 @@ usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /home/lcd_la/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/config/CMakeFiles/config.dir/build.make lib/config/CMakeFiles/config.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 # Help Target
@@ -1545,6 +1545,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lcd_la/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mles_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
