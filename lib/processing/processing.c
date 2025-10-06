@@ -4,6 +4,8 @@
 
 #include "processing.h"
 
+#define PI 3.14159265358979323846
+
 void simple_crop(const uint8_t* img, int w, int h, uint8_t* out, int* out_w, int* out_h){
     int left = w, right = -1;
 
@@ -131,4 +133,132 @@ void density(const uint8_t* img, int w, int h, float* density){
         }
     }
     *density = (float)count_ones / (w * h);
+}
+
+static void morphological_explode(const uint8_t* img, int w, int h, uint8_t* out){
+    memset(out, 0, w * h);
+    
+    for (int y = 1; y < h - 1; y++) {
+        for (int x = 1; x < w - 1; x++) {
+            int idx = y * w + x;
+            
+            uint8_t all_ones = 1;
+            
+            for (int dy = -1; dy <= 1; dy++) {
+                for (int dx = -1; dx <= 1; dx++) {
+                    int ny = y + dy;
+                    int nx = x + dx;
+                    int nidx = ny * w + nx;
+                    
+                    if (img[nidx] == 0) {
+                        all_ones = 0;
+                        break;
+                    }
+                }
+                if (!all_ones) break;
+            }
+            
+            out[idx] = all_ones;
+        }
+    }
+}
+
+static void morphological_implode(const uint8_t* img, int w, int h, uint8_t* out){
+    memset(out, 0, w * h);
+    
+    for (int y = 1; y < h - 1; y++) {
+        for (int x = 1; x < w - 1; x++) {
+            int idx = y * w + x;
+            
+            uint8_t any_one = 0;
+            
+            for (int dy = -1; dy <= 1; dy++) {
+                for (int dx = -1; dx <= 1; dx++) {
+                    int ny = y + dy;
+                    int nx = x + dx;
+                    int nidx = ny * w + nx;
+                    
+                    if (img[nidx] == 1) {
+                        any_one = 1;
+                        break;
+                    }
+                }
+                if (any_one) break;
+            }
+            
+            out[idx] = any_one;
+        }
+    }
+}
+
+void edge_detection(const uint8_t* img, int w, int h, uint8_t* out){
+    uint8_t* exploded = (uint8_t*)malloc(w * h);
+    uint8_t* imploded = (uint8_t*)malloc(w * h);
+    
+    if (!exploded || !imploded) {
+        memcpy(out, img, w * h);
+        free(exploded);
+        free(imploded);
+        return;
+    }
+    
+    // Step 1: Erode the image (shrinks objects)
+    morphological_explode(img, w, h, exploded);
+    
+    // Step 2: Dilate the image (expands objects)
+    morphological_implode(img, w, h, imploded);
+    
+    // Step 3: Edge = Dilation - Erosion
+    // This gives us both inner and outer boundaries
+    for (int i = 0; i < w * h; i++) {
+        out[i] = imploded[i] - exploded[i];
+    }
+    
+    free(exploded);
+    free(imploded);
+}
+
+static int area(const uint8_t* img, int w, int h){
+    int area = 0;
+    for(int i = 0; i < w * h; i++){
+        if(img[i] == 1){
+            area++;
+        }
+    }
+    return area;
+}
+
+static int perimeter(const uint8_t* img, int w, int h){
+    int perimeter = 0;
+    
+    for(int y = 0; y < h; y++){
+        for(int x = 0; x < w; x++){
+            int idx = y * w + x;
+            if(img[idx] == 1){
+                // Check 4-connected neighbors
+                if(x == 0 || img[y * w + (x - 1)] == 0) perimeter++; // Left
+                if(x == w - 1 || img[y * w + (x + 1)] == 0) perimeter++; // Right
+                if(y == 0 || img[(y - 1) * w + x] == 0) perimeter++; // Top
+                if(y == h - 1 || img[(y + 1) * w + x] == 0) perimeter++; // Bottom
+            }
+        }
+    }
+    
+    return perimeter;
+}
+
+void compactness(const uint8_t* img, int w, int h, float* isoperimetric, float* a_to_p_ratio, float* circularity_ratio){
+    int a = area(img, w, h);
+    int p = perimeter(img, w, h);
+    
+    if(p == 0){
+        *isoperimetric = 0.0f;
+        *a_to_p_ratio = 0.0f;
+        *circularity_ratio = 0.0f;
+        return;
+    }
+
+    *isoperimetric = (float)(4 * PI * a) / (p * p); // 4πA/P²
+    *a_to_p_ratio = (float)a / (float)p; // A/P
+    *circularity_ratio = (float)(p * p) / (4 * PI * a); // P²/4πA
 }
