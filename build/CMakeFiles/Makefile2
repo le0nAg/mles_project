@@ -69,6 +69,7 @@ all: lib/sd_card/all
 all: lib/config/all
 all: lib/lcd/all
 all: lib/font/all
+all: lib/processing/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -77,6 +78,7 @@ preinstall: lib/sd_card/preinstall
 preinstall: lib/config/preinstall
 preinstall: lib/lcd/preinstall
 preinstall: lib/font/preinstall
+preinstall: lib/processing/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -86,6 +88,7 @@ clean: lib/sd_card/clean
 clean: lib/config/clean
 clean: lib/lcd/clean
 clean: lib/font/clean
+clean: lib/processing/clean
 .PHONY : clean
 
 #=============================================================================
@@ -132,6 +135,21 @@ lib/lcd/preinstall:
 # Recursive "clean" directory target.
 lib/lcd/clean: lib/lcd/CMakeFiles/lcd.dir/clean
 .PHONY : lib/lcd/clean
+
+#=============================================================================
+# Directory level rules for directory lib/processing
+
+# Recursive "all" directory target.
+lib/processing/all: lib/processing/CMakeFiles/processing.dir/all
+.PHONY : lib/processing/all
+
+# Recursive "preinstall" directory target.
+lib/processing/preinstall:
+.PHONY : lib/processing/preinstall
+
+# Recursive "clean" directory target.
+lib/processing/clean: lib/processing/CMakeFiles/processing.dir/clean
+.PHONY : lib/processing/clean
 
 #=============================================================================
 # Directory level rules for directory lib/sd_card
@@ -1336,7 +1354,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/preinstall: pico-sdk/src/rp2_common/pi
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/preinstall
 
 # Recursive "clean" directory target.
-pico-sdk/src/rp2_common/pico_cyw43_driver/clean: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/clean
 pico-sdk/src/rp2_common/pico_cyw43_driver/clean: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
 pico-sdk/src/rp2_common/pico_cyw43_driver/clean: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/clean
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/clean
@@ -1885,14 +1902,15 @@ pico-sdk/tools/clean:
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: lib/font/CMakeFiles/font.dir/all
-CMakeFiles/main.dir/all: lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/all
 CMakeFiles/main.dir/all: lib/config/CMakeFiles/config.dir/all
 CMakeFiles/main.dir/all: lib/lcd/CMakeFiles/lcd.dir/all
+CMakeFiles/main.dir/all: lib/font/CMakeFiles/font.dir/all
+CMakeFiles/main.dir/all: lib/processing/CMakeFiles/processing.dir/all
+CMakeFiles/main.dir/all: lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/all
 CMakeFiles/main.dir/all: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1990,36 +2008,10 @@ pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/clean:
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/clean
 
 #=============================================================================
-# Target rules for target pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir
-
-# All Build rule for target.
-pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/all:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/depend
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=97,98,99 "Built target pioasmBuild"
-.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/all
-
-# Build rule for subdir invocation for target.
-pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
-.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/rule
-
-# Convenience name for target.
-pioasmBuild: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/rule
-.PHONY : pioasmBuild
-
-# clean rule for target.
-pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/clean:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/clean
-.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/clean
-
-#=============================================================================
 # Target rules for target pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir
 
 # All Build rule for target.
-pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/all: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/all
+pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mles_project/build/CMakeFiles --progress-num= "Built target cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
@@ -2027,7 +2019,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bu
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
@@ -2045,7 +2037,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bu
 # Target rules for target pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir
 
 # All Build rule for target.
-pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/all: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/all
+pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mles_project/build/CMakeFiles --progress-num= "Built target pico_status_led_ws2812_pio_h"
@@ -2053,7 +2045,7 @@ pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/rule
@@ -2071,7 +2063,7 @@ pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.
 # Target rules for target lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir
 
 # All Build rule for target.
-lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/all: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/all
+lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build.make lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build.make lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=100 "Built target sd_custom_driver_rp2040_sdio_pio_h"
@@ -2079,7 +2071,7 @@ lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/all: pico-sdk/src/
 
 # Build rule for subdir invocation for target.
 lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
 .PHONY : lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/rule
@@ -2123,18 +2115,18 @@ lib/config/CMakeFiles/config.dir/clean:
 # Target rules for target lib/lcd/CMakeFiles/lcd.dir
 
 # All Build rule for target.
+lib/lcd/CMakeFiles/lcd.dir/all: lib/config/CMakeFiles/config.dir/all
 lib/lcd/CMakeFiles/lcd.dir/all: lib/font/CMakeFiles/font.dir/all
 lib/lcd/CMakeFiles/lcd.dir/all: lib/sd_card/CMakeFiles/sd_custom_driver_rp2040_sdio_pio_h.dir/all
-lib/lcd/CMakeFiles/lcd.dir/all: lib/config/CMakeFiles/config.dir/all
 lib/lcd/CMakeFiles/lcd.dir/all: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57 "Built target lcd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58 "Built target lcd"
 .PHONY : lib/lcd/CMakeFiles/lcd.dir/all
 
 # Build rule for subdir invocation for target.
 lib/lcd/CMakeFiles/lcd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/lcd/CMakeFiles/lcd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
 .PHONY : lib/lcd/CMakeFiles/lcd.dir/rule
@@ -2173,6 +2165,32 @@ font: lib/font/CMakeFiles/font.dir/rule
 lib/font/CMakeFiles/font.dir/clean:
 	$(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/clean
 .PHONY : lib/font/CMakeFiles/font.dir/clean
+
+#=============================================================================
+# Target rules for target lib/processing/CMakeFiles/processing.dir
+
+# All Build rule for target.
+lib/processing/CMakeFiles/processing.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=99 "Built target processing"
+.PHONY : lib/processing/CMakeFiles/processing.dir/all
+
+# Build rule for subdir invocation for target.
+lib/processing/CMakeFiles/processing.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/CMakeFiles/processing.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
+.PHONY : lib/processing/CMakeFiles/processing.dir/rule
+
+# Convenience name for target.
+processing: lib/processing/CMakeFiles/processing.dir/rule
+.PHONY : processing
+
+# clean rule for target.
+lib/processing/CMakeFiles/processing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/clean
+.PHONY : lib/processing/CMakeFiles/processing.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

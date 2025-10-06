@@ -169,19 +169,6 @@ bs2_default_library/fast:
 .PHONY : bs2_default_library/fast
 
 #=============================================================================
-# Target rules for targets named pioasmBuild
-
-# Build rule for target.
-pioasmBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pioasmBuild
-.PHONY : pioasmBuild
-
-# fast build rule for target.
-pioasmBuild/fast:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build
-.PHONY : pioasmBuild/fast
-
-#=============================================================================
 # Target rules for targets named cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 
 # Build rule for target.
@@ -258,6 +245,19 @@ font: cmake_check_build_system
 font/fast:
 	$(MAKE) $(MAKESILENT) -f lib/font/CMakeFiles/font.dir/build.make lib/font/CMakeFiles/font.dir/build
 .PHONY : font/fast
+
+#=============================================================================
+# Target rules for targets named processing
+
+# Build rule for target.
+processing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 processing
+.PHONY : processing
+
+# fast build rule for target.
+processing/fast:
+	$(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/build
+.PHONY : processing/fast
 
 lib/sd_card/ff15/source/ff.o: lib/sd_card/ff15/source/ff.c.o
 .PHONY : lib/sd_card/ff15/source/ff.o
@@ -666,6 +666,30 @@ lib/sd_card/src/glue.s: lib/sd_card/src/glue.c.s
 lib/sd_card/src/glue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/glue.c.s
 .PHONY : lib/sd_card/src/glue.c.s
+
+lib/sd_card/src/hw_config.o: lib/sd_card/src/hw_config.c.o
+.PHONY : lib/sd_card/src/hw_config.o
+
+# target to build an object file
+lib/sd_card/src/hw_config.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o
+.PHONY : lib/sd_card/src/hw_config.c.o
+
+lib/sd_card/src/hw_config.i: lib/sd_card/src/hw_config.c.i
+.PHONY : lib/sd_card/src/hw_config.i
+
+# target to preprocess a source file
+lib/sd_card/src/hw_config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.i
+.PHONY : lib/sd_card/src/hw_config.c.i
+
+lib/sd_card/src/hw_config.s: lib/sd_card/src/hw_config.c.s
+.PHONY : lib/sd_card/src/hw_config.s
+
+# target to generate assembly for a file
+lib/sd_card/src/hw_config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.s
+.PHONY : lib/sd_card/src/hw_config.c.s
 
 lib/sd_card/src/my_debug.o: lib/sd_card/src/my_debug.c.o
 .PHONY : lib/sd_card/src/my_debug.o
@@ -2459,6 +2483,30 @@ usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
 
+usr/local/picosdk/src/rp2_common/pico_rand/rand.o: usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
+
+usr/local/picosdk/src/rp2_common/pico_rand/rand.i: usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
+
+usr/local/picosdk/src/rp2_common/pico_rand/rand.s: usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
+
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o: usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o
 
@@ -2734,7 +2782,6 @@ help:
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... pico_status_led_ws2812_pio_h"
-	@echo "... pioasmBuild"
 	@echo "... sd_custom_driver_rp2040_sdio_pio_h"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
@@ -2742,6 +2789,7 @@ help:
 	@echo "... font"
 	@echo "... lcd"
 	@echo "... main"
+	@echo "... processing"
 	@echo "... lib/sd_card/ff15/source/ff.o"
 	@echo "... lib/sd_card/ff15/source/ff.i"
 	@echo "... lib/sd_card/ff15/source/ff.s"
@@ -2793,6 +2841,9 @@ help:
 	@echo "... lib/sd_card/src/glue.o"
 	@echo "... lib/sd_card/src/glue.i"
 	@echo "... lib/sd_card/src/glue.s"
+	@echo "... lib/sd_card/src/hw_config.o"
+	@echo "... lib/sd_card/src/hw_config.i"
+	@echo "... lib/sd_card/src/hw_config.s"
 	@echo "... lib/sd_card/src/my_debug.o"
 	@echo "... lib/sd_card/src/my_debug.i"
 	@echo "... lib/sd_card/src/my_debug.s"
@@ -3017,6 +3068,9 @@ help:
 	@echo "... usr/local/picosdk/src/rp2_common/pico_printf/printf.o"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_printf/printf.i"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_printf/printf.s"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_rand/rand.o"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_rand/rand.i"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_rand/rand.s"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_runtime/runtime.i"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_runtime/runtime.s"

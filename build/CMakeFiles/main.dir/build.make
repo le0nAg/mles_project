@@ -377,10 +377,24 @@ CMakeFiles/main.dir/lib/sd_card/sd_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/lib/sd_card/sd_utils.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/sd_utils.c -o CMakeFiles/main.dir/lib/sd_card/sd_utils.c.s
 
+CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o: /home/mles_project/lib/sd_card/src/hw_config.c
+CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o -MF CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o.d -o CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o -c /home/mles_project/lib/sd_card/src/hw_config.c
+
+CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mles_project/lib/sd_card/src/hw_config.c > CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.i
+
+CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mles_project/lib/sd_card/src/hw_config.c -o CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.s
+
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o: /usr/local/picosdk/src/rp2_common/hardware_dma/dma.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o -c /usr/local/picosdk/src/rp2_common/hardware_dma/dma.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s: cmake
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o: /usr/local/picosdk/src/rp2040/pico_platform/platform.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o -c /usr/local/picosdk/src/rp2040/pico_platform/platform.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s: cma
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o: /usr/local/picosdk/src/rp2_common/pico_platform_common/common.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o -c /usr/local/picosdk/src/rp2_common/pico_platform_common/common.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o: /usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o -c /usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
@@ -436,7 +450,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o: /usr/local/picosdk/src/common/hardware_claim/claim.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o -c /usr/local/picosdk/src/common/hardware_claim/claim.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.i: cmake_force
@@ -450,7 +464,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.s: cmake
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o: /usr/local/picosdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o -c /usr/local/picosdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -464,7 +478,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s: cma
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
@@ -478,7 +492,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/syn
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o: /usr/local/picosdk/src/rp2_common/hardware_pio/pio.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o -c /usr/local/picosdk/src/rp2_common/hardware_pio/pio.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
@@ -492,7 +506,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s: cmake
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o: /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o -c /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -506,7 +520,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s: cma
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o: /usr/local/picosdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o -c /usr/local/picosdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -519,7 +533,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s: cmake
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -533,7 +547,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_ch
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o: /usr/local/picosdk/src/common/pico_sync/sem.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o -c /usr/local/picosdk/src/common/pico_sync/sem.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -547,7 +561,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.s: cmake_force
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o: /usr/local/picosdk/src/common/pico_sync/lock_core.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o -c /usr/local/picosdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -561,7 +575,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.s: cmake_
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o: /usr/local/picosdk/src/common/pico_sync/mutex.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o -c /usr/local/picosdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -575,7 +589,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.s: cmake_forc
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o: /usr/local/picosdk/src/common/pico_sync/critical_section.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o -c /usr/local/picosdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -589,7 +603,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.s:
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.o: /usr/local/picosdk/src/common/pico_time/time.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.o -c /usr/local/picosdk/src/common/pico_time/time.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.i: cmake_force
@@ -603,7 +617,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.s: cmake_force
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o: /usr/local/picosdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o -c /usr/local/picosdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -617,7 +631,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.s: c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o: /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o -c /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -631,7 +645,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s: c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o: /usr/local/picosdk/src/common/pico_util/datetime.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o -c /usr/local/picosdk/src/common/pico_util/datetime.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -645,7 +659,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.s: cmake_f
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o: /usr/local/picosdk/src/common/pico_util/pheap.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o -c /usr/local/picosdk/src/common/pico_util/pheap.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -659,7 +673,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.s: cmake_forc
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.o: /usr/local/picosdk/src/common/pico_util/queue.c
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.o -c /usr/local/picosdk/src/common/pico_util/queue.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.i: cmake_force
@@ -673,7 +687,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.s: cmake_forc
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o: /usr/local/picosdk/src/rp2_common/hardware_spi/spi.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o -c /usr/local/picosdk/src/rp2_common/hardware_spi/spi.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
@@ -687,7 +701,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s: cmake
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o: /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o -c /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -701,7 +715,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s:
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o: /usr/local/picosdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o -c /usr/local/picosdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -715,7 +729,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s: cmake
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o: /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o -c /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -729,7 +743,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s: cma
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o: /usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -743,7 +757,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o: /usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o -c /usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
@@ -757,7 +771,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s: c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o: /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -771,7 +785,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s: c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
@@ -785,7 +799,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
@@ -799,7 +813,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_loc
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o: /usr/local/picosdk/src/rp2_common/pico_flash/flash.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o -c /usr/local/picosdk/src/rp2_common/pico_flash/flash.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i: cmake_force
@@ -813,7 +827,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s: cmake
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o: /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o -c /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -827,7 +841,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s: cma
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o: /usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o -c /usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i: cmake_force
@@ -841,7 +855,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o: /usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o -c /usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i: cmake_force
@@ -855,7 +869,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s: cmake
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o: /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -869,7 +883,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s: cma
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o: /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o -c /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -882,7 +896,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s: cma
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o: /usr/local/picosdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o   -c /usr/local/picosdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -896,7 +910,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o: /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -910,7 +924,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s: c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
@@ -924,7 +938,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_i
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
@@ -938,7 +952,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_i
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
@@ -951,7 +965,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_i
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -964,7 +978,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o: /usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o   -c /usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.i: cmake_force
@@ -977,7 +991,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardwa
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: /usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.i: cmake_force
@@ -991,7 +1005,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: /usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
@@ -1005,7 +1019,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o: /usr/local/picosdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o -c /usr/local/picosdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -1018,7 +1032,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: /usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i: cmake_force
@@ -1031,7 +1045,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_s
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: /usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -1044,7 +1058,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_o
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: /usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.i: cmake_force
@@ -1058,7 +1072,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp20
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: /usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
@@ -1072,7 +1086,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_r
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o: /usr/local/picosdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o -c /usr/local/picosdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -1085,7 +1099,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s: 
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: /usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i: cmake_force
@@ -1099,7 +1113,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shi
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o: /usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o -c /usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
@@ -1112,7 +1126,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s: cma
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: /usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -1126,7 +1140,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o: /usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o -c /usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
@@ -1140,7 +1154,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s: cma
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
@@ -1154,7 +1168,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
@@ -1168,7 +1182,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/s
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o: /usr/local/picosdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o -c /usr/local/picosdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -1181,7 +1195,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s: cma
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o: /usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building ASM object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o   -c /usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
@@ -1195,7 +1209,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.s: cmake_f
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
@@ -1209,7 +1223,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o: /usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -1223,7 +1237,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s: cmake
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -1237,7 +1251,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interf
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -1251,7 +1265,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -1265,7 +1279,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_de
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o: /usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o -c /usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -1279,7 +1293,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o: /usr/local/picosdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o -c /usr/local/picosdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -1293,7 +1307,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s: c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
@@ -1307,7 +1321,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cach
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -1321,7 +1335,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp204
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -1335,7 +1349,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp204
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o: /usr/local/picosdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o -c /usr/local/picosdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -1349,7 +1363,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.s: cmake_for
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o: /usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o -c /usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -1363,7 +1377,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.s: c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -1377,7 +1391,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -1391,7 +1405,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.s: 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -1405,7 +1419,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.s: 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -1419,7 +1433,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -1433,7 +1447,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.s: 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -1447,7 +1461,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.s
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -1461,7 +1475,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.s: 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -1475,7 +1489,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -1489,7 +1503,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.s: 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -1503,7 +1517,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1517,7 +1531,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o: /usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o -c /usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1531,7 +1545,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o: /usr/local/picosdk/lib/tinyusb/src/tusb.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o -c /usr/local/picosdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1545,7 +1559,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.s: cmake_force
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o: /usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o -c /usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1559,7 +1573,7 @@ CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.s: cmak
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1570,10 +1584,24 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
+CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o: /usr/local/picosdk/src/rp2_common/pico_rand/rand.c
+CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o -c /usr/local/picosdk/src/rp2_common/pico_rand/rand.c
+
+CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/picosdk/src/rp2_common/pico_rand/rand.c > CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
+
+CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/picosdk/src/rp2_common/pico_rand/rand.c -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
+
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o: /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o -c /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i: cmake_force
@@ -1587,7 +1615,7 @@ CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o: /usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o -MF CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o.d -o CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o -c /usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c
 
 CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
@@ -1622,6 +1650,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/lib/sd_card/src/sd_timeouts.c.o" \
 "CMakeFiles/main.dir/lib/sd_card/src/util.c.o" \
 "CMakeFiles/main.dir/lib/sd_card/sd_utils.c.o" \
+"CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o" \
 "CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o" \
 "CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o" \
 "CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o" \
@@ -1708,6 +1737,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o" \
 "CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o" \
 "CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o" \
+"CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o" \
 "CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o" \
 "CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o"
 
@@ -1736,6 +1766,7 @@ main.elf: CMakeFiles/main.dir/lib/sd_card/src/my_rtc.c.o
 main.elf: CMakeFiles/main.dir/lib/sd_card/src/sd_timeouts.c.o
 main.elf: CMakeFiles/main.dir/lib/sd_card/src/util.c.o
 main.elf: CMakeFiles/main.dir/lib/sd_card/sd_utils.c.o
+main.elf: CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o
 main.elf: CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
 main.elf: CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o
 main.elf: CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
@@ -1822,16 +1853,18 @@ main.elf: CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/vide
 main.elf: CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o
 main.elf: CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o
 main.elf: CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+main.elf: CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
 main.elf: CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
 main.elf: CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o
 main.elf: CMakeFiles/main.dir/build.make
 main.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 main.elf: lib/lcd/liblcd.a
 main.elf: lib/font/libfont.a
+main.elf: lib/processing/libprocessing.a
 main.elf: lib/config/libconfig.a
 main.elf: /usr/local/picosdk/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 main.elf: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Linking CXX executable main.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mles_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Linking CXX executable main.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objdump -h /home/mles_project/build/main.elf > main.dis
 	/usr/bin/arm-none-eabi-objdump -d /home/mles_project/build/main.elf >> main.dis

@@ -1,5 +1,6 @@
 #include "sd_utils.h"
 #include "ff.h"
+#include "f_util.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -7,6 +8,7 @@
 #include "pico/util/queue.h"
 #include "pico/mutex.h"
 #include "hw_config.h"
+#include "pico/rand.h"
 
 #define PATH_MAX_LEN 256
 
@@ -57,7 +59,6 @@ static bool fs_mounted = false;
 // ============================================================================
 // PRIVATE FUNCTIONS - SD CARD OPERATIONS
 // ============================================================================
-
 /**
  * Initialize SD card driver and mount filesystem (called once)
  * @return true on success, false on failure
@@ -214,11 +215,11 @@ bool write_on_sd(const uint8_t *bitmap, uint16_t width, uint16_t height, const c
     UINT bw;
 
     // Step 1: Create file
-    char path[PATH_MAX_LEN];
+    // char path[PATH_MAX_LEN];
 
-    join_path(path, sizeof path, g_drive, "test3.txt");
+    // join_path(path, sizeof path, g_drive, filename);
 
-    fr = sd_create_file(path, &fil);
+    fr = sd_create_file(filename, &fil);
     if (fr != FR_OK) {
         return false;
     }
@@ -458,10 +459,12 @@ bool sd_write_async(const uint8_t *bitmap, uint16_t width, uint16_t height, cons
         printf("Core0: ERROR - Bitmap too large (%u > %u)\r\n", bitmap_size, MAX_BITMAP_SIZE);
         return false;
     }
-
+    printf("Core0: sd_write_async called with %ux%u bitmap\r\n", width, height);
     mutex_enter_blocking(&bitmap_mutex);
+    printf("Core0: copying bitmap data (%u bytes)\r\n", bitmap_size);
     memcpy(shared_bitmap_buffer, bitmap, bitmap_size);
     mutex_exit(&bitmap_mutex);
+    printf("Core0: bitmap data copied\r\n");
 
     SD_Write_Command cmd = {
         .cmd_type = SD_CMD_WRITE_TEXT,
@@ -522,4 +525,20 @@ uint32_t sd_writer_pending_count(void)
 bool sd_writer_is_busy(void)
 {
     return queue_get_level(&sd_command_queue) > 0;
+}
+
+/*
+@docs: alert: custom
+*/
+void generate_uuid(char out[37]) {
+    uint32_t r[4];
+    for (int i = 0; i < 4; i++) r[i] = get_rand_32();
+
+    // Format as 8-4-4-4-12 hex string
+    sprintf(out, "%08lx-%04lx-%04lx-%04lx-%012lx",
+            r[0],
+            (r[1] >> 16) & 0xFFFF,
+            r[1] & 0xFFFF,
+            (r[2] >> 16) & 0xFFFF,
+            (((uint64_t)(r[2] & 0xFFFF)) << 32) | r[3]);
 }

@@ -98,4 +98,5 @@ CMakeFiles/main.dir/main.c.o: /home/mles_project/main.c \
  /usr/local/picosdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h \
- /home/mles_project/./lib/sd_card/sd_utils.h
+ /home/mles_project/./lib/sd_card/sd_utils.h \
+ /home/mles_project/./lib/processing/processing.h

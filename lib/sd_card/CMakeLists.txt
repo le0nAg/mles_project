@@ -26,7 +26,7 @@ target_sources(sd_custom_driver INTERFACE
     ${CMAKE_CURRENT_LIST_DIR}/src/sd_timeouts.c
     ${CMAKE_CURRENT_LIST_DIR}/src/util.c
     ${CMAKE_CURRENT_LIST_DIR}/sd_utils.c
-
+    ${CMAKE_CURRENT_LIST_DIR}/src/hw_config.c
     )
 
 target_include_directories(sd_custom_driver INTERFACE
@@ -42,6 +42,8 @@ target_link_libraries(sd_custom_driver INTERFACE
     hardware_spi
     pico_aon_timer
     pico_stdlib
+    pico_rand
+    pico_time
     cmsis_core
     pico_multicore
     )

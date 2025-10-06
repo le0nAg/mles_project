@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libprocessing.a CMakeFiles/processing.dir/processing.c.o
+/usr/bin/arm-none-eabi-ranlib libprocessing.a

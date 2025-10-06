@@ -6,6 +6,8 @@
 #include <string.h>  
 #include <stdio.h>
 
+#include "processing.h"
+
 extern LCD_DIS sLCD_DIS;
 extern uint8_t id;
 static TP_DEV sTP_DEV;
@@ -310,14 +312,22 @@ void TP_Dialog(void)
 it does:
 1) down sampling
 2) cropping
-3) saving into sSavedBitmap
 */
+#define DEBUG_PRINT
 void TP_Save(void)
 {
-    static unique_cnt = 0;
-
     // Snapshot current drawing into the "saved" buffer
     memcpy(sSavedBitmap, sDrawShadow, sizeof(sSavedBitmap));
+
+    #ifdef DEBUG_PRINT
+    int pixel_count = 0;
+    for (int y = 0; y < BOX_H; y++) {
+        for (int x = 0; x < BOX_W; x++) {
+            if (sSavedBitmap[y][x]) pixel_count++;
+        }
+    }
+    printf("TP_Save: Found %d drawn pixels\r\n", pixel_count);
+    #endif
 
     // Optional on-screen / UART feedback
     GUI_DisString_EN(sLCD_DIS.LCD_Dis_Column - 120, 24,
@@ -331,14 +341,17 @@ void TP_Save(void)
     // (top row first, left->right)
     TP_DumpBitmapToSerial(sSavedBitmap);
     
-    char s[64];
-    snprintf(s,64, "%d.txt", unique_cnt);
-    sd_write_async(sSavedBitmap, BOX_W, BOX_H, s);
-    unique_cnt++;
+    // Write the packed bitmap to SD card
+    char uuid[37];
+	generate_uuid(uuid);
+	char filename[64];
+	snprintf(filename, sizeof(filename), "/%s.bim", uuid);
 
-    snprintf(s,64, "%d.pac.txt", unique_cnt);
-    sd_write_async_packed(sSavedBitmap, BOX_W, BOX_H, s);
-    unique_cnt++;
+    bool res = sd_write_async_packed(sSavedBitmap, BOX_W, BOX_H, filename);
+    if(res)
+        printf("TP_Save: wrote packed bitmap to SD as '%s', res=%d\r\n", filename, res);
+    else
+        printf("TP_Save: failed to write packed bitmap to SD as '%s', res=%d\r\n", filename, res);
 }
 
 /*

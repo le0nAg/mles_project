@@ -610,6 +610,30 @@ __/sd_card/src/glue.c.s:
 	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.s
 .PHONY : __/sd_card/src/glue.c.s
 
+__/sd_card/src/hw_config.o: __/sd_card/src/hw_config.c.o
+.PHONY : __/sd_card/src/hw_config.o
+
+# target to build an object file
+__/sd_card/src/hw_config.c.o:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/hw_config.c.o
+.PHONY : __/sd_card/src/hw_config.c.o
+
+__/sd_card/src/hw_config.i: __/sd_card/src/hw_config.c.i
+.PHONY : __/sd_card/src/hw_config.i
+
+# target to preprocess a source file
+__/sd_card/src/hw_config.c.i:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/hw_config.c.i
+.PHONY : __/sd_card/src/hw_config.c.i
+
+__/sd_card/src/hw_config.s: __/sd_card/src/hw_config.c.s
+.PHONY : __/sd_card/src/hw_config.s
+
+# target to generate assembly for a file
+__/sd_card/src/hw_config.c.s:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/hw_config.c.s
+.PHONY : __/sd_card/src/hw_config.c.s
+
 __/sd_card/src/my_debug.o: __/sd_card/src/my_debug.c.o
 .PHONY : __/sd_card/src/my_debug.o
 
@@ -1074,6 +1098,30 @@ usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s:
 	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
 
+usr/local/picosdk/src/rp2_common/hardware_flash/flash.o: usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o
+
+usr/local/picosdk/src/rp2_common/hardware_flash/flash.i: usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i
+
+usr/local/picosdk/src/rp2_common/hardware_flash/flash.s: usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s
+
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.o: usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.o
 
@@ -1393,6 +1441,30 @@ usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.s: usr/local/picosdk
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
 	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+
+usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.o: usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+
+usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.i: usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+
+usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.s: usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.o: usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.o
@@ -1874,6 +1946,30 @@ usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s:
 	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
 
+usr/local/picosdk/src/rp2_common/pico_rand/rand.o: usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
+
+usr/local/picosdk/src/rp2_common/pico_rand/rand.i: usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
+
+usr/local/picosdk/src/rp2_common/pico_rand/rand.s: usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
+
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o: usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o
 
@@ -2066,6 +2162,30 @@ usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
+usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.o: usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.o
+
+# target to build an object file
+usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o
+.PHONY : usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o
+
+usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.i: usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.i
+
+# target to preprocess a source file
+usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i
+
+usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.s: usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.s
+
+# target to generate assembly for a file
+usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.s:
+	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/lcd/CMakeFiles/lcd.dir/build.make lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2135,6 +2255,9 @@ help:
 	@echo "... __/sd_card/src/glue.o"
 	@echo "... __/sd_card/src/glue.i"
 	@echo "... __/sd_card/src/glue.s"
+	@echo "... __/sd_card/src/hw_config.o"
+	@echo "... __/sd_card/src/hw_config.i"
+	@echo "... __/sd_card/src/hw_config.s"
 	@echo "... __/sd_card/src/my_debug.o"
 	@echo "... __/sd_card/src/my_debug.i"
 	@echo "... __/sd_card/src/my_debug.s"
@@ -2193,6 +2316,9 @@ help:
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_dma/dma.o"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_dma/dma.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_dma/dma.s"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_flash/flash.o"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_flash/flash.i"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_flash/flash.s"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.o"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.s"
@@ -2233,6 +2359,9 @@ help:
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.o"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.s"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.o"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.i"
+	@echo "... usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.s"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.o"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.i"
 	@echo "... usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.s"
@@ -2293,6 +2422,9 @@ help:
 	@echo "... usr/local/picosdk/src/rp2_common/pico_printf/printf.o"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_printf/printf.i"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_printf/printf.s"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_rand/rand.o"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_rand/rand.i"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_rand/rand.s"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_runtime/runtime.i"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_runtime/runtime.s"
@@ -2317,6 +2449,9 @@ help:
 	@echo "... usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.o"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.o"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.i"
+	@echo "... usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.s"
 .PHONY : help
 
 

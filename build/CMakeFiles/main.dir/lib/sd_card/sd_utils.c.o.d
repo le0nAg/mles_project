@@ -11,6 +11,7 @@ CMakeFiles/main.dir/lib/sd_card/sd_utils.c.o: \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
  /home/mles_project/lib/sd_card/ff15/source/ff.h \
  /home/mles_project/lib/sd_card/include/ffconf.h \
+ /home/mles_project/lib/sd_card/include/f_util.h \
  /usr/arm-none-eabi/include/stdio.h /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/newlib.h \
  /usr/arm-none-eabi/include/sys/config.h \
@@ -130,4 +131,5 @@ CMakeFiles/main.dir/lib/sd_card/sd_utils.c.o: \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/arm_acle.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/armv7m_mpu.h \
- /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h
+ /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h \
+ /usr/local/picosdk/src/rp2_common/pico_rand/include/pico/rand.h

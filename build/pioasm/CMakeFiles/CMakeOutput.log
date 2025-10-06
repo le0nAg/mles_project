@@ -15,11 +15,11 @@ The CXX compiler identification is GNU, found in "/home/mles_project/build/pioas
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/mles_project/build/pioasm/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_60c42/fast && make[3]: Entering directory '/home/mles_project/build/pioasm/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_60c42.dir/build.make CMakeFiles/cmTC_60c42.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cc0df/fast && make[3]: Entering directory '/home/mles_project/build/pioasm/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_cc0df.dir/build.make CMakeFiles/cmTC_cc0df.dir/build
 make[4]: Entering directory '/home/mles_project/build/pioasm/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++   -v -o CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 Target: x86_64-alpine-linux-musl
@@ -27,8 +27,8 @@ Configured with: /home/buildozer/aports/main/gcc/src/gcc-12-20220924/configure -
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60c42.dir/'
- /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_60c42.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccbonnLi.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cc0df.dir/'
+ /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cc0df.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccaPcGGk.s
 GNU C++17 (Alpine 12.2.1_git20220924-r4) version 12.2.1 20220924 (x86_64-alpine-linux-musl)
 	compiled by GNU C version 12.2.1 20220924, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
 
@@ -49,15 +49,15 @@ GNU C++17 (Alpine 12.2.1_git20220924-r4) version 12.2.1 20220924 (x86_64-alpine-
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: c9d4bd07bf5f4c1c1a02701aed162be8
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60c42.dir/'
- /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/bin/as -v --64 -o CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbonnLi.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cc0df.dir/'
+ /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/bin/as -v --64 -o CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccaPcGGk.s
 GNU assembler version 2.39 (x86_64-alpine-linux-musl) using BFD version (GNU Binutils) 2.39
 COMPILER_PATH=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/x86_64-alpine-linux-musl/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/x86_64-alpine-linux-musl/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/../lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.'
-Linking CXX executable cmTC_60c42
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60c42.dir/link.txt --verbose=1
-/usr/bin/c++  -v CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_60c42 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_cc0df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc0df.dir/link.txt --verbose=1
+/usr/bin/c++  -v CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cc0df 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/lto-wrapper
@@ -68,9 +68,9 @@ Supported LTO compression algorithms: zlib
 gcc version 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/x86_64-alpine-linux-musl/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/x86_64-alpine-linux-musl/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/../lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60c42' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_60c42.'
- /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNfNcHI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr --hash-style=gnu -m elf_x86_64 --as-needed -dynamic-linker /lib/ld-musl-x86_64.so.1 -pie -z now -o cmTC_60c42 /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1 -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/../lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../.. CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtendS.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60c42' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_60c42.'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cc0df' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cc0df.'
+ /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cclPpmom.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr --hash-style=gnu -m elf_x86_64 --as-needed -dynamic-linker /lib/ld-musl-x86_64.so.1 -pie -z now -o cmTC_cc0df /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1 -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/../lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../.. CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtendS.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cc0df' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cc0df.'
 make[4]: Leaving directory '/home/mles_project/build/pioasm/CMakeFiles/CMakeTmp'
 make[3]: Leaving directory '/home/mles_project/build/pioasm/CMakeFiles/CMakeTmp'
 
@@ -99,11 +99,11 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/mles_project/build/pioasm/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_60c42/fast && make[3]: Entering directory '/home/mles_project/build/pioasm/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_60c42.dir/build.make CMakeFiles/cmTC_60c42.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_cc0df/fast && make[3]: Entering directory '/home/mles_project/build/pioasm/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_cc0df.dir/build.make CMakeFiles/cmTC_cc0df.dir/build]
   ignore line: [make[4]: Entering directory '/home/mles_project/build/pioasm/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [Target: x86_64-alpine-linux-musl]
@@ -111,8 +111,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60c42.dir/']
-  ignore line: [ /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_60c42.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccbonnLi.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cc0df.dir/']
+  ignore line: [ /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cc0df.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccaPcGGk.s]
   ignore line: [GNU C++17 (Alpine 12.2.1_git20220924-r4) version 12.2.1 20220924 (x86_64-alpine-linux-musl)]
   ignore line: [	compiled by GNU C version 12.2.1 20220924  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
   ignore line: []
@@ -133,15 +133,15 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: c9d4bd07bf5f4c1c1a02701aed162be8]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60c42.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/bin/as -v --64 -o CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbonnLi.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cc0df.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/bin/as -v --64 -o CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccaPcGGk.s]
   ignore line: [GNU assembler version 2.39 (x86_64-alpine-linux-musl) using BFD version (GNU Binutils) 2.39]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/x86_64-alpine-linux-musl/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/x86_64-alpine-linux-musl/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/../lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [Linking CXX executable cmTC_60c42]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60c42.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_60c42 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_cc0df]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc0df.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cc0df ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/lto-wrapper]
@@ -152,13 +152,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/libexec/gcc/x86_64-alpine-linux-musl/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/x86_64-alpine-linux-musl/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/../lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/:/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60c42' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_60c42.']
-  link line: [ /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNfNcHI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr --hash-style=gnu -m elf_x86_64 --as-needed -dynamic-linker /lib/ld-musl-x86_64.so.1 -pie -z now -o cmTC_60c42 /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1 -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/../lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../.. CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtendS.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cc0df' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cc0df.']
+  link line: [ /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/collect2 -plugin /usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cclPpmom.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr --hash-style=gnu -m elf_x86_64 --as-needed -dynamic-linker /lib/ld-musl-x86_64.so.1 -pie -z now -o cmTC_cc0df /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1 -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib/../lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib -L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../.. CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtendS.o /usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crtn.o]
     arg [/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/libexec/gcc/x86_64-alpine-linux-musl/12.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccNfNcHI.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cclPpmom.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -174,7 +174,7 @@ Parsed CXX implicit link information from above output:
     arg [-pie] ==> ignore
     arg [-znow] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_60c42] ==> ignore
+    arg [cmTC_cc0df] ==> ignore
     arg [/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/Scrt1.o]
     arg [/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../lib/crti.o]
     arg [/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/crtbeginS.o]
@@ -185,7 +185,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib] ==> dir [/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../../../x86_64-alpine-linux-musl/lib]
     arg [-L/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-alpine-linux-musl/12.2.1/../../..]
-    arg [CMakeFiles/cmTC_60c42.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_cc0df.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lssp_nonshared] ==> lib [ssp_nonshared]

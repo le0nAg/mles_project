@@ -44,6 +44,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/mles_project/build/lib/config/cmake_install.cmake")
   include("/home/mles_project/build/lib/lcd/cmake_install.cmake")
   include("/home/mles_project/build/lib/font/cmake_install.cmake")
+  include("/home/mles_project/build/lib/processing/cmake_install.cmake")
 
 endif()
 

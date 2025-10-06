@@ -158,7 +158,6 @@
 /home/mles_project/build/pico-sdk/src/rp2_common/pico_async_context/CMakeFiles/rebuild_cache.dir
 /home/mles_project/build/pico-sdk/src/rp2_common/pico_btstack/CMakeFiles/edit_cache.dir
 /home/mles_project/build/pico-sdk/src/rp2_common/pico_btstack/CMakeFiles/rebuild_cache.dir
-/home/mles_project/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir
 /home/mles_project/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir
 /home/mles_project/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/edit_cache.dir
 /home/mles_project/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/rebuild_cache.dir
@@ -213,3 +212,6 @@
 /home/mles_project/build/lib/font/CMakeFiles/font.dir
 /home/mles_project/build/lib/font/CMakeFiles/edit_cache.dir
 /home/mles_project/build/lib/font/CMakeFiles/rebuild_cache.dir
+/home/mles_project/build/lib/processing/CMakeFiles/processing.dir
+/home/mles_project/build/lib/processing/CMakeFiles/edit_cache.dir
+/home/mles_project/build/lib/processing/CMakeFiles/rebuild_cache.dir

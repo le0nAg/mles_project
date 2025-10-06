@@ -26,12 +26,13 @@ add_subdirectory(lib/sd_card)
 add_subdirectory(lib/config)
 add_subdirectory(lib/lcd)
 add_subdirectory(lib/font)
-
+add_subdirectory(lib/processing)
 
 include_directories(./lib/sd_card)
 include_directories(./lib/config)
 include_directories(./lib/lcd)
 include_directories(./lib/font)
+include_directories(./lib/processing)
 
 add_executable(${PROGRAM_NAME} 
 main.c
@@ -47,9 +48,12 @@ pico_add_extra_outputs(${PROGRAM_NAME})
 target_link_libraries(${PROGRAM_NAME} 
                         sd_custom_driver
                         lcd 
-                        font 
+                        font
+                        processing
                         config 
-                        pico_stdlib 
+                        pico_stdlib
+                        # pico_rand
+                        pico_time
                         hardware_spi 
                         hardware_pwm
                         )

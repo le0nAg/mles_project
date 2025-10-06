@@ -289,7 +289,8 @@ lib/lcd/CMakeFiles/lcd.dir/LCD_Touch.c.o: /home/mles_project/lib/lcd/LCD_Touch.c
   /usr/arm-none-eabi/include/string.h \
   /usr/arm-none-eabi/include/sys/_locale.h \
   /usr/arm-none-eabi/include/strings.h \
-  /usr/arm-none-eabi/include/sys/string.h
+  /usr/arm-none-eabi/include/sys/string.h \
+  /home/mles_project/lib/processing/processing.h
 
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/ff15/source/ff.c.o: /home/mles_project/lib/sd_card/ff15/source/ff.c \
   /usr/arm-none-eabi/include/string.h \
@@ -1272,6 +1273,7 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: /home/mles_project/lib/sd_ca
   /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
   /home/mles_project/lib/sd_card/ff15/source/ff.h \
   /home/mles_project/lib/sd_card/include/ffconf.h \
+  /home/mles_project/lib/sd_card/include/f_util.h \
   /usr/arm-none-eabi/include/stdio.h \
   /usr/arm-none-eabi/include/_ansi.h \
   /usr/arm-none-eabi/include/newlib.h \
@@ -1392,7 +1394,8 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: /home/mles_project/lib/sd_ca
   /usr/lib/gcc/arm-none-eabi/12.2.0/include/arm_acle.h \
   /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h \
   /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/armv7m_mpu.h \
-  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h
+  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h \
+  /usr/local/picosdk/src/rp2_common/pico_rand/include/pico/rand.h
 
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o: /home/mles_project/lib/sd_card/src/crash.c \
   /usr/arm-none-eabi/include/string.h \
@@ -1729,6 +1732,131 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/glue.c.o: /home/mles_project/lib/sd_ca
   /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
   /usr/arm-none-eabi/include/assert.h \
   /usr/arm-none-eabi/include/_ansi.h \
+  generated/pico_base/pico/version.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /usr/local/picosdk/src/boards/include/boards/pico.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/error.h \
+  /usr/local/picosdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  /usr/local/picosdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/pads_bank0.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /usr/local/picosdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform/cpu_regs.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/m0plus.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/nvic.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /usr/local/picosdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  /usr/local/picosdk/src/common/pico_sync/include/pico/mutex.h \
+  /usr/local/picosdk/src/common/pico_sync/include/pico/lock_core.h \
+  /usr/local/picosdk/src/common/pico_time/include/pico/time.h \
+  /usr/local/picosdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /usr/local/picosdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
+  /home/mles_project/lib/sd_card/ff15/source/ff.h \
+  /home/mles_project/lib/sd_card/include/ffconf.h \
+  /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.h \
+  /home/mles_project/lib/sd_card/sd_driver/SPI/my_spi.h \
+  /usr/local/picosdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
+  /usr/local/picosdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h \
+  /usr/local/picosdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /usr/local/picosdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
+  /usr/local/picosdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+  /usr/local/picosdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/dma_debug.h \
+  /usr/local/picosdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
+  /home/mles_project/lib/sd_card/include/my_debug.h \
+  /usr/arm-none-eabi/include/stdio.h \
+  /usr/arm-none-eabi/include/sys/reent.h \
+  /usr/arm-none-eabi/include/sys/lock.h \
+  /usr/arm-none-eabi/include/sys/stdio.h \
+  /home/mles_project/lib/sd_card/include/sd_timeouts.h \
+  /home/mles_project/lib/sd_card/sd_driver/SPI/sd_card_spi.h \
+  /home/mles_project/lib/sd_card/ff15/source/diskio.h \
+  /home/mles_project/lib/sd_card/ff15/source/ff.h \
+  /home/mles_project/lib/sd_card/sd_driver/sd_card_constants.h \
+  /home/mles_project/lib/sd_card/sd_driver/sd_regs.h \
+  /home/mles_project/lib/sd_card/include/util.h \
+  /usr/arm-none-eabi/include/string.h \
+  /usr/arm-none-eabi/include/sys/_locale.h \
+  /usr/arm-none-eabi/include/strings.h \
+  /usr/arm-none-eabi/include/sys/string.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/RP2040.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/core_cm0plus.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_version.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_compiler.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_gcc.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/arm_acle.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/armv7m_mpu.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h
+
+lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/hw_config.c.o: /home/mles_project/lib/sd_card/src/hw_config.c \
+  /usr/arm-none-eabi/include/assert.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/newlib.h \
+  /usr/arm-none-eabi/include/_newlib_version.h \
+  /usr/arm-none-eabi/include/sys/config.h \
+  /usr/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/arm-none-eabi/include/sys/features.h \
+  /home/mles_project/lib/sd_card/include/hw_config.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
+  /home/mles_project/lib/sd_card/sd_driver/sd_card.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
+  /usr/arm-none-eabi/include/stdint.h \
+  /usr/arm-none-eabi/include/machine/_default_types.h \
+  /usr/arm-none-eabi/include/sys/_intsup.h \
+  /usr/arm-none-eabi/include/sys/_stdint.h \
+  /usr/arm-none-eabi/include/sys/types.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/sys/cdefs.h \
+  /usr/arm-none-eabi/include/machine/_types.h \
+  /usr/arm-none-eabi/include/sys/_types.h \
+  /usr/arm-none-eabi/include/machine/endian.h \
+  /usr/arm-none-eabi/include/machine/_endian.h \
+  /usr/arm-none-eabi/include/sys/select.h \
+  /usr/arm-none-eabi/include/sys/_sigset.h \
+  /usr/arm-none-eabi/include/sys/_timeval.h \
+  /usr/arm-none-eabi/include/sys/timespec.h \
+  /usr/arm-none-eabi/include/sys/_timespec.h \
+  /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
+  /usr/arm-none-eabi/include/sys/sched.h \
+  /usr/arm-none-eabi/include/machine/types.h \
+  /usr/local/picosdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
   generated/pico_base/pico/version.h \
   /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
   generated/pico_base/pico/config_autogen.h \
@@ -2825,6 +2953,65 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
   /usr/local/picosdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
   /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h
 
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o: /usr/local/picosdk/src/rp2_common/hardware_flash/flash.c \
+  /usr/local/picosdk/src/rp2_common/hardware_flash/include/hardware/flash.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
+  /usr/arm-none-eabi/include/assert.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/newlib.h \
+  /usr/arm-none-eabi/include/_newlib_version.h \
+  /usr/arm-none-eabi/include/sys/config.h \
+  /usr/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/arm-none-eabi/include/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
+  /usr/arm-none-eabi/include/stdint.h \
+  /usr/arm-none-eabi/include/machine/_default_types.h \
+  /usr/arm-none-eabi/include/sys/_intsup.h \
+  /usr/arm-none-eabi/include/sys/_stdint.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /usr/local/picosdk/src/boards/include/boards/pico.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /usr/arm-none-eabi/include/sys/cdefs.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/error.h \
+  /usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h \
+  /usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom_constants.h \
+  /usr/local/picosdk/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h \
+  /usr/arm-none-eabi/include/string.h \
+  /usr/arm-none-eabi/include/sys/reent.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/sys/_types.h \
+  /usr/arm-none-eabi/include/machine/_types.h \
+  /usr/arm-none-eabi/include/sys/lock.h \
+  /usr/arm-none-eabi/include/sys/_locale.h \
+  /usr/arm-none-eabi/include/strings.h \
+  /usr/arm-none-eabi/include/sys/string.h \
+  /usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom/lock.h \
+  /usr/local/picosdk/src/rp2_common/hardware_boot_lock/include/hardware/boot_lock.h \
+  /usr/local/picosdk/src/rp2_common/pico_flash/include/pico/flash.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/io_qspi.h \
+  /usr/local/picosdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/pads_qspi.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/pads_qspi.h \
+  /usr/local/picosdk/src/rp2_common/hardware_xip_cache/include/hardware/xip_cache.h
+
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o: /usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c \
   /usr/local/picosdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
   /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
@@ -3457,6 +3644,47 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/wa
   /usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom/lock.h \
   /usr/local/picosdk/src/rp2_common/hardware_boot_lock/include/hardware/boot_lock.h \
   /usr/local/picosdk/src/rp2_common/pico_flash/include/pico/flash.h
+
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c \
+  /usr/local/picosdk/src/rp2_common/hardware_xip_cache/include/hardware/xip_cache.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
+  /usr/arm-none-eabi/include/assert.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/newlib.h \
+  /usr/arm-none-eabi/include/_newlib_version.h \
+  /usr/arm-none-eabi/include/sys/config.h \
+  /usr/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/arm-none-eabi/include/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
+  /usr/arm-none-eabi/include/stdint.h \
+  /usr/arm-none-eabi/include/machine/_default_types.h \
+  /usr/arm-none-eabi/include/sys/_intsup.h \
+  /usr/arm-none-eabi/include/sys/_stdint.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /usr/local/picosdk/src/boards/include/boards/pico.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /usr/arm-none-eabi/include/sys/cdefs.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/error.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/xip.h \
+  /usr/local/picosdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/xip.h \
+  /usr/local/picosdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h
 
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o: /usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c \
   /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
@@ -4352,6 +4580,58 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c
   /usr/local/picosdk/src/rp2_common/pico_printf/include/pico/printf.h \
   /usr/lib/gcc/arm-none-eabi/12.2.0/include/float.h
 
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o: /usr/local/picosdk/src/rp2_common/pico_rand/rand.c \
+  /usr/local/picosdk/src/rp2_common/pico_rand/include/pico/rand.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
+  /usr/arm-none-eabi/include/assert.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/newlib.h \
+  /usr/arm-none-eabi/include/_newlib_version.h \
+  /usr/arm-none-eabi/include/sys/config.h \
+  /usr/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/arm-none-eabi/include/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
+  /usr/arm-none-eabi/include/stdint.h \
+  /usr/arm-none-eabi/include/machine/_default_types.h \
+  /usr/arm-none-eabi/include/sys/_intsup.h \
+  /usr/arm-none-eabi/include/sys/_stdint.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /usr/local/picosdk/src/boards/include/boards/pico.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /usr/arm-none-eabi/include/sys/cdefs.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/error.h \
+  /usr/local/picosdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h \
+  /usr/local/picosdk/src/common/pico_time/include/pico/time.h \
+  /usr/local/picosdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /usr/local/picosdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /usr/local/picosdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/rosc.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/rosc.h \
+  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/busctrl.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/busctrl.h \
+  /usr/local/picosdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h
+
 lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o: /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c \
   /usr/local/picosdk/src/rp2_common/pico_runtime/include/pico/runtime.h \
   /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
@@ -4791,10 +5071,62 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
   /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
   /usr/local/picosdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
 
+lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o: /usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c \
+  /usr/local/picosdk/src/rp2_common/hardware_flash/include/hardware/flash.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
+  /usr/arm-none-eabi/include/assert.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/newlib.h \
+  /usr/arm-none-eabi/include/_newlib_version.h \
+  /usr/arm-none-eabi/include/sys/config.h \
+  /usr/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/arm-none-eabi/include/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
+  /usr/arm-none-eabi/include/stdint.h \
+  /usr/arm-none-eabi/include/machine/_default_types.h \
+  /usr/arm-none-eabi/include/sys/_intsup.h \
+  /usr/arm-none-eabi/include/sys/_stdint.h \
+  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /usr/local/picosdk/src/boards/include/boards/pico.h \
+  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /usr/arm-none-eabi/include/sys/cdefs.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /usr/local/picosdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/local/picosdk/src/common/pico_base_headers/include/pico/error.h \
+  /usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h \
+  /usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom_constants.h \
+  /usr/local/picosdk/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h \
+  /usr/arm-none-eabi/include/string.h \
+  /usr/arm-none-eabi/include/sys/reent.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/sys/_types.h \
+  /usr/arm-none-eabi/include/machine/_types.h \
+  /usr/arm-none-eabi/include/sys/lock.h \
+  /usr/arm-none-eabi/include/sys/_locale.h \
+  /usr/arm-none-eabi/include/strings.h \
+  /usr/arm-none-eabi/include/sys/string.h \
+  /usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom/lock.h \
+  /usr/local/picosdk/src/rp2_common/hardware_boot_lock/include/hardware/boot_lock.h \
+  /usr/local/picosdk/src/rp2_common/pico_flash/include/pico/flash.h \
+  /usr/local/picosdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h
+
+
+/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c:
 
 /usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c:
-
-/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c:
 
 /usr/local/picosdk/src/rp2040/boot_stage2/include/boot_stage2/config.h:
 
@@ -4813,6 +5145,12 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 /usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c:
 
 /usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c:
+
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/busctrl.h:
+
+/usr/local/picosdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
+
+/usr/local/picosdk/src/rp2_common/pico_rand/rand.c:
 
 /usr/local/picosdk/src/rp2_common/pico_printf/printf.c:
 
@@ -4856,7 +5194,29 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 
 /usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c:
 
-/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h:
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/xosc.h:
+
+/usr/local/picosdk/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
+
+/usr/arm-none-eabi/include/c++/12.2.0/cassert:
+
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
+
+/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c:
+
+/usr/local/picosdk/src/rp2_common/pico_flash/flash.c:
+
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
+
+/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c:
+
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
+
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
+
+/usr/arm-none-eabi/include/c++/12.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h:
+
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
 
 /usr/local/picosdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h:
 
@@ -4867,8 +5227,6 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h:
 
 /usr/arm-none-eabi/include/sys/config.h:
-
-/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/rtc.h:
 
 /usr/local/picosdk/src/rp2_common/pico_stdio/include/pico/stdio/driver.h:
 
@@ -4890,6 +5248,10 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 
 /usr/local/picosdk/src/rp2_common/pico_multicore/include/pico/multicore.h:
 
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/rtc.h:
+
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h:
+
 /usr/arm-none-eabi/include/sys/string.h:
 
 /usr/arm-none-eabi/include/sys/_locale.h:
@@ -4908,9 +5270,15 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 
 /home/mles_project/lib/sd_card/sd_driver/SPI/sd_spi.h:
 
+/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c:
+
+/usr/arm-none-eabi/include/machine/stdlib.h:
+
 /home/mles_project/lib/lcd/LCD_GUI.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_spi/include/hardware/spi.h:
+
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/busctrl.h:
 
 /usr/arm-none-eabi/include/limits.h:
 
@@ -4934,6 +5302,8 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 
 /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h:
 
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/rosc.h:
+
 /home/mles_project/lib/sd_card/src/f_util.c:
 
 /usr/local/picosdk/src/rp2_common/pico_time_adapter/include/pico/time_adapter.h:
@@ -4947,6 +5317,8 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c
 /usr/arm-none-eabi/include/ctype.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
+
+/usr/local/picosdk/src/rp2_common/pico_rand/include/pico/rand.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
 
@@ -4992,10 +5364,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/local/picosdk/src/common/pico_sync/lock_core.c:
 
-/usr/local/picosdk/src/rp2_common/pico_flash/flash.c:
-
-/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
-
 /usr/local/picosdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
 
 /home/mles_project/lib/font/fonts.h:
@@ -5005,6 +5373,8 @@ generated/pico_base/pico/config_autogen.h:
 /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/pads_bank0.h:
 
 /usr/arm-none-eabi/include/sys/_pthreadtypes.h:
+
+/usr/local/picosdk/src/rp2_common/hardware_xip_cache/include/hardware/xip_cache.h:
 
 /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
 
@@ -5018,11 +5388,9 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_pio/include/hardware/pio.h:
 
-/home/mles_project/lib/sd_card/include/ffconf.h:
+/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c:
 
-/home/mles_project/lib/sd_card/ff15/source/diskio.h:
-
-/usr/local/picosdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h:
+/usr/arm-none-eabi/include/string.h:
 
 /usr/arm-none-eabi/include/sys/_intsup.h:
 
@@ -5033,6 +5401,14 @@ generated/pico_base/pico/config_autogen.h:
 /usr/arm-none-eabi/include/sys/select.h:
 
 /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h:
+
+/home/mles_project/lib/sd_card/include/ffconf.h:
+
+/home/mles_project/lib/sd_card/ff15/source/diskio.h:
+
+/usr/local/picosdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h:
+
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
 
@@ -5092,11 +5468,11 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c:
 
-/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
-
 /usr/arm-none-eabi/include/newlib.h:
 
 /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h:
+
+/home/mles_project/lib/sd_card/src/hw_config.c:
 
 generated/pico_base/pico/version.h:
 
@@ -5124,9 +5500,7 @@ generated/pico_base/pico/version.h:
 
 /usr/local/picosdk/src/rp2_common/pico_float/include/pico/float.h:
 
-/usr/arm-none-eabi/include/c++/12.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h:
-
-/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/rosc.h:
 
 /home/mles_project/lib/sd_card/sd_driver/dma_interrupts.h:
 
@@ -5144,17 +5518,11 @@ generated/pico_base/pico/version.h:
 
 /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
 
-/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/xosc.h:
-
 /usr/local/picosdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_rtc/include/hardware/rtc.h:
 
 /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h:
-
-/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c:
-
-/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
 
 /usr/arm-none-eabi/include/machine/_types.h:
 
@@ -5174,6 +5542,8 @@ generated/pico_base/pico/version.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c:
 
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/xip.h:
+
 /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_irq/include/hardware/irq.h:
@@ -5183,6 +5553,8 @@ generated/pico_base/pico/version.h:
 /usr/local/picosdk/src/common/hardware_claim/include/hardware/claim.h:
 
 /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/nvic.h:
+
+/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h:
 
 /home/mles_project/lib/sd_card/include/hw_config.h:
 
@@ -5197,8 +5569,6 @@ generated/pico_base/pico/version.h:
 /usr/arm-none-eabi/include/math.h:
 
 /usr/local/picosdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
-
-/usr/local/picosdk/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
 
 /usr/arm-none-eabi/include/sys/lock.h:
 
@@ -5230,6 +5600,8 @@ generated/pico_base/pico/version.h:
 
 /usr/local/picosdk/src/common/pico_sync/critical_section.c:
 
+/home/mles_project/lib/processing/processing.h:
+
 lib/sd_card/rp2040_sdio.pio.h:
 
 /home/mles_project/lib/sd_card/include/f_util.h:
@@ -5253,6 +5625,8 @@ lib/sd_card/rp2040_sdio.pio.h:
 /usr/local/picosdk/src/common/pico_time/timeout_helper.c:
 
 /home/mles_project/lib/sd_card/sd_driver/SPI/sd_spi.c:
+
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/xip.h:
 
 /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/sysinfo.h:
 
@@ -5291,6 +5665,8 @@ lib/sd_card/rp2040_sdio.pio.h:
 /usr/local/picosdk/src/common/pico_util/include/pico/util/pheap.h:
 
 /home/mles_project/lib/sd_card/src/crc.c:
+
+/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c:
 
 /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/rtc.h:
 
@@ -5332,7 +5708,13 @@ lib/sd_card/rp2040_sdio.pio.h:
 
 /usr/local/picosdk/src/rp2_common/pico_runtime/include/pico/runtime.h:
 
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/pads_qspi.h:
+
 /usr/local/picosdk/src/common/pico_sync/sem.c:
+
+/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c:
+
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
 
 /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
 
@@ -5348,9 +5730,9 @@ lib/sd_card/rp2040_sdio.pio.h:
 
 /usr/local/picosdk/src/rp2040/pico_platform/platform.c:
 
-/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h:
-
 /usr/local/picosdk/src/rp2_common/pico_atomic/include/stdatomic.h:
+
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h:
 
 /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c:
 
@@ -5367,6 +5749,20 @@ lib/sd_card/rp2040_sdio.pio.h:
 /usr/arm-none-eabi/include/machine/_endian.h:
 
 /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
+
+/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c:
+
+/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
+
+/usr/local/picosdk/src/rp2_common/hardware_flash/include/hardware/flash.h:
+
+/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c:
+
+/usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom/lock.h:
+
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/io_qspi.h:
+
+/usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/pads_qspi.h:
 
 /home/mles_project/lib/sd_card/ff15/source/ffsystem.c:
 
@@ -5387,23 +5783,3 @@ lib/sd_card/rp2040_sdio.pio.h:
 /usr/local/picosdk/src/rp2_common/hardware_timer/timer.c:
 
 /usr/local/picosdk/src/rp2_common/hardware_uart/uart.c:
-
-/usr/arm-none-eabi/include/machine/stdlib.h:
-
-/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c:
-
-/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c:
-
-/usr/local/picosdk/src/rp2_common/pico_bootrom/include/pico/bootrom/lock.h:
-
-/usr/arm-none-eabi/include/c++/12.2.0/cassert:
-
-/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
-
-/usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
-
-/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c:
-
-/usr/arm-none-eabi/include/string.h:
-
-/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c:

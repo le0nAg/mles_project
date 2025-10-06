@@ -348,6 +348,15 @@ picotool_DIR:PATH=/usr/local/lib/cmake/picotool
 //The directory containing a CMake configuration file for pioasm.
 pioasm_DIR:PATH=pioasm_DIR-NOTFOUND
 
+//Value Computed by CMake
+processing_BINARY_DIR:STATIC=/home/mles_project/build/lib/processing
+
+//Value Computed by CMake
+processing_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+processing_SOURCE_DIR:STATIC=/home/mles_project/lib/processing
+
 
 ########################
 # INTERNAL cache entries
@@ -472,7 +481,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=102
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=103
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

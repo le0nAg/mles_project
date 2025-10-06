@@ -10,7 +10,7 @@ bool sd_write_async(const uint8_t *bitmap, uint16_t width, uint16_t height, cons
 bool sd_write_async_packed(const uint8_t *bitmap, uint16_t width, uint16_t height, const char *filename);
 uint32_t sd_writer_pending_count(void);
 bool sd_writer_is_busy(void);
-
+void generate_uuid(char out[37]);
 
 
 #endif
