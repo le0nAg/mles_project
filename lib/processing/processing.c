@@ -259,3 +259,65 @@ void compactness(const uint8_t* img, int w, int h, float* isoperimetric, float* 
     *a_to_p_ratio = (float)a / (float)p; // A/P
     *circularity_ratio = (float)(p * p) / (4 * PI * a); // P²/4πA
 }
+
+bool extract_features_json(const uint8_t* img, int w, int h, char* out_json, size_t json_buffer_size){
+    if (!img || !out_json || json_buffer_size < 512) {
+        printf("ERROR: Invalid parameters for extract_features_json\r\n");
+        return false;
+    }
+
+    uint8_t* edges = (uint8_t*)malloc(w * h);
+    if (!edges) {
+        printf("ERROR: Failed to allocate memory for edge detection\r\n");
+        return false;
+    }
+
+    // Extract features
+    int n_components = 0;
+    connected_components(img, w, h, &n_components);
+
+    float pixel_density = 0.0f;
+    density(img, w, h, &pixel_density);
+
+    edge_detection(img, w, h, edges);
+    int edge_count = 0;
+    for (int i = 0; i < w * h; i++) {
+        if (edges[i] == 1) edge_count++;
+    }
+
+    float isoperimetric = 0.0f;
+    float a_to_p_ratio = 0.0f;
+    float circularity_ratio = 0.0f;
+    compactness(img, w, h, &isoperimetric, &a_to_p_ratio, &circularity_ratio);
+
+    free(edges);
+
+    // Build JSON
+    int written = snprintf(out_json, json_buffer_size,
+        "{\n"
+        "  \"features\": {\n"
+        "    \"image_dimensions\": {\n"
+        "      \"width\": %d,\n"
+        "      \"height\": %d\n"
+        "    },\n"
+        "    \"edges\": %d,\n"
+        "    \"pixel_density\": %.6f,\n"
+        "    \"connected_components\": %d,\n"
+        "    \"compactness\": {\n"
+        "      \"isoperimetric_quotient\": %.6f,\n"
+        "      \"area_to_perimeter_ratio\": %.6f,\n"
+        "      \"circularity_ratio\": %.6f\n"
+        "    }\n"
+        "  }\n"
+        "}",
+        w, h, edge_count, pixel_density, n_components,
+        isoperimetric, a_to_p_ratio, circularity_ratio
+    );
+
+    if (written < 0 || (size_t)written >= json_buffer_size) {
+        printf("ERROR: JSON buffer too small\r\n");
+        return false;
+    }
+
+    return true;
+}

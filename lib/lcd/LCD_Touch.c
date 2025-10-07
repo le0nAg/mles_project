@@ -308,12 +308,17 @@ void TP_Dialog(void)
 }
 
 /** 
- * @leo
-*/
+ * @leo 
+ * Pipeline:
+ * 1. Capture current drawing to saved bitmap
+ * 2. Save original packed bitmap as <uuid>.bim
+ * 3. Apply edge detection and save as <uuid>.morph.bim
+ * 4. Extract features and save as <uuid>.json
+ */
 #define DEBUG_PRINT
 void TP_Save(void)
 {
-    // Snapshot current drawing into the "saved" buffer
+    // Step 1: Snapshot current drawing into the "saved" buffer
     memcpy(sSavedBitmap, sDrawShadow, sizeof(sSavedBitmap));
 
     #ifdef DEBUG_PRINT
@@ -326,29 +331,93 @@ void TP_Save(void)
     printf("TP_Save: Found %d drawn pixels\r\n", pixel_count);
     #endif
 
-    // Optional on-screen / UART feedback
+    // Generate UUID for this capture
+    char uuid[37];
+    generate_uuid(uuid);
+    printf("TP_Save: Generated UUID: %s\r\n", uuid);
+
+    // Save original packed bitmap
+    char filename_original[64];
+    snprintf(filename_original, sizeof(filename_original), "/%s.bim", uuid);
+
+    bool res_original = sd_write_async_packed((uint8_t*)sSavedBitmap, BOX_W, BOX_H, filename_original);
+    if (res_original) {
+        printf("TP_Save: Queued original bitmap write to '%s'\r\n", filename_original);
+    } else {
+        printf("TP_Save: Failed to queue original bitmap write\r\n");
+    }
+
+    // Apply edge detection and save morphological bitmap
+    uint8_t* edges = (uint8_t*)malloc(BOX_W * BOX_H);
+    if (!edges) {
+        printf("TP_Save: ERROR - Failed to allocate memory for edge detection\r\n");
+        goto cleanup;
+    }
+
+    edge_detection((uint8_t*)sSavedBitmap, BOX_W, BOX_H, edges);
+
+    #ifdef DEBUG_PRINT
+    int edge_count = 0;
+    for (int i = 0; i < BOX_W * BOX_H; i++) {
+        if (edges[i]) edge_count++;
+    }
+    printf("TP_Save: Edge detection found %d edge pixels\r\n", edge_count);
+    #endif
+
+    char filename_morph[64];
+    snprintf(filename_morph, sizeof(filename_morph), "/%s.morph.bim", uuid);
+
+    bool res_morph = sd_write_async_packed(edges, BOX_W, BOX_H, filename_morph);
+    if (res_morph) {
+        printf("TP_Save: Queued morphological bitmap write to '%s'\r\n", filename_morph);
+    } else {
+        printf("TP_Save: Failed to queue morphological bitmap write\r\n");
+    }
+
+    // Extract features and save JSON
+    char json_buffer[1024];
+    bool json_success = extract_features_json((uint8_t*)sSavedBitmap, BOX_W, BOX_H, 
+                                               json_buffer, sizeof(json_buffer));
+    
+    if (json_success) {
+        #ifdef DEBUG_PRINT
+        printf("TP_Save: Generated JSON:\r\n%s\r\n", json_buffer);
+        #endif
+
+        char filename_json[64];
+        snprintf(filename_json, sizeof(filename_json), "/%s.json", uuid);
+
+        bool res_json = sd_write_async_json(json_buffer, filename_json);
+        if (res_json) {
+            printf("TP_Save: Queued JSON write to '%s'\r\n", filename_json);
+        } else {
+            printf("TP_Save: Failed to queue JSON write\r\n");
+        }
+    } else {
+        printf("TP_Save: Failed to extract features to JSON\r\n");
+    }
+
+cleanup:
+    if (edges) {
+        free(edges);
+    }
+
+    // ========================================================================
+    // User feedback
+    // ========================================================================
     GUI_DisString_EN(sLCD_DIS.LCD_Dis_Column - 120, 24,
                      "SAVED", &Font16, BLACK, WHITE);
-    printf("TP_Save: captured %ux%u pixels from box [%u,%u]-[%u,%u]\r\n",
-           (unsigned)BOX_W, (unsigned)BOX_H,
-           (unsigned)BOX_X0, (unsigned)BOX_Y0,
-           (unsigned)BOX_X1, (unsigned)BOX_Y1);
-
-    // Print the full image as 0/1 so it "looks" like the drawing
-    // (top row first, left->right)
-    TP_DumpBitmapToSerial(sSavedBitmap);
     
-    // Write the packed bitmap to SD card
-    char uuid[37];
-	generate_uuid(uuid);
-	char filename[64];
-	snprintf(filename, sizeof(filename), "/%s.bim", uuid);
+    printf("TP_Save: Pipeline complete for UUID %s\r\n", uuid);
+    printf("  - Original: %s\r\n", filename_original);
+    printf("  - Morphological: %s\r\n", filename_morph);
+    printf("  - Features: %s.json\r\n", uuid);
 
-    bool res = sd_write_async_packed(sSavedBitmap, BOX_W, BOX_H, filename);
-    if(res)
-        printf("TP_Save: wrote packed bitmap to SD as '%s', res=%d\r\n", filename, res);
-    else
-        printf("TP_Save: failed to write packed bitmap to SD as '%s', res=%d\r\n", filename, res);
+    // Optional: Print the full image as 0/1 for debugging
+    #ifdef DEBUG_PRINT
+    printf("TP_Save: Original bitmap dump:\r\n");
+    TP_DumpBitmapToSerial(sSavedBitmap);
+    #endif
 }
 
 /*

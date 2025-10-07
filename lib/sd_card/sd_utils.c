@@ -28,6 +28,7 @@ TODO: timestamp the data
 typedef enum {
     SD_CMD_WRITE_TEXT,
     SD_CMD_WRITE_BINARY,
+    SD_CMD_WRITE_JSON,
     SD_CMD_SHUTDOWN
 } SD_Command_Type;
 
@@ -37,12 +38,17 @@ typedef struct {
     uint16_t width;
     uint16_t height;
     char filename[64];
+    char json_data[1024];
 } SD_Write_Command;
 
 static queue_t sd_command_queue;
 static mutex_t bitmap_mutex;
 
 #define MAX_BITMAP_SIZE (320 * 240)
+#define MAX_FILE_NAMME_LEN 64
+#define MAX_JSON_SIZE 1024
+#define SD_COMMAND_QUEUE_SIZE 4
+
 static uint8_t shared_bitmap_buffer[MAX_BITMAP_SIZE];
 
 static volatile bool core1_running = false;
@@ -191,9 +197,6 @@ static FRESULT sd_close_file(FIL *file)
     return fr;
 }
 
-// ============================================================================
-// WRITE IMPLEMENTATIONS
-// ============================================================================
 
 static void join_path(char *out, size_t out_sz, const char *drive, const char *rel) {
     // drive = "0:" or "0:/", ensure exactly one slash when joining
@@ -204,6 +207,7 @@ static void join_path(char *out, size_t out_sz, const char *drive, const char *r
         snprintf(out, out_sz, "%s/%s", drive, rel ? rel : "");
 }
 
+// even if public, these are low-level and the usage outside this file is discouraged
 
 /**
  * Write bitmap as ASCII '0' and '1' characters
@@ -339,6 +343,39 @@ bool write_on_sd_bit_pack(const uint8_t *bitmap, uint16_t width, uint16_t height
     return success;
 }
 
+
+bool write_json_to_sd(const char *json_str, const char *filename)
+{
+    if (!json_str || !filename) {
+        printf("ERROR: Invalid parameters for write_json_to_sd\r\n");
+        return false;
+    }
+
+    FIL fil;
+    FRESULT fr;
+    UINT bw;
+
+    fr = sd_create_file(filename, &fil);
+    if (fr != FR_OK) {
+        return false;
+    }
+
+    // Write JSON string
+    size_t json_len = strlen(json_str);
+    fr = sd_write_data(&fil, json_str, json_len, &bw);
+    
+    bool success = (fr == FR_OK && bw == json_len);
+    
+    sd_close_file(&fil);
+
+    if (success) {
+        printf("SUCCESS: Wrote JSON to '%s' (%zu bytes)\r\n", filename, json_len);
+    } else {
+        printf("ERROR: Failed to write JSON to '%s'\r\n", filename);
+    }
+
+    return success;
+}
 // ============================================================================
 // CORE1 WORKER FUNCTION
 // ============================================================================
@@ -541,4 +578,40 @@ void generate_uuid(char out[37]) {
             r[1] & 0xFFFF,
             (r[2] >> 16) & 0xFFFF,
             (((uint64_t)(r[2] & 0xFFFF)) << 32) | r[3]);
+}
+
+
+bool sd_write_async_json(const char *json_str, const char *filename)
+{
+    if (!json_str || !filename) {
+        printf("Core0: ERROR - Invalid parameters\r\n");
+        return false;
+    }
+
+    size_t json_len = strlen(json_str);
+    if (json_len >= 1024) {
+        printf("Core0: ERROR - JSON too large (%zu > 1024)\r\n", json_len);
+        return false;
+    }
+
+    SD_Write_Command cmd = {
+        .cmd_type = SD_CMD_WRITE_JSON,
+        .bitmap = NULL,
+        .width = 0,
+        .height = 0
+    };
+
+    strncpy(cmd.filename, filename, sizeof(cmd.filename) - 1);
+    cmd.filename[sizeof(cmd.filename) - 1] = '\0';
+
+    strncpy(cmd.json_data, json_str, sizeof(cmd.json_data) - 1);
+    cmd.json_data[sizeof(cmd.json_data) - 1] = '\0';
+
+    if (!queue_try_add(&sd_command_queue, &cmd)) {
+        printf("Core0: WARNING - SD command queue is full\r\n");
+        return false;
+    }
+
+    printf("Core0: Queued JSON write to '%s'\r\n", filename);
+    return true;
 }

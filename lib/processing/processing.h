@@ -7,6 +7,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+/**
+ * @docs: Generate JSON string with extracted features
+ */
+bool extract_features_json(const uint8_t* img, int w, int h, char* out_json, size_t json_buffer_size);
 
 /**
  * @docs: Crop the image from first top-left 1 and the last bottom-right 1.
