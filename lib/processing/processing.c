@@ -45,9 +45,6 @@ void simple_crop(const uint8_t* img, int w, int h, uint8_t* out, int* out_w, int
 }
 
 
-/**
- * @docs: Explode vertex pixels (1s) in all 8 directions by a given magnitude.
- */
 static void explode_vertex(const uint8_t* img, int w, int h, uint8_t* out, int16_t magnitude){
     for(int i = 0; i < w * h; i++){
         out[i] = img[i];

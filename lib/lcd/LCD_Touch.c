@@ -307,11 +307,8 @@ void TP_Dialog(void)
     memset(sDrawShadow, 0, sizeof(sDrawShadow));
 }
 
-/*
-@leo
-it does:
-1) down sampling
-2) cropping
+/** 
+ * @leo
 */
 #define DEBUG_PRINT
 void TP_Save(void)

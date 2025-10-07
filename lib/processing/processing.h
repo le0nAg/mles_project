@@ -21,7 +21,6 @@ static void explode_vertex(const uint8_t* img, int w, int h, uint8_t* out, int16
 
 /**
  * @docs: Perform edge detection on an image.
- * @todo: Implement this function.
  * considerations: could use Sobel operator or Morphological detection.
  */
 void edge_detection(const uint8_t* img, int w, int h, uint8_t* out);
