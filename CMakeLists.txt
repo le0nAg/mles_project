@@ -27,12 +27,14 @@ add_subdirectory(lib/config)
 add_subdirectory(lib/lcd)
 add_subdirectory(lib/font)
 add_subdirectory(lib/processing)
+add_subdirectory(lib/testing)
 
 include_directories(./lib/sd_card)
 include_directories(./lib/config)
 include_directories(./lib/lcd)
 include_directories(./lib/font)
 include_directories(./lib/processing)
+include_directories(./lib/testing)
 
 add_executable(${PROGRAM_NAME} 
 main.c
@@ -50,6 +52,7 @@ target_link_libraries(${PROGRAM_NAME}
                         lcd 
                         font
                         processing
+                        testing
                         config 
                         pico_stdlib
                         # pico_rand

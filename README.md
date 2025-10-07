@@ -19,3 +19,4 @@ sudo picocom -b 115200 /dev/ttyACM0
 - [ ] Topological-preserving downsampling
 - [ ] Script.py for fast image translation and feature analysis
 - [ ] Performance optimizations (processing and memory)
+- [ ] add a .gitignore 
