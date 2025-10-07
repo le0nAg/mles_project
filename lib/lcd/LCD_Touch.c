@@ -354,10 +354,13 @@ void TP_Save(void)
         printf("TP_Save: Queued original bitmap write to '%s'\r\n", filename_original);
     } else {
         printf("TP_Save: Failed to queue original bitmap write\r\n");
-        goto user_feedback; // Skip remaining steps on failure
+        goto user_feedback;
     }
+
+    // Crop the image
     int out_w, out_h;
     simple_crop((uint8_t*)sSavedBitmap, BOX_W, BOX_H, (uint8_t*)sSavedBitmap, &out_w, &out_h);
+    printf("TP_Save: Cropped to %dx%d\r\n", out_w, out_h);
 
     // Apply edge detection and save morphological bitmap
     printf("TP_Save: Allocating memory for edge detection (%u bytes)\r\n", 
@@ -366,12 +369,12 @@ void TP_Save(void)
     uint8_t* edges = (uint8_t*)malloc(out_w * out_h);
     if (!edges) {
         printf("TP_Save: ERROR - Failed to allocate %u bytes for edge detection\r\n",
-               (unsigned)(BOX_W * BOX_H));
+               (unsigned)(out_w * out_h));
         goto user_feedback;
     }
 
     printf("TP_Save: Running edge detection...\r\n");
-    edge_detection((uint8_t*)sSavedBitmap, BOX_W, BOX_H, edges);
+    edge_detection((uint8_t*)sSavedBitmap, out_w, out_h, edges);
 
     #ifdef DEBUG_PRINT
     int edge_count = 0;
@@ -394,50 +397,70 @@ void TP_Save(void)
     free(edges);
     edges = NULL;
 
-    // Extract features and save JSON
-    printf("TP_Save: Allocating JSON buffer...\r\n");
+    // Feature Extraction 
+    printf("\r\n");
+    printf("========================================\r\n");
+    printf("FEATURE EXTRACTION - UUID: %s\r\n", uuid);
+    printf("========================================\r\n");
+
+    // 1. Image Dimensions
+    printf("Image Dimensions:\r\n");
+    printf("  Width  : %d pixels\r\n", out_w);
+    printf("  Height : %d pixels\r\n", out_h);
+    printf("  Total  : %d pixels\r\n", out_w * out_h);
+
+    // 2. Connected Components
+    printf("\r\nConnected Components:\r\n");
+    int n_components = 0;
+    connected_components((uint8_t*)sSavedBitmap, out_w, out_h, &n_components);
+    printf("  Count  : %d component(s)\r\n", n_components);
+
+    // 3. Pixel Density
+    printf("\r\nPixel Density:\r\n");
+    float pixel_density = 0.0f;
+    density((uint8_t*)sSavedBitmap, out_w, out_h, &pixel_density);
+    printf("  Density: %.6f (%.2f%%)\r\n", pixel_density, pixel_density * 100.0f);
+
+    // 4. Edge Count (already computed above)
+    printf("\r\nEdge Analysis:\r\n");
+    printf("  Edges  : %d pixels\r\n", edge_count);
+    float edge_ratio = (out_w * out_h > 0) ? (float)edge_count / (out_w * out_h) : 0.0f;
+    printf("  Ratio  : %.6f (%.2f%%)\r\n", edge_ratio, edge_ratio * 100.0f);
+
+    // 5. Compactness Features
+    printf("\r\nCompactness Features:\r\n");
+    float isoperimetric = 0.0f;
+    float a_to_p_ratio = 0.0f;
+    float circularity_ratio = 0.0f;
+    compactness((uint8_t*)sSavedBitmap, out_w, out_h, 
+                &isoperimetric, &a_to_p_ratio, &circularity_ratio);
     
-    char* json_buffer = (char*)malloc(1024);
-    if (!json_buffer) {
-        printf("TP_Save: ERROR - Failed to allocate JSON buffer\r\n");
-        goto user_feedback;
-    }
-
-    printf("TP_Save: Extracting features...\r\n");
-    bool json_success = extract_features_json((uint8_t*)sSavedBitmap, out_w, out_h, 
-                                               json_buffer, 1024);
+    printf("  Isoperimetric Quotient   : %.6f\r\n", isoperimetric);
+    printf("  Area/Perimeter Ratio     : %.6f\r\n", a_to_p_ratio);
+    printf("  Circularity Ratio        : %.6f\r\n", circularity_ratio);
     
-    if (json_success) {
-        #ifdef DEBUG_PRINT
-        printf("TP_Save: Generated JSON:\r\n%s\r\n", json_buffer);
-        #endif
-
-        char filename_json[64];
-        snprintf(filename_json, sizeof(filename_json), "/%s.json", uuid);
-
-        bool res_json = sd_write_async_json(json_buffer, filename_json);
-        if (res_json) {
-            printf("TP_Save: Queued JSON write to '%s'\r\n", filename_json);
-        } else {
-            printf("TP_Save: Failed to queue JSON write\r\n");
-        }
+    // Shape interpretation
+    printf("\r\nShape Interpretation:\r\n");
+    if (isoperimetric > 0.8f) {
+        printf("  Shape: Nearly circular (isoperimetric > 0.8)\r\n");
+    } else if (isoperimetric > 0.5f) {
+        printf("  Shape: Moderately compact (isoperimetric > 0.5)\r\n");
+    } else if (isoperimetric > 0.2f) {
+        printf("  Shape: Elongated (isoperimetric > 0.2)\r\n");
     } else {
-        printf("TP_Save: Failed to extract features to JSON\r\n");
+        printf("  Shape: Very irregular/complex\r\n");
     }
 
-    free(json_buffer);
-    json_buffer = NULL;
+    printf("========================================\r\n");
+    printf("END FEATURE EXTRACTION\r\n");
+    printf("========================================\r\n\r\n");
 
     printf("TP_Save: Pipeline complete for UUID %s\r\n", uuid);
 
 user_feedback:
-    // ========================================================================
-    // User feedback
-    // ========================================================================
     GUI_DisString_EN(sLCD_DIS.LCD_Dis_Column - 120, 24,
                      "SAVED", &Font16, BLACK, WHITE);
     
-    // Optional: Print the full image as 0/1 for debugging
     #ifdef DEBUG_PRINT
     printf("TP_Save: Original bitmap dump:\r\n");
     TP_DumpBitmapToSerial(sSavedBitmap);
