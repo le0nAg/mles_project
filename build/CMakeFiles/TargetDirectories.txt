@@ -215,3 +215,6 @@
 /home/mles_project/build/lib/processing/CMakeFiles/processing.dir
 /home/mles_project/build/lib/processing/CMakeFiles/edit_cache.dir
 /home/mles_project/build/lib/processing/CMakeFiles/rebuild_cache.dir
+/home/mles_project/build/lib/testing/CMakeFiles/testing.dir
+/home/mles_project/build/lib/testing/CMakeFiles/edit_cache.dir
+/home/mles_project/build/lib/testing/CMakeFiles/rebuild_cache.dir

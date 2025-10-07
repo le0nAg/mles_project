@@ -21,6 +21,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/mles_project/lib/lcd/CMakeLists.txt"
   "/home/mles_project/lib/processing/CMakeLists.txt"
   "/home/mles_project/lib/sd_card/CMakeLists.txt"
+  "/home/mles_project/lib/testing/CMakeLists.txt"
   "/home/mles_project/pico_sdk_import.cmake"
   "/usr/local/lib/cmake/picotool/picotoolConfig.cmake"
   "/usr/local/lib/cmake/picotool/picotoolConfigVersion.cmake"
@@ -287,6 +288,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "lib/lcd/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/font/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/processing/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/testing/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -302,4 +304,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "lib/lcd/CMakeFiles/lcd.dir/DependInfo.cmake"
   "lib/font/CMakeFiles/font.dir/DependInfo.cmake"
   "lib/processing/CMakeFiles/processing.dir/DependInfo.cmake"
+  "lib/testing/CMakeFiles/testing.dir/DependInfo.cmake"
   )

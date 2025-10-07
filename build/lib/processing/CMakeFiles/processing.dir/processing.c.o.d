@@ -32,4 +32,10 @@ lib/processing/CMakeFiles/processing.dir/processing.c.o: \
  /usr/arm-none-eabi/include/sys/sched.h \
  /usr/arm-none-eabi/include/machine/types.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
+ /usr/arm-none-eabi/include/stdlib.h \
+ /usr/arm-none-eabi/include/machine/stdlib.h \
+ /usr/arm-none-eabi/include/alloca.h /usr/arm-none-eabi/include/string.h \
+ /usr/arm-none-eabi/include/sys/_locale.h \
+ /usr/arm-none-eabi/include/strings.h \
+ /usr/arm-none-eabi/include/sys/string.h \
  /home/mles_project/lib/processing/processing.h

@@ -50,6 +50,9 @@ static int area(const uint8_t* img, int w, int h);
 static int perimeter(const uint8_t* img, int w, int h);
 void compactness(const uint8_t* img, int w, int h, float* isoperimetric, float* a_to_p_ratio, float* circularity_ratio);
 
+// TODO: remove at the end of the project
+void print_free_memory(void);
+
 #ifdef __cplusplus
 }
 #endif

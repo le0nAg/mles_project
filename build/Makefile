@@ -259,6 +259,19 @@ processing/fast:
 	$(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/build
 .PHONY : processing/fast
 
+#=============================================================================
+# Target rules for targets named testing
+
+# Build rule for target.
+testing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testing
+.PHONY : testing
+
+# fast build rule for target.
+testing/fast:
+	$(MAKE) $(MAKESILENT) -f lib/testing/CMakeFiles/testing.dir/build.make lib/testing/CMakeFiles/testing.dir/build
+.PHONY : testing/fast
+
 lib/sd_card/ff15/source/ff.o: lib/sd_card/ff15/source/ff.c.o
 .PHONY : lib/sd_card/ff15/source/ff.o
 
@@ -2790,6 +2803,7 @@ help:
 	@echo "... lcd"
 	@echo "... main"
 	@echo "... processing"
+	@echo "... testing"
 	@echo "... lib/sd_card/ff15/source/ff.o"
 	@echo "... lib/sd_card/ff15/source/ff.i"
 	@echo "... lib/sd_card/ff15/source/ff.s"

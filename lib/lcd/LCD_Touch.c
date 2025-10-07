@@ -15,13 +15,22 @@ static TP_DRAW sTP_Draw;
 
 
 // ---- Capture area (the black box) ------------------------------------------
-#define BOX_X0 100
-#define BOX_Y0 50
-#define BOX_X1 380   // right  edge (exclusive in our math)
-#define BOX_Y1 290   // bottom edge (exclusive in our math)
+// #define BOX_X0 100
+// #define BOX_Y0 50
+// #define BOX_X1 380   // right  edge (exclusive in our math)
+// #define BOX_Y1 290   // bottom edge (exclusive in our math)
 
-#define BOX_W (BOX_X1 - BOX_X0)   // 280 -> 280/8 = 35 per row after bit packing
-#define BOX_H (BOX_Y1 - BOX_Y0)   // 240 -> 240/8 = 30 per column after bit packing
+// #define BOX_W (BOX_X1 - BOX_X0)   // 280 -> 280/8 = 35 per row after bit packing
+// #define BOX_H (BOX_Y1 - BOX_Y0)   // 240 -> 240/8 = 30 per column after bit packing
+
+#define BOX_X0 252
+#define BOX_Y0 50
+#define BOX_X1 380   // right edge fixed
+#define BOX_Y1 162   // bottom edge (exclusive in our math)
+
+#define BOX_W (BOX_X1 - BOX_X0)   // 128 -> 128/8 = 16 per row after bit packing
+#define BOX_H (BOX_Y1 - BOX_Y0)   // 112 -> 112/8 = 14 per column after bit packing
+
 
 // Live "shadow" of what has been drawn (0 = empty, 1 = drawn)
 static uint8_t sDrawShadow[BOX_H][BOX_W];
@@ -345,20 +354,28 @@ void TP_Save(void)
         printf("TP_Save: Queued original bitmap write to '%s'\r\n", filename_original);
     } else {
         printf("TP_Save: Failed to queue original bitmap write\r\n");
+        goto user_feedback; // Skip remaining steps on failure
     }
+    int out_w, out_h;
+    simple_crop((uint8_t*)sSavedBitmap, BOX_W, BOX_H, (uint8_t*)sSavedBitmap, &out_w, &out_h);
 
     // Apply edge detection and save morphological bitmap
-    uint8_t* edges = (uint8_t*)malloc(BOX_W * BOX_H);
+    printf("TP_Save: Allocating memory for edge detection (%u bytes)\r\n", 
+           (unsigned)(out_w * out_h));
+
+    uint8_t* edges = (uint8_t*)malloc(out_w * out_h);
     if (!edges) {
-        printf("TP_Save: ERROR - Failed to allocate memory for edge detection\r\n");
-        goto cleanup;
+        printf("TP_Save: ERROR - Failed to allocate %u bytes for edge detection\r\n",
+               (unsigned)(BOX_W * BOX_H));
+        goto user_feedback;
     }
 
+    printf("TP_Save: Running edge detection...\r\n");
     edge_detection((uint8_t*)sSavedBitmap, BOX_W, BOX_H, edges);
 
     #ifdef DEBUG_PRINT
     int edge_count = 0;
-    for (int i = 0; i < BOX_W * BOX_H; i++) {
+    for (int i = 0; i < out_w * out_h; i++) {
         if (edges[i]) edge_count++;
     }
     printf("TP_Save: Edge detection found %d edge pixels\r\n", edge_count);
@@ -367,17 +384,28 @@ void TP_Save(void)
     char filename_morph[64];
     snprintf(filename_morph, sizeof(filename_morph), "/%s.morph.bim", uuid);
 
-    bool res_morph = sd_write_async_packed(edges, BOX_W, BOX_H, filename_morph);
+    bool res_morph = sd_write_async_packed(edges, out_w, out_h, filename_morph);
     if (res_morph) {
         printf("TP_Save: Queued morphological bitmap write to '%s'\r\n", filename_morph);
     } else {
         printf("TP_Save: Failed to queue morphological bitmap write\r\n");
     }
 
+    free(edges);
+    edges = NULL;
+
     // Extract features and save JSON
-    char json_buffer[1024];
-    bool json_success = extract_features_json((uint8_t*)sSavedBitmap, BOX_W, BOX_H, 
-                                               json_buffer, sizeof(json_buffer));
+    printf("TP_Save: Allocating JSON buffer...\r\n");
+    
+    char* json_buffer = (char*)malloc(1024);
+    if (!json_buffer) {
+        printf("TP_Save: ERROR - Failed to allocate JSON buffer\r\n");
+        goto user_feedback;
+    }
+
+    printf("TP_Save: Extracting features...\r\n");
+    bool json_success = extract_features_json((uint8_t*)sSavedBitmap, out_w, out_h, 
+                                               json_buffer, 1024);
     
     if (json_success) {
         #ifdef DEBUG_PRINT
@@ -397,22 +425,18 @@ void TP_Save(void)
         printf("TP_Save: Failed to extract features to JSON\r\n");
     }
 
-cleanup:
-    if (edges) {
-        free(edges);
-    }
+    free(json_buffer);
+    json_buffer = NULL;
 
+    printf("TP_Save: Pipeline complete for UUID %s\r\n", uuid);
+
+user_feedback:
     // ========================================================================
     // User feedback
     // ========================================================================
     GUI_DisString_EN(sLCD_DIS.LCD_Dis_Column - 120, 24,
                      "SAVED", &Font16, BLACK, WHITE);
     
-    printf("TP_Save: Pipeline complete for UUID %s\r\n", uuid);
-    printf("  - Original: %s\r\n", filename_original);
-    printf("  - Morphological: %s\r\n", filename_morph);
-    printf("  - Features: %s.json\r\n", uuid);
-
     // Optional: Print the full image as 0/1 for debugging
     #ifdef DEBUG_PRINT
     printf("TP_Save: Original bitmap dump:\r\n");

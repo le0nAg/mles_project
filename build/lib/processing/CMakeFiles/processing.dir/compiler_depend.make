@@ -35,8 +35,21 @@ lib/processing/CMakeFiles/processing.dir/processing.c.o: /home/mles_project/lib/
   /usr/arm-none-eabi/include/sys/sched.h \
   /usr/arm-none-eabi/include/machine/types.h \
   /usr/arm-none-eabi/include/sys/stdio.h \
+  /usr/arm-none-eabi/include/stdlib.h \
+  /usr/arm-none-eabi/include/machine/stdlib.h \
+  /usr/arm-none-eabi/include/alloca.h \
+  /usr/arm-none-eabi/include/string.h \
+  /usr/arm-none-eabi/include/sys/_locale.h \
+  /usr/arm-none-eabi/include/strings.h \
+  /usr/arm-none-eabi/include/sys/string.h \
   /home/mles_project/lib/processing/processing.h
 
+
+/usr/arm-none-eabi/include/sys/string.h:
+
+/usr/arm-none-eabi/include/string.h:
+
+/usr/arm-none-eabi/include/machine/stdlib.h:
 
 /usr/arm-none-eabi/include/sys/stdio.h:
 
@@ -45,6 +58,8 @@ lib/processing/CMakeFiles/processing.dir/processing.c.o: /home/mles_project/lib/
 /usr/arm-none-eabi/include/sys/sched.h:
 
 /usr/arm-none-eabi/include/sys/_pthreadtypes.h:
+
+/usr/arm-none-eabi/include/alloca.h:
 
 /usr/arm-none-eabi/include/newlib.h:
 
@@ -65,6 +80,8 @@ lib/processing/CMakeFiles/processing.dir/processing.c.o: /home/mles_project/lib/
 /home/mles_project/lib/processing/processing.c:
 
 /usr/arm-none-eabi/include/machine/ieeefp.h:
+
+/usr/arm-none-eabi/include/strings.h:
 
 /usr/arm-none-eabi/include/stdint.h:
 
@@ -94,6 +111,8 @@ lib/processing/CMakeFiles/processing.dir/processing.c.o: /home/mles_project/lib/
 
 /usr/arm-none-eabi/include/sys/_types.h:
 
+/usr/arm-none-eabi/include/stdlib.h:
+
 /usr/arm-none-eabi/include/sys/lock.h:
 
 /usr/arm-none-eabi/include/sys/types.h:
@@ -101,6 +120,8 @@ lib/processing/CMakeFiles/processing.dir/processing.c.o: /home/mles_project/lib/
 /usr/arm-none-eabi/include/machine/endian.h:
 
 /usr/arm-none-eabi/include/machine/_endian.h:
+
+/usr/arm-none-eabi/include/sys/_locale.h:
 
 /usr/arm-none-eabi/include/_ansi.h:
 
