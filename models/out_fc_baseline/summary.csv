@@ -1,0 +1,2 @@
+fc_baseline,keras_size,tflite_size,test_acc,keras_ms,tflite_ms
+fc_baseline,852104,276096,0.976900,41.264683,0.007145
