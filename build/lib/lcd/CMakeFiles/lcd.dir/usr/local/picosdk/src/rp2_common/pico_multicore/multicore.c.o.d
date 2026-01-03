@@ -21,9 +21,9 @@ lib/lcd/CMakeFiles/lcd.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multi
  /usr/local/picosdk/src/common/pico_sync/include/pico/lock_core.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
- /home/mles_project/build/generated/pico_base/pico/version.h \
+ /home/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
+ /home/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \

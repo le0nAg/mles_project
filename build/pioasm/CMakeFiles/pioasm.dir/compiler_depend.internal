@@ -164,7 +164,7 @@ CMakeFiles/pioasm.dir/ada_output.cpp.o
  /usr/include/c++/12.2.1/utility
  /usr/include/c++/12.2.1/bits/stl_relops.h
  /usr/local/picosdk/tools/pioasm/gen/location.h
- /home/mles_project/build/pioasm/version.h
+ /home/build/pioasm/version.h
 
 CMakeFiles/pioasm.dir/c_sdk_output.cpp.o
  /usr/local/picosdk/tools/pioasm/c_sdk_output.cpp
@@ -329,7 +329,7 @@ CMakeFiles/pioasm.dir/c_sdk_output.cpp.o
  /usr/include/c++/12.2.1/utility
  /usr/include/c++/12.2.1/bits/stl_relops.h
  /usr/local/picosdk/tools/pioasm/gen/location.h
- /home/mles_project/build/pioasm/version.h
+ /home/build/pioasm/version.h
 
 CMakeFiles/pioasm.dir/gen/lexer.cpp.o
  /usr/local/picosdk/tools/pioasm/gen/lexer.cpp
@@ -850,7 +850,7 @@ CMakeFiles/pioasm.dir/go_output.cpp.o
  /usr/include/c++/12.2.1/utility
  /usr/include/c++/12.2.1/bits/stl_relops.h
  /usr/local/picosdk/tools/pioasm/gen/location.h
- /home/mles_project/build/pioasm/version.h
+ /home/build/pioasm/version.h
 
 CMakeFiles/pioasm.dir/hex_output.cpp.o
  /usr/local/picosdk/tools/pioasm/hex_output.cpp
@@ -1335,7 +1335,7 @@ CMakeFiles/pioasm.dir/main.cpp.o
  /usr/include/c++/12.2.1/cassert
  /usr/include/assert.h
  /usr/local/picosdk/tools/pioasm/output_format.h
- /home/mles_project/build/pioasm/version.h
+ /home/build/pioasm/version.h
 
 CMakeFiles/pioasm.dir/pio_assembler.cpp.o
  /usr/local/picosdk/tools/pioasm/pio_assembler.cpp
@@ -1855,5 +1855,5 @@ CMakeFiles/pioasm.dir/python_output.cpp.o
  /usr/include/c++/12.2.1/bits/stl_relops.h
  /usr/local/picosdk/tools/pioasm/gen/location.h
  /usr/include/c++/12.2.1/iostream
- /home/mles_project/build/pioasm/version.h
+ /home/build/pioasm/version.h
 

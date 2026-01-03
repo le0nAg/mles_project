@@ -1,6 +1,5 @@
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o: \
- /home/mles_project/lib/sd_card/src/ff_stdio.c \
- /usr/arm-none-eabi/include/errno.h \
+ /home/lib/sd_card/src/ff_stdio.c /usr/arm-none-eabi/include/errno.h \
  /usr/arm-none-eabi/include/sys/errno.h \
  /usr/arm-none-eabi/include/sys/reent.h \
  /usr/arm-none-eabi/include/_ansi.h /usr/arm-none-eabi/include/newlib.h \
@@ -40,11 +39,9 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/ff_stdio.c.o: \
  /usr/arm-none-eabi/include/sys/_locale.h \
  /usr/arm-none-eabi/include/strings.h \
  /usr/arm-none-eabi/include/sys/string.h \
- /home/mles_project/lib/sd_card/include/my_debug.h \
+ /home/lib/sd_card/include/my_debug.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/sys/_intsup.h \
- /home/mles_project/lib/sd_card/include/f_util.h \
- /home/mles_project/lib/sd_card/ff15/source/ff.h \
- /home/mles_project/lib/sd_card/include/ffconf.h \
- /home/mles_project/lib/sd_card/include/ff_stdio.h
+ /home/lib/sd_card/include/f_util.h /home/lib/sd_card/ff15/source/ff.h \
+ /home/lib/sd_card/include/ffconf.h /home/lib/sd_card/include/ff_stdio.h

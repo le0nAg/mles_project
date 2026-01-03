@@ -1,5 +1,5 @@
 lib/processing/CMakeFiles/processing.dir/processing.c.o: \
- /home/mles_project/lib/processing/processing.c \
+ /home/lib/processing/processing.c \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
@@ -38,4 +38,4 @@ lib/processing/CMakeFiles/processing.dir/processing.c.o: \
  /usr/arm-none-eabi/include/sys/_locale.h \
  /usr/arm-none-eabi/include/strings.h \
  /usr/arm-none-eabi/include/sys/string.h \
- /home/mles_project/lib/processing/processing.h
+ /home/lib/processing/processing.h

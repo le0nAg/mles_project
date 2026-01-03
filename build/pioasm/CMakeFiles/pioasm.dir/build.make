@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /usr/local/picosdk/tools/pioasm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mles_project/build/pioasm
+CMAKE_BINARY_DIR = /home/build/pioasm
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pioasm.dir/depend.make
@@ -250,6 +250,6 @@ CMakeFiles/pioasm.dir/clean:
 .PHONY : CMakeFiles/pioasm.dir/clean
 
 CMakeFiles/pioasm.dir/depend:
-	cd /home/mles_project/build/pioasm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /usr/local/picosdk/tools/pioasm /usr/local/picosdk/tools/pioasm /home/mles_project/build/pioasm /home/mles_project/build/pioasm /home/mles_project/build/pioasm/CMakeFiles/pioasm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/build/pioasm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /usr/local/picosdk/tools/pioasm /usr/local/picosdk/tools/pioasm /home/build/pioasm /home/build/pioasm /home/build/pioasm/CMakeFiles/pioasm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pioasm.dir/depend
 

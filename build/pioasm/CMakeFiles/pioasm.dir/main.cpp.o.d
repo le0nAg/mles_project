@@ -132,4 +132,4 @@ CMakeFiles/pioasm.dir/main.cpp.o: \
  /usr/local/picosdk/tools/pioasm/gen/location.h \
  /usr/include/c++/12.2.1/cassert /usr/include/assert.h \
  /usr/local/picosdk/tools/pioasm/output_format.h \
- /home/mles_project/build/pioasm/version.h
+ /home/build/pioasm/version.h

@@ -1,7 +1,6 @@
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o: \
- /home/mles_project/lib/sd_card/src/crash.c \
- /usr/arm-none-eabi/include/string.h /usr/arm-none-eabi/include/_ansi.h \
- /usr/arm-none-eabi/include/newlib.h \
+ /home/lib/sd_card/src/crash.c /usr/arm-none-eabi/include/string.h \
+ /usr/arm-none-eabi/include/_ansi.h /usr/arm-none-eabi/include/newlib.h \
  /usr/arm-none-eabi/include/_newlib_version.h \
  /usr/arm-none-eabi/include/sys/config.h \
  /usr/arm-none-eabi/include/machine/ieeefp.h \
@@ -40,9 +39,9 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o: \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/sys/_intsup.h \
- /home/mles_project/build/generated/pico_base/pico/version.h \
+ /home/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
+ /home/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
@@ -84,12 +83,10 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o: \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /usr/local/picosdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
- /home/mles_project/lib/sd_card/include/crc.h \
- /home/mles_project/lib/sd_card/include/my_debug.h \
+ /home/lib/sd_card/include/crc.h /home/lib/sd_card/include/my_debug.h \
  /usr/arm-none-eabi/include/stdio.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
- /home/mles_project/lib/sd_card/include/my_rtc.h \
- /home/mles_project/lib/sd_card/include/util.h \
+ /home/lib/sd_card/include/my_rtc.h /home/lib/sd_card/include/util.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/RP2040.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/core_cm0plus.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_version.h \
@@ -99,4 +96,4 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crash.c.o: \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/armv7m_mpu.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h \
- /home/mles_project/lib/sd_card/include/crash.h
+ /home/lib/sd_card/include/crash.h

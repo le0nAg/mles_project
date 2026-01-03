@@ -1,5 +1,5 @@
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o: \
- /home/mles_project/lib/sd_card/sd_driver/SPI/sd_spi.c \
+ /home/lib/sd_card/sd_driver/SPI/sd_spi.c \
  /usr/arm-none-eabi/include/inttypes.h \
  /usr/arm-none-eabi/include/newlib.h \
  /usr/arm-none-eabi/include/_newlib_version.h \
@@ -29,9 +29,9 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o: \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/assert.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
  /usr/arm-none-eabi/include/assert.h \
- /home/mles_project/build/generated/pico_base/pico/version.h \
+ /home/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
+ /home/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
@@ -58,8 +58,7 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o: \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/m0plus.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/nvic.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h \
- /home/mles_project/lib/sd_card/include/my_debug.h \
- /usr/arm-none-eabi/include/stdio.h \
+ /home/lib/sd_card/include/my_debug.h /usr/arm-none-eabi/include/stdio.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h \
  /usr/arm-none-eabi/include/sys/types.h \
  /usr/arm-none-eabi/include/machine/endian.h \
@@ -73,7 +72,7 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o: \
  /usr/arm-none-eabi/include/sys/sched.h \
  /usr/arm-none-eabi/include/machine/types.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
- /home/mles_project/lib/sd_card/include/delays.h \
+ /home/lib/sd_card/include/delays.h \
  /usr/local/picosdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /usr/local/picosdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
  /usr/local/picosdk/src/common/pico_time/include/pico/time.h \
@@ -97,7 +96,7 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o: \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/armv7m_mpu.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h \
- /home/mles_project/lib/sd_card/sd_driver/SPI/my_spi.h \
+ /home/lib/sd_card/sd_driver/SPI/my_spi.h \
  /usr/local/picosdk/src/common/pico_sync/include/pico/mutex.h \
  /usr/local/picosdk/src/common/pico_sync/include/pico/lock_core.h \
  /usr/local/picosdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
@@ -109,19 +108,17 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_driver/SPI/sd_spi.c.o: \
  /usr/local/picosdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
- /home/mles_project/lib/sd_card/include/sd_timeouts.h \
- /home/mles_project/lib/sd_card/sd_driver/SPI/sd_spi.h \
- /home/mles_project/lib/sd_card/sd_driver/sd_card.h \
+ /home/lib/sd_card/include/sd_timeouts.h \
+ /home/lib/sd_card/sd_driver/SPI/sd_spi.h \
+ /home/lib/sd_card/sd_driver/sd_card.h \
  /usr/local/picosdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
  /usr/local/picosdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
- /home/mles_project/lib/sd_card/ff15/source/ff.h \
- /home/mles_project/lib/sd_card/include/ffconf.h \
- /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.h \
- /home/mles_project/lib/sd_card/sd_driver/SPI/sd_card_spi.h \
- /home/mles_project/lib/sd_card/ff15/source/diskio.h \
- /home/mles_project/lib/sd_card/ff15/source/ff.h \
- /home/mles_project/lib/sd_card/sd_driver/sd_card_constants.h \
- /home/mles_project/lib/sd_card/sd_driver/sd_regs.h \
- /home/mles_project/lib/sd_card/include/util.h
+ /home/lib/sd_card/ff15/source/ff.h /home/lib/sd_card/include/ffconf.h \
+ /home/lib/sd_card/sd_driver/SDIO/rp2040_sdio.h \
+ /home/lib/sd_card/sd_driver/SPI/sd_card_spi.h \
+ /home/lib/sd_card/ff15/source/diskio.h \
+ /home/lib/sd_card/ff15/source/ff.h \
+ /home/lib/sd_card/sd_driver/sd_card_constants.h \
+ /home/lib/sd_card/sd_driver/sd_regs.h /home/lib/sd_card/include/util.h

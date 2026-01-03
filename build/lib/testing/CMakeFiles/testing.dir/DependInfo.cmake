@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mles_project/lib/testing/testing.c" "lib/testing/CMakeFiles/testing.dir/testing.c.o" "gcc" "lib/testing/CMakeFiles/testing.dir/testing.c.o.d"
+  "/home/lib/testing/testing.c" "lib/testing/CMakeFiles/testing.dir/testing.c.o" "gcc" "lib/testing/CMakeFiles/testing.dir/testing.c.o.d"
   )
 
 # Targets to which this target links.

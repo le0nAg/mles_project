@@ -1,0 +1,17 @@
+{
+  "model": "mcunet_tiny",
+  "early_exit": true,
+  "qat": true,
+  "epochs": 15,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "lr_schedule": "cosine",
+  "optimizer": "adam",
+  "early_exit_weight": 0.3,
+  "label_smoothing": 0.1,
+  "samples_dir": "../samples",
+  "augment_custom": true,
+  "augmentations_per_sample": 10,
+  "custom_weight": 3.0,
+  "output_dir": "checkpoints"
+}

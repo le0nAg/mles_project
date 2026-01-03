@@ -1,5 +1,5 @@
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o: \
- /home/mles_project/lib/sd_card/src/my_debug.c \
+ /home/lib/sd_card/src/my_debug.c \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
@@ -37,9 +37,9 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o: \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/assert.h \
  /usr/arm-none-eabi/include/assert.h \
- /home/mles_project/build/generated/pico_base/pico/version.h \
+ /home/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
+ /home/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
@@ -80,8 +80,7 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o: \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /usr/local/picosdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
- /home/mles_project/lib/sd_card/include/crash.h \
- /usr/arm-none-eabi/include/time.h \
+ /home/lib/sd_card/include/crash.h /usr/arm-none-eabi/include/time.h \
  /usr/arm-none-eabi/include/machine/time.h \
  /usr/arm-none-eabi/include/sys/types.h \
  /usr/arm-none-eabi/include/machine/endian.h \
@@ -94,6 +93,5 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/my_debug.c.o: \
  /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
  /usr/arm-none-eabi/include/sys/sched.h \
  /usr/arm-none-eabi/include/machine/types.h \
- /home/mles_project/lib/sd_card/include/my_debug.h \
- /usr/arm-none-eabi/include/stdio.h \
+ /home/lib/sd_card/include/my_debug.h /usr/arm-none-eabi/include/stdio.h \
  /usr/arm-none-eabi/include/sys/stdio.h

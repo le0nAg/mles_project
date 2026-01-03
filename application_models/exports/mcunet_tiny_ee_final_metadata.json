@@ -1,0 +1,11 @@
+{
+  "model_name": "mcunet_tiny_ee_final",
+  "keras_params": 3858,
+  "float_tflite_size": 20152,
+  "int8_tflite_size": 15552,
+  "float_accuracy": 0.9756243756243757,
+  "int8_accuracy": 0.975024975024975,
+  "float_inference_ms": 0.018880367279052734,
+  "int8_inference_ms": 0.011146068572998047,
+  "export_date": "2026-01-01T19:11:58.602722"
+}

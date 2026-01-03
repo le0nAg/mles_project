@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mles_project
+CMAKE_SOURCE_DIR = /home
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mles_project/build
+CMAKE_BINARY_DIR = /home/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles /home/mles_project/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/build/CMakeFiles /home/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named pin_auth
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+pin_auth: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pin_auth
+.PHONY : pin_auth
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+pin_auth/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/build
+.PHONY : pin_auth/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -285,12 +285,1529 @@ testing/fast:
 	$(MAKE) $(MAKESILENT) -f lib/testing/CMakeFiles/testing.dir/build.make lib/testing/CMakeFiles/testing.dir/build
 .PHONY : testing/fast
 
+#=============================================================================
+# Target rules for targets named pico-tflmicro
+
+# Build rule for target.
+pico-tflmicro: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-tflmicro
+.PHONY : pico-tflmicro
+
+# fast build rule for target.
+pico-tflmicro/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/CMakeFiles/pico-tflmicro.dir/build.make _deps/pico-tflmicro-build/CMakeFiles/pico-tflmicro.dir/build
+.PHONY : pico-tflmicro/fast
+
+#=============================================================================
+# Target rules for targets named pico-tflmicro_test
+
+# Build rule for target.
+pico-tflmicro_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-tflmicro_test
+.PHONY : pico-tflmicro_test
+
+# fast build rule for target.
+pico-tflmicro_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/CMakeFiles/pico-tflmicro_test.dir/build.make _deps/pico-tflmicro-build/CMakeFiles/pico-tflmicro_test.dir/build
+.PHONY : pico-tflmicro_test/fast
+
+#=============================================================================
+# Target rules for targets named hello_world_test
+
+# Build rule for target.
+hello_world_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_world_test
+.PHONY : hello_world_test
+
+# fast build rule for target.
+hello_world_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/examples/hello_world/CMakeFiles/hello_world_test.dir/build.make _deps/pico-tflmicro-build/examples/hello_world/CMakeFiles/hello_world_test.dir/build
+.PHONY : hello_world_test/fast
+
+#=============================================================================
+# Target rules for targets named hello_world
+
+# Build rule for target.
+hello_world: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_world
+.PHONY : hello_world
+
+# fast build rule for target.
+hello_world/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/examples/hello_world/CMakeFiles/hello_world.dir/build.make _deps/pico-tflmicro-build/examples/hello_world/CMakeFiles/hello_world.dir/build
+.PHONY : hello_world/fast
+
+#=============================================================================
+# Target rules for targets named output_handler_test
+
+# Build rule for target.
+output_handler_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 output_handler_test
+.PHONY : output_handler_test
+
+# fast build rule for target.
+output_handler_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/examples/hello_world/CMakeFiles/output_handler_test.dir/build.make _deps/pico-tflmicro-build/examples/hello_world/CMakeFiles/output_handler_test.dir/build
+.PHONY : output_handler_test/fast
+
+#=============================================================================
+# Target rules for targets named detection_responder_test
+
+# Build rule for target.
+detection_responder_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detection_responder_test
+.PHONY : detection_responder_test
+
+# fast build rule for target.
+detection_responder_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/detection_responder_test.dir/build.make _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/detection_responder_test.dir/build
+.PHONY : detection_responder_test/fast
+
+#=============================================================================
+# Target rules for targets named person_detection_benchmark
+
+# Build rule for target.
+person_detection_benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 person_detection_benchmark
+.PHONY : person_detection_benchmark
+
+# fast build rule for target.
+person_detection_benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/person_detection_benchmark.dir/build.make _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/person_detection_benchmark.dir/build
+.PHONY : person_detection_benchmark/fast
+
+#=============================================================================
+# Target rules for targets named person_detection_test
+
+# Build rule for target.
+person_detection_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 person_detection_test
+.PHONY : person_detection_test
+
+# fast build rule for target.
+person_detection_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/person_detection_test.dir/build.make _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/person_detection_test.dir/build
+.PHONY : person_detection_test/fast
+
+#=============================================================================
+# Target rules for targets named person_detection
+
+# Build rule for target.
+person_detection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 person_detection
+.PHONY : person_detection
+
+# fast build rule for target.
+person_detection/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/person_detection.dir/build.make _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/person_detection.dir/build
+.PHONY : person_detection/fast
+
+#=============================================================================
+# Target rules for targets named image_provider_test
+
+# Build rule for target.
+image_provider_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 image_provider_test
+.PHONY : image_provider_test
+
+# fast build rule for target.
+image_provider_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/image_provider_test.dir/build.make _deps/pico-tflmicro-build/examples/person_detection/CMakeFiles/image_provider_test.dir/build
+.PHONY : image_provider_test/fast
+
+#=============================================================================
+# Target rules for targets named arena_allocator_non_persistent_arena_buffer_allocator_test
+
+# Build rule for target.
+arena_allocator_non_persistent_arena_buffer_allocator_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arena_allocator_non_persistent_arena_buffer_allocator_test
+.PHONY : arena_allocator_non_persistent_arena_buffer_allocator_test
+
+# fast build rule for target.
+arena_allocator_non_persistent_arena_buffer_allocator_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/arena_allocator_non_persistent_arena_buffer_allocator_test/CMakeFiles/arena_allocator_non_persistent_arena_buffer_allocator_test.dir/build.make _deps/pico-tflmicro-build/tests/arena_allocator_non_persistent_arena_buffer_allocator_test/CMakeFiles/arena_allocator_non_persistent_arena_buffer_allocator_test.dir/build
+.PHONY : arena_allocator_non_persistent_arena_buffer_allocator_test/fast
+
+#=============================================================================
+# Target rules for targets named arena_allocator_persistent_arena_buffer_allocator_test
+
+# Build rule for target.
+arena_allocator_persistent_arena_buffer_allocator_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arena_allocator_persistent_arena_buffer_allocator_test
+.PHONY : arena_allocator_persistent_arena_buffer_allocator_test
+
+# fast build rule for target.
+arena_allocator_persistent_arena_buffer_allocator_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/arena_allocator_persistent_arena_buffer_allocator_test/CMakeFiles/arena_allocator_persistent_arena_buffer_allocator_test.dir/build.make _deps/pico-tflmicro-build/tests/arena_allocator_persistent_arena_buffer_allocator_test/CMakeFiles/arena_allocator_persistent_arena_buffer_allocator_test.dir/build
+.PHONY : arena_allocator_persistent_arena_buffer_allocator_test/fast
+
+#=============================================================================
+# Target rules for targets named arena_allocator_recording_single_arena_buffer_allocator_test
+
+# Build rule for target.
+arena_allocator_recording_single_arena_buffer_allocator_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arena_allocator_recording_single_arena_buffer_allocator_test
+.PHONY : arena_allocator_recording_single_arena_buffer_allocator_test
+
+# fast build rule for target.
+arena_allocator_recording_single_arena_buffer_allocator_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/arena_allocator_recording_single_arena_buffer_allocator_test/CMakeFiles/arena_allocator_recording_single_arena_buffer_allocator_test.dir/build.make _deps/pico-tflmicro-build/tests/arena_allocator_recording_single_arena_buffer_allocator_test/CMakeFiles/arena_allocator_recording_single_arena_buffer_allocator_test.dir/build
+.PHONY : arena_allocator_recording_single_arena_buffer_allocator_test/fast
+
+#=============================================================================
+# Target rules for targets named arena_allocator_single_arena_buffer_allocator_test
+
+# Build rule for target.
+arena_allocator_single_arena_buffer_allocator_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arena_allocator_single_arena_buffer_allocator_test
+.PHONY : arena_allocator_single_arena_buffer_allocator_test
+
+# fast build rule for target.
+arena_allocator_single_arena_buffer_allocator_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/arena_allocator_single_arena_buffer_allocator_test/CMakeFiles/arena_allocator_single_arena_buffer_allocator_test.dir/build.make _deps/pico-tflmicro-build/tests/arena_allocator_single_arena_buffer_allocator_test/CMakeFiles/arena_allocator_single_arena_buffer_allocator_test.dir/build
+.PHONY : arena_allocator_single_arena_buffer_allocator_test/fast
+
+#=============================================================================
+# Target rules for targets named fake_micro_context_test
+
+# Build rule for target.
+fake_micro_context_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fake_micro_context_test
+.PHONY : fake_micro_context_test
+
+# fast build rule for target.
+fake_micro_context_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/fake_micro_context_test/CMakeFiles/fake_micro_context_test.dir/build.make _deps/pico-tflmicro-build/tests/fake_micro_context_test/CMakeFiles/fake_micro_context_test.dir/build
+.PHONY : fake_micro_context_test/fast
+
+#=============================================================================
+# Target rules for targets named flatbuffer_utils_test
+
+# Build rule for target.
+flatbuffer_utils_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatbuffer_utils_test
+.PHONY : flatbuffer_utils_test
+
+# fast build rule for target.
+flatbuffer_utils_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/flatbuffer_utils_test/CMakeFiles/flatbuffer_utils_test.dir/build.make _deps/pico-tflmicro-build/tests/flatbuffer_utils_test/CMakeFiles/flatbuffer_utils_test.dir/build
+.PHONY : flatbuffer_utils_test/fast
+
+#=============================================================================
+# Target rules for targets named hexdump_test
+
+# Build rule for target.
+hexdump_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hexdump_test
+.PHONY : hexdump_test
+
+# fast build rule for target.
+hexdump_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/hexdump_test/CMakeFiles/hexdump_test.dir/build.make _deps/pico-tflmicro-build/tests/hexdump_test/CMakeFiles/hexdump_test.dir/build
+.PHONY : hexdump_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_activations_test
+
+# Build rule for target.
+kernels_activations_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_activations_test
+.PHONY : kernels_activations_test
+
+# fast build rule for target.
+kernels_activations_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_activations_test/CMakeFiles/kernels_activations_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_activations_test/CMakeFiles/kernels_activations_test.dir/build
+.PHONY : kernels_activations_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_add_n_test
+
+# Build rule for target.
+kernels_add_n_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_add_n_test
+.PHONY : kernels_add_n_test
+
+# fast build rule for target.
+kernels_add_n_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_add_n_test/CMakeFiles/kernels_add_n_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_add_n_test/CMakeFiles/kernels_add_n_test.dir/build
+.PHONY : kernels_add_n_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_add_test
+
+# Build rule for target.
+kernels_add_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_add_test
+.PHONY : kernels_add_test
+
+# fast build rule for target.
+kernels_add_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_add_test/CMakeFiles/kernels_add_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_add_test/CMakeFiles/kernels_add_test.dir/build
+.PHONY : kernels_add_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_arg_min_max_test
+
+# Build rule for target.
+kernels_arg_min_max_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_arg_min_max_test
+.PHONY : kernels_arg_min_max_test
+
+# fast build rule for target.
+kernels_arg_min_max_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_arg_min_max_test/CMakeFiles/kernels_arg_min_max_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_arg_min_max_test/CMakeFiles/kernels_arg_min_max_test.dir/build
+.PHONY : kernels_arg_min_max_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_batch_matmul_test
+
+# Build rule for target.
+kernels_batch_matmul_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_batch_matmul_test
+.PHONY : kernels_batch_matmul_test
+
+# fast build rule for target.
+kernels_batch_matmul_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_batch_matmul_test/CMakeFiles/kernels_batch_matmul_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_batch_matmul_test/CMakeFiles/kernels_batch_matmul_test.dir/build
+.PHONY : kernels_batch_matmul_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_batch_to_space_nd_test
+
+# Build rule for target.
+kernels_batch_to_space_nd_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_batch_to_space_nd_test
+.PHONY : kernels_batch_to_space_nd_test
+
+# fast build rule for target.
+kernels_batch_to_space_nd_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_batch_to_space_nd_test/CMakeFiles/kernels_batch_to_space_nd_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_batch_to_space_nd_test/CMakeFiles/kernels_batch_to_space_nd_test.dir/build
+.PHONY : kernels_batch_to_space_nd_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_broadcast_args_test
+
+# Build rule for target.
+kernels_broadcast_args_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_broadcast_args_test
+.PHONY : kernels_broadcast_args_test
+
+# fast build rule for target.
+kernels_broadcast_args_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_broadcast_args_test/CMakeFiles/kernels_broadcast_args_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_broadcast_args_test/CMakeFiles/kernels_broadcast_args_test.dir/build
+.PHONY : kernels_broadcast_args_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_broadcast_to_test
+
+# Build rule for target.
+kernels_broadcast_to_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_broadcast_to_test
+.PHONY : kernels_broadcast_to_test
+
+# fast build rule for target.
+kernels_broadcast_to_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_broadcast_to_test/CMakeFiles/kernels_broadcast_to_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_broadcast_to_test/CMakeFiles/kernels_broadcast_to_test.dir/build
+.PHONY : kernels_broadcast_to_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_call_once_test
+
+# Build rule for target.
+kernels_call_once_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_call_once_test
+.PHONY : kernels_call_once_test
+
+# fast build rule for target.
+kernels_call_once_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_call_once_test/CMakeFiles/kernels_call_once_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_call_once_test/CMakeFiles/kernels_call_once_test.dir/build
+.PHONY : kernels_call_once_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_cast_test
+
+# Build rule for target.
+kernels_cast_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_cast_test
+.PHONY : kernels_cast_test
+
+# fast build rule for target.
+kernels_cast_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_cast_test/CMakeFiles/kernels_cast_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_cast_test/CMakeFiles/kernels_cast_test.dir/build
+.PHONY : kernels_cast_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_ceil_test
+
+# Build rule for target.
+kernels_ceil_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_ceil_test
+.PHONY : kernels_ceil_test
+
+# fast build rule for target.
+kernels_ceil_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_ceil_test/CMakeFiles/kernels_ceil_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_ceil_test/CMakeFiles/kernels_ceil_test.dir/build
+.PHONY : kernels_ceil_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_circular_buffer_test
+
+# Build rule for target.
+kernels_circular_buffer_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_circular_buffer_test
+.PHONY : kernels_circular_buffer_test
+
+# fast build rule for target.
+kernels_circular_buffer_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_circular_buffer_test/CMakeFiles/kernels_circular_buffer_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_circular_buffer_test/CMakeFiles/kernels_circular_buffer_test.dir/build
+.PHONY : kernels_circular_buffer_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_comparisons_test
+
+# Build rule for target.
+kernels_comparisons_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_comparisons_test
+.PHONY : kernels_comparisons_test
+
+# fast build rule for target.
+kernels_comparisons_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_comparisons_test/CMakeFiles/kernels_comparisons_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_comparisons_test/CMakeFiles/kernels_comparisons_test.dir/build
+.PHONY : kernels_comparisons_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_concatenation_test
+
+# Build rule for target.
+kernels_concatenation_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_concatenation_test
+.PHONY : kernels_concatenation_test
+
+# fast build rule for target.
+kernels_concatenation_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_concatenation_test/CMakeFiles/kernels_concatenation_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_concatenation_test/CMakeFiles/kernels_concatenation_test.dir/build
+.PHONY : kernels_concatenation_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_conv_test
+
+# Build rule for target.
+kernels_conv_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_conv_test
+.PHONY : kernels_conv_test
+
+# fast build rule for target.
+kernels_conv_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_conv_test/CMakeFiles/kernels_conv_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_conv_test/CMakeFiles/kernels_conv_test.dir/build
+.PHONY : kernels_conv_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_cumsum_test
+
+# Build rule for target.
+kernels_cumsum_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_cumsum_test
+.PHONY : kernels_cumsum_test
+
+# fast build rule for target.
+kernels_cumsum_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_cumsum_test/CMakeFiles/kernels_cumsum_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_cumsum_test/CMakeFiles/kernels_cumsum_test.dir/build
+.PHONY : kernels_cumsum_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_decompress_test
+
+# Build rule for target.
+kernels_decompress_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_decompress_test
+.PHONY : kernels_decompress_test
+
+# fast build rule for target.
+kernels_decompress_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_decompress_test/CMakeFiles/kernels_decompress_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_decompress_test/CMakeFiles/kernels_decompress_test.dir/build
+.PHONY : kernels_decompress_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_depth_to_space_test
+
+# Build rule for target.
+kernels_depth_to_space_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_depth_to_space_test
+.PHONY : kernels_depth_to_space_test
+
+# fast build rule for target.
+kernels_depth_to_space_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_depth_to_space_test/CMakeFiles/kernels_depth_to_space_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_depth_to_space_test/CMakeFiles/kernels_depth_to_space_test.dir/build
+.PHONY : kernels_depth_to_space_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_depthwise_conv_test
+
+# Build rule for target.
+kernels_depthwise_conv_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_depthwise_conv_test
+.PHONY : kernels_depthwise_conv_test
+
+# fast build rule for target.
+kernels_depthwise_conv_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_depthwise_conv_test/CMakeFiles/kernels_depthwise_conv_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_depthwise_conv_test/CMakeFiles/kernels_depthwise_conv_test.dir/build
+.PHONY : kernels_depthwise_conv_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_dequantize_test
+
+# Build rule for target.
+kernels_dequantize_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_dequantize_test
+.PHONY : kernels_dequantize_test
+
+# fast build rule for target.
+kernels_dequantize_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_dequantize_test/CMakeFiles/kernels_dequantize_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_dequantize_test/CMakeFiles/kernels_dequantize_test.dir/build
+.PHONY : kernels_dequantize_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_detection_postprocess_test
+
+# Build rule for target.
+kernels_detection_postprocess_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_detection_postprocess_test
+.PHONY : kernels_detection_postprocess_test
+
+# fast build rule for target.
+kernels_detection_postprocess_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_detection_postprocess_test/CMakeFiles/kernels_detection_postprocess_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_detection_postprocess_test/CMakeFiles/kernels_detection_postprocess_test.dir/build
+.PHONY : kernels_detection_postprocess_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_div_test
+
+# Build rule for target.
+kernels_div_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_div_test
+.PHONY : kernels_div_test
+
+# fast build rule for target.
+kernels_div_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_div_test/CMakeFiles/kernels_div_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_div_test/CMakeFiles/kernels_div_test.dir/build
+.PHONY : kernels_div_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_elementwise_test
+
+# Build rule for target.
+kernels_elementwise_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_elementwise_test
+.PHONY : kernels_elementwise_test
+
+# fast build rule for target.
+kernels_elementwise_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_elementwise_test/CMakeFiles/kernels_elementwise_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_elementwise_test/CMakeFiles/kernels_elementwise_test.dir/build
+.PHONY : kernels_elementwise_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_elu_test
+
+# Build rule for target.
+kernels_elu_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_elu_test
+.PHONY : kernels_elu_test
+
+# fast build rule for target.
+kernels_elu_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_elu_test/CMakeFiles/kernels_elu_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_elu_test/CMakeFiles/kernels_elu_test.dir/build
+.PHONY : kernels_elu_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_embedding_lookup_test
+
+# Build rule for target.
+kernels_embedding_lookup_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_embedding_lookup_test
+.PHONY : kernels_embedding_lookup_test
+
+# fast build rule for target.
+kernels_embedding_lookup_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_embedding_lookup_test/CMakeFiles/kernels_embedding_lookup_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_embedding_lookup_test/CMakeFiles/kernels_embedding_lookup_test.dir/build
+.PHONY : kernels_embedding_lookup_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_exp_test
+
+# Build rule for target.
+kernels_exp_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_exp_test
+.PHONY : kernels_exp_test
+
+# fast build rule for target.
+kernels_exp_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_exp_test/CMakeFiles/kernels_exp_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_exp_test/CMakeFiles/kernels_exp_test.dir/build
+.PHONY : kernels_exp_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_expand_dims_test
+
+# Build rule for target.
+kernels_expand_dims_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_expand_dims_test
+.PHONY : kernels_expand_dims_test
+
+# fast build rule for target.
+kernels_expand_dims_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_expand_dims_test/CMakeFiles/kernels_expand_dims_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_expand_dims_test/CMakeFiles/kernels_expand_dims_test.dir/build
+.PHONY : kernels_expand_dims_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_fill_test
+
+# Build rule for target.
+kernels_fill_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_fill_test
+.PHONY : kernels_fill_test
+
+# fast build rule for target.
+kernels_fill_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_fill_test/CMakeFiles/kernels_fill_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_fill_test/CMakeFiles/kernels_fill_test.dir/build
+.PHONY : kernels_fill_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_floor_div_test
+
+# Build rule for target.
+kernels_floor_div_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_floor_div_test
+.PHONY : kernels_floor_div_test
+
+# fast build rule for target.
+kernels_floor_div_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_floor_div_test/CMakeFiles/kernels_floor_div_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_floor_div_test/CMakeFiles/kernels_floor_div_test.dir/build
+.PHONY : kernels_floor_div_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_floor_mod_test
+
+# Build rule for target.
+kernels_floor_mod_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_floor_mod_test
+.PHONY : kernels_floor_mod_test
+
+# fast build rule for target.
+kernels_floor_mod_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_floor_mod_test/CMakeFiles/kernels_floor_mod_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_floor_mod_test/CMakeFiles/kernels_floor_mod_test.dir/build
+.PHONY : kernels_floor_mod_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_floor_test
+
+# Build rule for target.
+kernels_floor_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_floor_test
+.PHONY : kernels_floor_test
+
+# fast build rule for target.
+kernels_floor_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_floor_test/CMakeFiles/kernels_floor_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_floor_test/CMakeFiles/kernels_floor_test.dir/build
+.PHONY : kernels_floor_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_fully_connected_test
+
+# Build rule for target.
+kernels_fully_connected_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_fully_connected_test
+.PHONY : kernels_fully_connected_test
+
+# fast build rule for target.
+kernels_fully_connected_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_fully_connected_test/CMakeFiles/kernels_fully_connected_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_fully_connected_test/CMakeFiles/kernels_fully_connected_test.dir/build
+.PHONY : kernels_fully_connected_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_gather_nd_test
+
+# Build rule for target.
+kernels_gather_nd_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_gather_nd_test
+.PHONY : kernels_gather_nd_test
+
+# fast build rule for target.
+kernels_gather_nd_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_gather_nd_test/CMakeFiles/kernels_gather_nd_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_gather_nd_test/CMakeFiles/kernels_gather_nd_test.dir/build
+.PHONY : kernels_gather_nd_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_gather_test
+
+# Build rule for target.
+kernels_gather_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_gather_test
+.PHONY : kernels_gather_test
+
+# fast build rule for target.
+kernels_gather_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_gather_test/CMakeFiles/kernels_gather_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_gather_test/CMakeFiles/kernels_gather_test.dir/build
+.PHONY : kernels_gather_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_hard_swish_test
+
+# Build rule for target.
+kernels_hard_swish_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_hard_swish_test
+.PHONY : kernels_hard_swish_test
+
+# fast build rule for target.
+kernels_hard_swish_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_hard_swish_test/CMakeFiles/kernels_hard_swish_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_hard_swish_test/CMakeFiles/kernels_hard_swish_test.dir/build
+.PHONY : kernels_hard_swish_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_if_test
+
+# Build rule for target.
+kernels_if_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_if_test
+.PHONY : kernels_if_test
+
+# fast build rule for target.
+kernels_if_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_if_test/CMakeFiles/kernels_if_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_if_test/CMakeFiles/kernels_if_test.dir/build
+.PHONY : kernels_if_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_l2_pool_2d_test
+
+# Build rule for target.
+kernels_l2_pool_2d_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_l2_pool_2d_test
+.PHONY : kernels_l2_pool_2d_test
+
+# fast build rule for target.
+kernels_l2_pool_2d_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_l2_pool_2d_test/CMakeFiles/kernels_l2_pool_2d_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_l2_pool_2d_test/CMakeFiles/kernels_l2_pool_2d_test.dir/build
+.PHONY : kernels_l2_pool_2d_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_l2norm_test
+
+# Build rule for target.
+kernels_l2norm_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_l2norm_test
+.PHONY : kernels_l2norm_test
+
+# fast build rule for target.
+kernels_l2norm_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_l2norm_test/CMakeFiles/kernels_l2norm_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_l2norm_test/CMakeFiles/kernels_l2norm_test.dir/build
+.PHONY : kernels_l2norm_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_leaky_relu_test
+
+# Build rule for target.
+kernels_leaky_relu_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_leaky_relu_test
+.PHONY : kernels_leaky_relu_test
+
+# fast build rule for target.
+kernels_leaky_relu_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_leaky_relu_test/CMakeFiles/kernels_leaky_relu_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_leaky_relu_test/CMakeFiles/kernels_leaky_relu_test.dir/build
+.PHONY : kernels_leaky_relu_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_log_softmax_test
+
+# Build rule for target.
+kernels_log_softmax_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_log_softmax_test
+.PHONY : kernels_log_softmax_test
+
+# fast build rule for target.
+kernels_log_softmax_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_log_softmax_test/CMakeFiles/kernels_log_softmax_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_log_softmax_test/CMakeFiles/kernels_log_softmax_test.dir/build
+.PHONY : kernels_log_softmax_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_logical_test
+
+# Build rule for target.
+kernels_logical_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_logical_test
+.PHONY : kernels_logical_test
+
+# fast build rule for target.
+kernels_logical_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_logical_test/CMakeFiles/kernels_logical_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_logical_test/CMakeFiles/kernels_logical_test.dir/build
+.PHONY : kernels_logical_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_logistic_test
+
+# Build rule for target.
+kernels_logistic_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_logistic_test
+.PHONY : kernels_logistic_test
+
+# fast build rule for target.
+kernels_logistic_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_logistic_test/CMakeFiles/kernels_logistic_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_logistic_test/CMakeFiles/kernels_logistic_test.dir/build
+.PHONY : kernels_logistic_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_lstm_eval_test
+
+# Build rule for target.
+kernels_lstm_eval_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_lstm_eval_test
+.PHONY : kernels_lstm_eval_test
+
+# fast build rule for target.
+kernels_lstm_eval_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_lstm_eval_test/CMakeFiles/kernels_lstm_eval_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_lstm_eval_test/CMakeFiles/kernels_lstm_eval_test.dir/build
+.PHONY : kernels_lstm_eval_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_maximum_minimum_test
+
+# Build rule for target.
+kernels_maximum_minimum_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_maximum_minimum_test
+.PHONY : kernels_maximum_minimum_test
+
+# fast build rule for target.
+kernels_maximum_minimum_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_maximum_minimum_test/CMakeFiles/kernels_maximum_minimum_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_maximum_minimum_test/CMakeFiles/kernels_maximum_minimum_test.dir/build
+.PHONY : kernels_maximum_minimum_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_mirror_pad_test
+
+# Build rule for target.
+kernels_mirror_pad_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_mirror_pad_test
+.PHONY : kernels_mirror_pad_test
+
+# fast build rule for target.
+kernels_mirror_pad_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_mirror_pad_test/CMakeFiles/kernels_mirror_pad_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_mirror_pad_test/CMakeFiles/kernels_mirror_pad_test.dir/build
+.PHONY : kernels_mirror_pad_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_mul_test
+
+# Build rule for target.
+kernels_mul_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_mul_test
+.PHONY : kernels_mul_test
+
+# fast build rule for target.
+kernels_mul_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_mul_test/CMakeFiles/kernels_mul_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_mul_test/CMakeFiles/kernels_mul_test.dir/build
+.PHONY : kernels_mul_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_neg_test
+
+# Build rule for target.
+kernels_neg_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_neg_test
+.PHONY : kernels_neg_test
+
+# fast build rule for target.
+kernels_neg_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_neg_test/CMakeFiles/kernels_neg_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_neg_test/CMakeFiles/kernels_neg_test.dir/build
+.PHONY : kernels_neg_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_pack_test
+
+# Build rule for target.
+kernels_pack_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_pack_test
+.PHONY : kernels_pack_test
+
+# fast build rule for target.
+kernels_pack_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_pack_test/CMakeFiles/kernels_pack_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_pack_test/CMakeFiles/kernels_pack_test.dir/build
+.PHONY : kernels_pack_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_pad_test
+
+# Build rule for target.
+kernels_pad_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_pad_test
+.PHONY : kernels_pad_test
+
+# fast build rule for target.
+kernels_pad_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_pad_test/CMakeFiles/kernels_pad_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_pad_test/CMakeFiles/kernels_pad_test.dir/build
+.PHONY : kernels_pad_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_pooling_test
+
+# Build rule for target.
+kernels_pooling_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_pooling_test
+.PHONY : kernels_pooling_test
+
+# fast build rule for target.
+kernels_pooling_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_pooling_test/CMakeFiles/kernels_pooling_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_pooling_test/CMakeFiles/kernels_pooling_test.dir/build
+.PHONY : kernels_pooling_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_prelu_test
+
+# Build rule for target.
+kernels_prelu_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_prelu_test
+.PHONY : kernels_prelu_test
+
+# fast build rule for target.
+kernels_prelu_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_prelu_test/CMakeFiles/kernels_prelu_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_prelu_test/CMakeFiles/kernels_prelu_test.dir/build
+.PHONY : kernels_prelu_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_quantization_util_test
+
+# Build rule for target.
+kernels_quantization_util_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_quantization_util_test
+.PHONY : kernels_quantization_util_test
+
+# fast build rule for target.
+kernels_quantization_util_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_quantization_util_test/CMakeFiles/kernels_quantization_util_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_quantization_util_test/CMakeFiles/kernels_quantization_util_test.dir/build
+.PHONY : kernels_quantization_util_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_quantize_test
+
+# Build rule for target.
+kernels_quantize_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_quantize_test
+.PHONY : kernels_quantize_test
+
+# fast build rule for target.
+kernels_quantize_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_quantize_test/CMakeFiles/kernels_quantize_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_quantize_test/CMakeFiles/kernels_quantize_test.dir/build
+.PHONY : kernels_quantize_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_reduce_test
+
+# Build rule for target.
+kernels_reduce_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_reduce_test
+.PHONY : kernels_reduce_test
+
+# fast build rule for target.
+kernels_reduce_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_reduce_test/CMakeFiles/kernels_reduce_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_reduce_test/CMakeFiles/kernels_reduce_test.dir/build
+.PHONY : kernels_reduce_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_reshape_test
+
+# Build rule for target.
+kernels_reshape_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_reshape_test
+.PHONY : kernels_reshape_test
+
+# fast build rule for target.
+kernels_reshape_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_reshape_test/CMakeFiles/kernels_reshape_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_reshape_test/CMakeFiles/kernels_reshape_test.dir/build
+.PHONY : kernels_reshape_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_resize_bilinear_test
+
+# Build rule for target.
+kernels_resize_bilinear_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_resize_bilinear_test
+.PHONY : kernels_resize_bilinear_test
+
+# fast build rule for target.
+kernels_resize_bilinear_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_resize_bilinear_test/CMakeFiles/kernels_resize_bilinear_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_resize_bilinear_test/CMakeFiles/kernels_resize_bilinear_test.dir/build
+.PHONY : kernels_resize_bilinear_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_resize_nearest_neighbor_test
+
+# Build rule for target.
+kernels_resize_nearest_neighbor_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_resize_nearest_neighbor_test
+.PHONY : kernels_resize_nearest_neighbor_test
+
+# fast build rule for target.
+kernels_resize_nearest_neighbor_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_resize_nearest_neighbor_test/CMakeFiles/kernels_resize_nearest_neighbor_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_resize_nearest_neighbor_test/CMakeFiles/kernels_resize_nearest_neighbor_test.dir/build
+.PHONY : kernels_resize_nearest_neighbor_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_round_test
+
+# Build rule for target.
+kernels_round_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_round_test
+.PHONY : kernels_round_test
+
+# fast build rule for target.
+kernels_round_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_round_test/CMakeFiles/kernels_round_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_round_test/CMakeFiles/kernels_round_test.dir/build
+.PHONY : kernels_round_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_select_test
+
+# Build rule for target.
+kernels_select_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_select_test
+.PHONY : kernels_select_test
+
+# fast build rule for target.
+kernels_select_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_select_test/CMakeFiles/kernels_select_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_select_test/CMakeFiles/kernels_select_test.dir/build
+.PHONY : kernels_select_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_shape_test
+
+# Build rule for target.
+kernels_shape_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_shape_test
+.PHONY : kernels_shape_test
+
+# fast build rule for target.
+kernels_shape_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_shape_test/CMakeFiles/kernels_shape_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_shape_test/CMakeFiles/kernels_shape_test.dir/build
+.PHONY : kernels_shape_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_slice_test
+
+# Build rule for target.
+kernels_slice_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_slice_test
+.PHONY : kernels_slice_test
+
+# fast build rule for target.
+kernels_slice_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_slice_test/CMakeFiles/kernels_slice_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_slice_test/CMakeFiles/kernels_slice_test.dir/build
+.PHONY : kernels_slice_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_softmax_test
+
+# Build rule for target.
+kernels_softmax_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_softmax_test
+.PHONY : kernels_softmax_test
+
+# fast build rule for target.
+kernels_softmax_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_softmax_test/CMakeFiles/kernels_softmax_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_softmax_test/CMakeFiles/kernels_softmax_test.dir/build
+.PHONY : kernels_softmax_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_space_to_batch_nd_test
+
+# Build rule for target.
+kernels_space_to_batch_nd_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_space_to_batch_nd_test
+.PHONY : kernels_space_to_batch_nd_test
+
+# fast build rule for target.
+kernels_space_to_batch_nd_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_space_to_batch_nd_test/CMakeFiles/kernels_space_to_batch_nd_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_space_to_batch_nd_test/CMakeFiles/kernels_space_to_batch_nd_test.dir/build
+.PHONY : kernels_space_to_batch_nd_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_space_to_depth_test
+
+# Build rule for target.
+kernels_space_to_depth_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_space_to_depth_test
+.PHONY : kernels_space_to_depth_test
+
+# fast build rule for target.
+kernels_space_to_depth_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_space_to_depth_test/CMakeFiles/kernels_space_to_depth_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_space_to_depth_test/CMakeFiles/kernels_space_to_depth_test.dir/build
+.PHONY : kernels_space_to_depth_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_split_test
+
+# Build rule for target.
+kernels_split_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_split_test
+.PHONY : kernels_split_test
+
+# fast build rule for target.
+kernels_split_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_split_test/CMakeFiles/kernels_split_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_split_test/CMakeFiles/kernels_split_test.dir/build
+.PHONY : kernels_split_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_split_v_test
+
+# Build rule for target.
+kernels_split_v_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_split_v_test
+.PHONY : kernels_split_v_test
+
+# fast build rule for target.
+kernels_split_v_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_split_v_test/CMakeFiles/kernels_split_v_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_split_v_test/CMakeFiles/kernels_split_v_test.dir/build
+.PHONY : kernels_split_v_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_squared_difference_test
+
+# Build rule for target.
+kernels_squared_difference_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_squared_difference_test
+.PHONY : kernels_squared_difference_test
+
+# fast build rule for target.
+kernels_squared_difference_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_squared_difference_test/CMakeFiles/kernels_squared_difference_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_squared_difference_test/CMakeFiles/kernels_squared_difference_test.dir/build
+.PHONY : kernels_squared_difference_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_squeeze_test
+
+# Build rule for target.
+kernels_squeeze_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_squeeze_test
+.PHONY : kernels_squeeze_test
+
+# fast build rule for target.
+kernels_squeeze_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_squeeze_test/CMakeFiles/kernels_squeeze_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_squeeze_test/CMakeFiles/kernels_squeeze_test.dir/build
+.PHONY : kernels_squeeze_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_strided_slice_test
+
+# Build rule for target.
+kernels_strided_slice_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_strided_slice_test
+.PHONY : kernels_strided_slice_test
+
+# fast build rule for target.
+kernels_strided_slice_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_strided_slice_test/CMakeFiles/kernels_strided_slice_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_strided_slice_test/CMakeFiles/kernels_strided_slice_test.dir/build
+.PHONY : kernels_strided_slice_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_sub_test
+
+# Build rule for target.
+kernels_sub_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_sub_test
+.PHONY : kernels_sub_test
+
+# fast build rule for target.
+kernels_sub_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_sub_test/CMakeFiles/kernels_sub_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_sub_test/CMakeFiles/kernels_sub_test.dir/build
+.PHONY : kernels_sub_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_svdf_test
+
+# Build rule for target.
+kernels_svdf_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_svdf_test
+.PHONY : kernels_svdf_test
+
+# fast build rule for target.
+kernels_svdf_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_svdf_test/CMakeFiles/kernels_svdf_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_svdf_test/CMakeFiles/kernels_svdf_test.dir/build
+.PHONY : kernels_svdf_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_tanh_test
+
+# Build rule for target.
+kernels_tanh_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_tanh_test
+.PHONY : kernels_tanh_test
+
+# fast build rule for target.
+kernels_tanh_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_tanh_test/CMakeFiles/kernels_tanh_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_tanh_test/CMakeFiles/kernels_tanh_test.dir/build
+.PHONY : kernels_tanh_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_transpose_conv_test
+
+# Build rule for target.
+kernels_transpose_conv_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_transpose_conv_test
+.PHONY : kernels_transpose_conv_test
+
+# fast build rule for target.
+kernels_transpose_conv_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_transpose_conv_test/CMakeFiles/kernels_transpose_conv_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_transpose_conv_test/CMakeFiles/kernels_transpose_conv_test.dir/build
+.PHONY : kernels_transpose_conv_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_transpose_test
+
+# Build rule for target.
+kernels_transpose_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_transpose_test
+.PHONY : kernels_transpose_test
+
+# fast build rule for target.
+kernels_transpose_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_transpose_test/CMakeFiles/kernels_transpose_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_transpose_test/CMakeFiles/kernels_transpose_test.dir/build
+.PHONY : kernels_transpose_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_unidirectional_sequence_lstm_test
+
+# Build rule for target.
+kernels_unidirectional_sequence_lstm_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_unidirectional_sequence_lstm_test
+.PHONY : kernels_unidirectional_sequence_lstm_test
+
+# fast build rule for target.
+kernels_unidirectional_sequence_lstm_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_unidirectional_sequence_lstm_test/CMakeFiles/kernels_unidirectional_sequence_lstm_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_unidirectional_sequence_lstm_test/CMakeFiles/kernels_unidirectional_sequence_lstm_test.dir/build
+.PHONY : kernels_unidirectional_sequence_lstm_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_unpack_test
+
+# Build rule for target.
+kernels_unpack_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_unpack_test
+.PHONY : kernels_unpack_test
+
+# fast build rule for target.
+kernels_unpack_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_unpack_test/CMakeFiles/kernels_unpack_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_unpack_test/CMakeFiles/kernels_unpack_test.dir/build
+.PHONY : kernels_unpack_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_while_test
+
+# Build rule for target.
+kernels_while_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_while_test
+.PHONY : kernels_while_test
+
+# fast build rule for target.
+kernels_while_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_while_test/CMakeFiles/kernels_while_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_while_test/CMakeFiles/kernels_while_test.dir/build
+.PHONY : kernels_while_test/fast
+
+#=============================================================================
+# Target rules for targets named kernels_zeros_like_test
+
+# Build rule for target.
+kernels_zeros_like_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernels_zeros_like_test
+.PHONY : kernels_zeros_like_test
+
+# fast build rule for target.
+kernels_zeros_like_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/kernels_zeros_like_test/CMakeFiles/kernels_zeros_like_test.dir/build.make _deps/pico-tflmicro-build/tests/kernels_zeros_like_test/CMakeFiles/kernels_zeros_like_test.dir/build
+.PHONY : kernels_zeros_like_test/fast
+
+#=============================================================================
+# Target rules for targets named memory_arena_threshold_test
+
+# Build rule for target.
+memory_arena_threshold_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory_arena_threshold_test
+.PHONY : memory_arena_threshold_test
+
+# fast build rule for target.
+memory_arena_threshold_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/build.make _deps/pico-tflmicro-build/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/build
+.PHONY : memory_arena_threshold_test/fast
+
+#=============================================================================
+# Target rules for targets named memory_helpers_test
+
+# Build rule for target.
+memory_helpers_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory_helpers_test
+.PHONY : memory_helpers_test
+
+# fast build rule for target.
+memory_helpers_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/build.make _deps/pico-tflmicro-build/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/build
+.PHONY : memory_helpers_test/fast
+
+#=============================================================================
+# Target rules for targets named memory_planner_greedy_memory_planner_test
+
+# Build rule for target.
+memory_planner_greedy_memory_planner_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory_planner_greedy_memory_planner_test
+.PHONY : memory_planner_greedy_memory_planner_test
+
+# fast build rule for target.
+memory_planner_greedy_memory_planner_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/memory_planner_greedy_memory_planner_test/CMakeFiles/memory_planner_greedy_memory_planner_test.dir/build.make _deps/pico-tflmicro-build/tests/memory_planner_greedy_memory_planner_test/CMakeFiles/memory_planner_greedy_memory_planner_test.dir/build
+.PHONY : memory_planner_greedy_memory_planner_test/fast
+
+#=============================================================================
+# Target rules for targets named memory_planner_linear_memory_planner_test
+
+# Build rule for target.
+memory_planner_linear_memory_planner_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory_planner_linear_memory_planner_test
+.PHONY : memory_planner_linear_memory_planner_test
+
+# fast build rule for target.
+memory_planner_linear_memory_planner_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/memory_planner_linear_memory_planner_test/CMakeFiles/memory_planner_linear_memory_planner_test.dir/build.make _deps/pico-tflmicro-build/tests/memory_planner_linear_memory_planner_test/CMakeFiles/memory_planner_linear_memory_planner_test.dir/build
+.PHONY : memory_planner_linear_memory_planner_test/fast
+
+#=============================================================================
+# Target rules for targets named memory_planner_non_persistent_buffer_planner_shim_test
+
+# Build rule for target.
+memory_planner_non_persistent_buffer_planner_shim_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory_planner_non_persistent_buffer_planner_shim_test
+.PHONY : memory_planner_non_persistent_buffer_planner_shim_test
+
+# fast build rule for target.
+memory_planner_non_persistent_buffer_planner_shim_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/memory_planner_non_persistent_buffer_planner_shim_test/CMakeFiles/memory_planner_non_persistent_buffer_planner_shim_test.dir/build.make _deps/pico-tflmicro-build/tests/memory_planner_non_persistent_buffer_planner_shim_test/CMakeFiles/memory_planner_non_persistent_buffer_planner_shim_test.dir/build
+.PHONY : memory_planner_non_persistent_buffer_planner_shim_test/fast
+
+#=============================================================================
+# Target rules for targets named micro_allocation_info_test
+
+# Build rule for target.
+micro_allocation_info_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 micro_allocation_info_test
+.PHONY : micro_allocation_info_test
+
+# fast build rule for target.
+micro_allocation_info_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/micro_allocation_info_test/CMakeFiles/micro_allocation_info_test.dir/build.make _deps/pico-tflmicro-build/tests/micro_allocation_info_test/CMakeFiles/micro_allocation_info_test.dir/build
+.PHONY : micro_allocation_info_test/fast
+
+#=============================================================================
+# Target rules for targets named micro_allocator_test
+
+# Build rule for target.
+micro_allocator_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 micro_allocator_test
+.PHONY : micro_allocator_test
+
+# fast build rule for target.
+micro_allocator_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/build.make _deps/pico-tflmicro-build/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/build
+.PHONY : micro_allocator_test/fast
+
+#=============================================================================
+# Target rules for targets named micro_interpreter_context_test
+
+# Build rule for target.
+micro_interpreter_context_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 micro_interpreter_context_test
+.PHONY : micro_interpreter_context_test
+
+# fast build rule for target.
+micro_interpreter_context_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/micro_interpreter_context_test/CMakeFiles/micro_interpreter_context_test.dir/build.make _deps/pico-tflmicro-build/tests/micro_interpreter_context_test/CMakeFiles/micro_interpreter_context_test.dir/build
+.PHONY : micro_interpreter_context_test/fast
+
+#=============================================================================
+# Target rules for targets named micro_log_test
+
+# Build rule for target.
+micro_log_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 micro_log_test
+.PHONY : micro_log_test
+
+# fast build rule for target.
+micro_log_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/micro_log_test/CMakeFiles/micro_log_test.dir/build.make _deps/pico-tflmicro-build/tests/micro_log_test/CMakeFiles/micro_log_test.dir/build
+.PHONY : micro_log_test/fast
+
+#=============================================================================
+# Target rules for targets named micro_mutable_op_resolver_test
+
+# Build rule for target.
+micro_mutable_op_resolver_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 micro_mutable_op_resolver_test
+.PHONY : micro_mutable_op_resolver_test
+
+# fast build rule for target.
+micro_mutable_op_resolver_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/build.make _deps/pico-tflmicro-build/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/build
+.PHONY : micro_mutable_op_resolver_test/fast
+
+#=============================================================================
+# Target rules for targets named micro_resource_variable_test
+
+# Build rule for target.
+micro_resource_variable_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 micro_resource_variable_test
+.PHONY : micro_resource_variable_test
+
+# fast build rule for target.
+micro_resource_variable_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/micro_resource_variable_test/CMakeFiles/micro_resource_variable_test.dir/build.make _deps/pico-tflmicro-build/tests/micro_resource_variable_test/CMakeFiles/micro_resource_variable_test.dir/build
+.PHONY : micro_resource_variable_test/fast
+
+#=============================================================================
+# Target rules for targets named micro_time_test
+
+# Build rule for target.
+micro_time_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 micro_time_test
+.PHONY : micro_time_test
+
+# fast build rule for target.
+micro_time_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/micro_time_test/CMakeFiles/micro_time_test.dir/build.make _deps/pico-tflmicro-build/tests/micro_time_test/CMakeFiles/micro_time_test.dir/build
+.PHONY : micro_time_test/fast
+
+#=============================================================================
+# Target rules for targets named micro_utils_test
+
+# Build rule for target.
+micro_utils_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 micro_utils_test
+.PHONY : micro_utils_test
+
+# fast build rule for target.
+micro_utils_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/build.make _deps/pico-tflmicro-build/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/build
+.PHONY : micro_utils_test/fast
+
+#=============================================================================
+# Target rules for targets named recording_micro_allocator_test
+
+# Build rule for target.
+recording_micro_allocator_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recording_micro_allocator_test
+.PHONY : recording_micro_allocator_test
+
+# fast build rule for target.
+recording_micro_allocator_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/recording_micro_allocator_test/CMakeFiles/recording_micro_allocator_test.dir/build.make _deps/pico-tflmicro-build/tests/recording_micro_allocator_test/CMakeFiles/recording_micro_allocator_test.dir/build
+.PHONY : recording_micro_allocator_test/fast
+
+#=============================================================================
+# Target rules for targets named span_test
+
+# Build rule for target.
+span_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 span_test
+.PHONY : span_test
+
+# fast build rule for target.
+span_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/span_test/CMakeFiles/span_test.dir/build.make _deps/pico-tflmicro-build/tests/span_test/CMakeFiles/span_test.dir/build
+.PHONY : span_test/fast
+
+#=============================================================================
+# Target rules for targets named static_vector_test
+
+# Build rule for target.
+static_vector_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 static_vector_test
+.PHONY : static_vector_test
+
+# fast build rule for target.
+static_vector_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/static_vector_test/CMakeFiles/static_vector_test.dir/build.make _deps/pico-tflmicro-build/tests/static_vector_test/CMakeFiles/static_vector_test.dir/build
+.PHONY : static_vector_test/fast
+
+#=============================================================================
+# Target rules for targets named testing_helpers_test
+
+# Build rule for target.
+testing_helpers_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testing_helpers_test
+.PHONY : testing_helpers_test
+
+# fast build rule for target.
+testing_helpers_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/testing_helpers_test/CMakeFiles/testing_helpers_test.dir/build.make _deps/pico-tflmicro-build/tests/testing_helpers_test/CMakeFiles/testing_helpers_test.dir/build
+.PHONY : testing_helpers_test/fast
+
+#=============================================================================
+# Target rules for targets named testing_util_test
+
+# Build rule for target.
+testing_util_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testing_util_test
+.PHONY : testing_util_test
+
+# fast build rule for target.
+testing_util_test/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/pico-tflmicro-build/tests/testing_util_test/CMakeFiles/testing_util_test.dir/build.make _deps/pico-tflmicro-build/tests/testing_util_test/CMakeFiles/testing_util_test.dir/build
+.PHONY : testing_util_test/fast
+
+lib/auth_ui/pin_auth_ui.o: lib/auth_ui/pin_auth_ui.c.o
+.PHONY : lib/auth_ui/pin_auth_ui.o
+
+# target to build an object file
+lib/auth_ui/pin_auth_ui.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/auth_ui/pin_auth_ui.c.o
+.PHONY : lib/auth_ui/pin_auth_ui.c.o
+
+lib/auth_ui/pin_auth_ui.i: lib/auth_ui/pin_auth_ui.c.i
+.PHONY : lib/auth_ui/pin_auth_ui.i
+
+# target to preprocess a source file
+lib/auth_ui/pin_auth_ui.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/auth_ui/pin_auth_ui.c.i
+.PHONY : lib/auth_ui/pin_auth_ui.c.i
+
+lib/auth_ui/pin_auth_ui.s: lib/auth_ui/pin_auth_ui.c.s
+.PHONY : lib/auth_ui/pin_auth_ui.s
+
+# target to generate assembly for a file
+lib/auth_ui/pin_auth_ui.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/auth_ui/pin_auth_ui.c.s
+.PHONY : lib/auth_ui/pin_auth_ui.c.s
+
+lib/ml/digit_inference.o: lib/ml/digit_inference.cc.o
+.PHONY : lib/ml/digit_inference.o
+
+# target to build an object file
+lib/ml/digit_inference.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/ml/digit_inference.cc.o
+.PHONY : lib/ml/digit_inference.cc.o
+
+lib/ml/digit_inference.i: lib/ml/digit_inference.cc.i
+.PHONY : lib/ml/digit_inference.i
+
+# target to preprocess a source file
+lib/ml/digit_inference.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/ml/digit_inference.cc.i
+.PHONY : lib/ml/digit_inference.cc.i
+
+lib/ml/digit_inference.s: lib/ml/digit_inference.cc.s
+.PHONY : lib/ml/digit_inference.s
+
+# target to generate assembly for a file
+lib/ml/digit_inference.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/ml/digit_inference.cc.s
+.PHONY : lib/ml/digit_inference.cc.s
+
 lib/sd_card/ff15/source/ff.o: lib/sd_card/ff15/source/ff.c.o
 .PHONY : lib/sd_card/ff15/source/ff.o
 
 # target to build an object file
 lib/sd_card/ff15/source/ff.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ff.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/ff15/source/ff.c.o
 .PHONY : lib/sd_card/ff15/source/ff.c.o
 
 lib/sd_card/ff15/source/ff.i: lib/sd_card/ff15/source/ff.c.i
@@ -298,7 +1815,7 @@ lib/sd_card/ff15/source/ff.i: lib/sd_card/ff15/source/ff.c.i
 
 # target to preprocess a source file
 lib/sd_card/ff15/source/ff.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ff.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/ff15/source/ff.c.i
 .PHONY : lib/sd_card/ff15/source/ff.c.i
 
 lib/sd_card/ff15/source/ff.s: lib/sd_card/ff15/source/ff.c.s
@@ -306,7 +1823,7 @@ lib/sd_card/ff15/source/ff.s: lib/sd_card/ff15/source/ff.c.s
 
 # target to generate assembly for a file
 lib/sd_card/ff15/source/ff.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ff.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/ff15/source/ff.c.s
 .PHONY : lib/sd_card/ff15/source/ff.c.s
 
 lib/sd_card/ff15/source/ffsystem.o: lib/sd_card/ff15/source/ffsystem.c.o
@@ -314,7 +1831,7 @@ lib/sd_card/ff15/source/ffsystem.o: lib/sd_card/ff15/source/ffsystem.c.o
 
 # target to build an object file
 lib/sd_card/ff15/source/ffsystem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffsystem.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/ff15/source/ffsystem.c.o
 .PHONY : lib/sd_card/ff15/source/ffsystem.c.o
 
 lib/sd_card/ff15/source/ffsystem.i: lib/sd_card/ff15/source/ffsystem.c.i
@@ -322,7 +1839,7 @@ lib/sd_card/ff15/source/ffsystem.i: lib/sd_card/ff15/source/ffsystem.c.i
 
 # target to preprocess a source file
 lib/sd_card/ff15/source/ffsystem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffsystem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/ff15/source/ffsystem.c.i
 .PHONY : lib/sd_card/ff15/source/ffsystem.c.i
 
 lib/sd_card/ff15/source/ffsystem.s: lib/sd_card/ff15/source/ffsystem.c.s
@@ -330,7 +1847,7 @@ lib/sd_card/ff15/source/ffsystem.s: lib/sd_card/ff15/source/ffsystem.c.s
 
 # target to generate assembly for a file
 lib/sd_card/ff15/source/ffsystem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffsystem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/ff15/source/ffsystem.c.s
 .PHONY : lib/sd_card/ff15/source/ffsystem.c.s
 
 lib/sd_card/ff15/source/ffunicode.o: lib/sd_card/ff15/source/ffunicode.c.o
@@ -338,7 +1855,7 @@ lib/sd_card/ff15/source/ffunicode.o: lib/sd_card/ff15/source/ffunicode.c.o
 
 # target to build an object file
 lib/sd_card/ff15/source/ffunicode.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffunicode.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/ff15/source/ffunicode.c.o
 .PHONY : lib/sd_card/ff15/source/ffunicode.c.o
 
 lib/sd_card/ff15/source/ffunicode.i: lib/sd_card/ff15/source/ffunicode.c.i
@@ -346,7 +1863,7 @@ lib/sd_card/ff15/source/ffunicode.i: lib/sd_card/ff15/source/ffunicode.c.i
 
 # target to preprocess a source file
 lib/sd_card/ff15/source/ffunicode.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffunicode.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/ff15/source/ffunicode.c.i
 .PHONY : lib/sd_card/ff15/source/ffunicode.c.i
 
 lib/sd_card/ff15/source/ffunicode.s: lib/sd_card/ff15/source/ffunicode.c.s
@@ -354,7 +1871,7 @@ lib/sd_card/ff15/source/ffunicode.s: lib/sd_card/ff15/source/ffunicode.c.s
 
 # target to generate assembly for a file
 lib/sd_card/ff15/source/ffunicode.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/ff15/source/ffunicode.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/ff15/source/ffunicode.c.s
 .PHONY : lib/sd_card/ff15/source/ffunicode.c.s
 
 lib/sd_card/sd_driver/SDIO/rp2040_sdio.o: lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.o
@@ -362,7 +1879,7 @@ lib/sd_card/sd_driver/SDIO/rp2040_sdio.o: lib/sd_card/sd_driver/SDIO/rp2040_sdio
 
 # target to build an object file
 lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.o
 .PHONY : lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.o
 
 lib/sd_card/sd_driver/SDIO/rp2040_sdio.i: lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.i
@@ -370,7 +1887,7 @@ lib/sd_card/sd_driver/SDIO/rp2040_sdio.i: lib/sd_card/sd_driver/SDIO/rp2040_sdio
 
 # target to preprocess a source file
 lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.i
 .PHONY : lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.i
 
 lib/sd_card/sd_driver/SDIO/rp2040_sdio.s: lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.s
@@ -378,7 +1895,7 @@ lib/sd_card/sd_driver/SDIO/rp2040_sdio.s: lib/sd_card/sd_driver/SDIO/rp2040_sdio
 
 # target to generate assembly for a file
 lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.s
 .PHONY : lib/sd_card/sd_driver/SDIO/rp2040_sdio.c.s
 
 lib/sd_card/sd_driver/SDIO/sd_card_sdio.o: lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.o
@@ -386,7 +1903,7 @@ lib/sd_card/sd_driver/SDIO/sd_card_sdio.o: lib/sd_card/sd_driver/SDIO/sd_card_sd
 
 # target to build an object file
 lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.o
 .PHONY : lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.o
 
 lib/sd_card/sd_driver/SDIO/sd_card_sdio.i: lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.i
@@ -394,7 +1911,7 @@ lib/sd_card/sd_driver/SDIO/sd_card_sdio.i: lib/sd_card/sd_driver/SDIO/sd_card_sd
 
 # target to preprocess a source file
 lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.i
 .PHONY : lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.i
 
 lib/sd_card/sd_driver/SDIO/sd_card_sdio.s: lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.s
@@ -402,7 +1919,7 @@ lib/sd_card/sd_driver/SDIO/sd_card_sdio.s: lib/sd_card/sd_driver/SDIO/sd_card_sd
 
 # target to generate assembly for a file
 lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.s
 .PHONY : lib/sd_card/sd_driver/SDIO/sd_card_sdio.c.s
 
 lib/sd_card/sd_driver/SPI/my_spi.o: lib/sd_card/sd_driver/SPI/my_spi.c.o
@@ -410,7 +1927,7 @@ lib/sd_card/sd_driver/SPI/my_spi.o: lib/sd_card/sd_driver/SPI/my_spi.c.o
 
 # target to build an object file
 lib/sd_card/sd_driver/SPI/my_spi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/my_spi.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SPI/my_spi.c.o
 .PHONY : lib/sd_card/sd_driver/SPI/my_spi.c.o
 
 lib/sd_card/sd_driver/SPI/my_spi.i: lib/sd_card/sd_driver/SPI/my_spi.c.i
@@ -418,7 +1935,7 @@ lib/sd_card/sd_driver/SPI/my_spi.i: lib/sd_card/sd_driver/SPI/my_spi.c.i
 
 # target to preprocess a source file
 lib/sd_card/sd_driver/SPI/my_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/my_spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SPI/my_spi.c.i
 .PHONY : lib/sd_card/sd_driver/SPI/my_spi.c.i
 
 lib/sd_card/sd_driver/SPI/my_spi.s: lib/sd_card/sd_driver/SPI/my_spi.c.s
@@ -426,7 +1943,7 @@ lib/sd_card/sd_driver/SPI/my_spi.s: lib/sd_card/sd_driver/SPI/my_spi.c.s
 
 # target to generate assembly for a file
 lib/sd_card/sd_driver/SPI/my_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/my_spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SPI/my_spi.c.s
 .PHONY : lib/sd_card/sd_driver/SPI/my_spi.c.s
 
 lib/sd_card/sd_driver/SPI/sd_card_spi.o: lib/sd_card/sd_driver/SPI/sd_card_spi.c.o
@@ -434,7 +1951,7 @@ lib/sd_card/sd_driver/SPI/sd_card_spi.o: lib/sd_card/sd_driver/SPI/sd_card_spi.c
 
 # target to build an object file
 lib/sd_card/sd_driver/SPI/sd_card_spi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_card_spi.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SPI/sd_card_spi.c.o
 .PHONY : lib/sd_card/sd_driver/SPI/sd_card_spi.c.o
 
 lib/sd_card/sd_driver/SPI/sd_card_spi.i: lib/sd_card/sd_driver/SPI/sd_card_spi.c.i
@@ -442,7 +1959,7 @@ lib/sd_card/sd_driver/SPI/sd_card_spi.i: lib/sd_card/sd_driver/SPI/sd_card_spi.c
 
 # target to preprocess a source file
 lib/sd_card/sd_driver/SPI/sd_card_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_card_spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SPI/sd_card_spi.c.i
 .PHONY : lib/sd_card/sd_driver/SPI/sd_card_spi.c.i
 
 lib/sd_card/sd_driver/SPI/sd_card_spi.s: lib/sd_card/sd_driver/SPI/sd_card_spi.c.s
@@ -450,7 +1967,7 @@ lib/sd_card/sd_driver/SPI/sd_card_spi.s: lib/sd_card/sd_driver/SPI/sd_card_spi.c
 
 # target to generate assembly for a file
 lib/sd_card/sd_driver/SPI/sd_card_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_card_spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SPI/sd_card_spi.c.s
 .PHONY : lib/sd_card/sd_driver/SPI/sd_card_spi.c.s
 
 lib/sd_card/sd_driver/SPI/sd_spi.o: lib/sd_card/sd_driver/SPI/sd_spi.c.o
@@ -458,7 +1975,7 @@ lib/sd_card/sd_driver/SPI/sd_spi.o: lib/sd_card/sd_driver/SPI/sd_spi.c.o
 
 # target to build an object file
 lib/sd_card/sd_driver/SPI/sd_spi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_spi.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SPI/sd_spi.c.o
 .PHONY : lib/sd_card/sd_driver/SPI/sd_spi.c.o
 
 lib/sd_card/sd_driver/SPI/sd_spi.i: lib/sd_card/sd_driver/SPI/sd_spi.c.i
@@ -466,7 +1983,7 @@ lib/sd_card/sd_driver/SPI/sd_spi.i: lib/sd_card/sd_driver/SPI/sd_spi.c.i
 
 # target to preprocess a source file
 lib/sd_card/sd_driver/SPI/sd_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SPI/sd_spi.c.i
 .PHONY : lib/sd_card/sd_driver/SPI/sd_spi.c.i
 
 lib/sd_card/sd_driver/SPI/sd_spi.s: lib/sd_card/sd_driver/SPI/sd_spi.c.s
@@ -474,7 +1991,7 @@ lib/sd_card/sd_driver/SPI/sd_spi.s: lib/sd_card/sd_driver/SPI/sd_spi.c.s
 
 # target to generate assembly for a file
 lib/sd_card/sd_driver/SPI/sd_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/SPI/sd_spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/SPI/sd_spi.c.s
 .PHONY : lib/sd_card/sd_driver/SPI/sd_spi.c.s
 
 lib/sd_card/sd_driver/dma_interrupts.o: lib/sd_card/sd_driver/dma_interrupts.c.o
@@ -482,7 +1999,7 @@ lib/sd_card/sd_driver/dma_interrupts.o: lib/sd_card/sd_driver/dma_interrupts.c.o
 
 # target to build an object file
 lib/sd_card/sd_driver/dma_interrupts.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/dma_interrupts.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/dma_interrupts.c.o
 .PHONY : lib/sd_card/sd_driver/dma_interrupts.c.o
 
 lib/sd_card/sd_driver/dma_interrupts.i: lib/sd_card/sd_driver/dma_interrupts.c.i
@@ -490,7 +2007,7 @@ lib/sd_card/sd_driver/dma_interrupts.i: lib/sd_card/sd_driver/dma_interrupts.c.i
 
 # target to preprocess a source file
 lib/sd_card/sd_driver/dma_interrupts.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/dma_interrupts.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/dma_interrupts.c.i
 .PHONY : lib/sd_card/sd_driver/dma_interrupts.c.i
 
 lib/sd_card/sd_driver/dma_interrupts.s: lib/sd_card/sd_driver/dma_interrupts.c.s
@@ -498,7 +2015,7 @@ lib/sd_card/sd_driver/dma_interrupts.s: lib/sd_card/sd_driver/dma_interrupts.c.s
 
 # target to generate assembly for a file
 lib/sd_card/sd_driver/dma_interrupts.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/dma_interrupts.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/dma_interrupts.c.s
 .PHONY : lib/sd_card/sd_driver/dma_interrupts.c.s
 
 lib/sd_card/sd_driver/sd_card.o: lib/sd_card/sd_driver/sd_card.c.o
@@ -506,7 +2023,7 @@ lib/sd_card/sd_driver/sd_card.o: lib/sd_card/sd_driver/sd_card.c.o
 
 # target to build an object file
 lib/sd_card/sd_driver/sd_card.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/sd_card.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/sd_card.c.o
 .PHONY : lib/sd_card/sd_driver/sd_card.c.o
 
 lib/sd_card/sd_driver/sd_card.i: lib/sd_card/sd_driver/sd_card.c.i
@@ -514,7 +2031,7 @@ lib/sd_card/sd_driver/sd_card.i: lib/sd_card/sd_driver/sd_card.c.i
 
 # target to preprocess a source file
 lib/sd_card/sd_driver/sd_card.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/sd_card.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/sd_card.c.i
 .PHONY : lib/sd_card/sd_driver/sd_card.c.i
 
 lib/sd_card/sd_driver/sd_card.s: lib/sd_card/sd_driver/sd_card.c.s
@@ -522,7 +2039,7 @@ lib/sd_card/sd_driver/sd_card.s: lib/sd_card/sd_driver/sd_card.c.s
 
 # target to generate assembly for a file
 lib/sd_card/sd_driver/sd_card.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_driver/sd_card.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_driver/sd_card.c.s
 .PHONY : lib/sd_card/sd_driver/sd_card.c.s
 
 lib/sd_card/sd_utils.o: lib/sd_card/sd_utils.c.o
@@ -530,7 +2047,7 @@ lib/sd_card/sd_utils.o: lib/sd_card/sd_utils.c.o
 
 # target to build an object file
 lib/sd_card/sd_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_utils.c.o
 .PHONY : lib/sd_card/sd_utils.c.o
 
 lib/sd_card/sd_utils.i: lib/sd_card/sd_utils.c.i
@@ -538,7 +2055,7 @@ lib/sd_card/sd_utils.i: lib/sd_card/sd_utils.c.i
 
 # target to preprocess a source file
 lib/sd_card/sd_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_utils.c.i
 .PHONY : lib/sd_card/sd_utils.c.i
 
 lib/sd_card/sd_utils.s: lib/sd_card/sd_utils.c.s
@@ -546,7 +2063,7 @@ lib/sd_card/sd_utils.s: lib/sd_card/sd_utils.c.s
 
 # target to generate assembly for a file
 lib/sd_card/sd_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/sd_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/sd_utils.c.s
 .PHONY : lib/sd_card/sd_utils.c.s
 
 lib/sd_card/src/crash.o: lib/sd_card/src/crash.c.o
@@ -554,7 +2071,7 @@ lib/sd_card/src/crash.o: lib/sd_card/src/crash.c.o
 
 # target to build an object file
 lib/sd_card/src/crash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/crash.c.o
 .PHONY : lib/sd_card/src/crash.c.o
 
 lib/sd_card/src/crash.i: lib/sd_card/src/crash.c.i
@@ -562,7 +2079,7 @@ lib/sd_card/src/crash.i: lib/sd_card/src/crash.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/crash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/crash.c.i
 .PHONY : lib/sd_card/src/crash.c.i
 
 lib/sd_card/src/crash.s: lib/sd_card/src/crash.c.s
@@ -570,7 +2087,7 @@ lib/sd_card/src/crash.s: lib/sd_card/src/crash.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/crash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/crash.c.s
 .PHONY : lib/sd_card/src/crash.c.s
 
 lib/sd_card/src/crc.o: lib/sd_card/src/crc.c.o
@@ -578,7 +2095,7 @@ lib/sd_card/src/crc.o: lib/sd_card/src/crc.c.o
 
 # target to build an object file
 lib/sd_card/src/crc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/crc.c.o
 .PHONY : lib/sd_card/src/crc.c.o
 
 lib/sd_card/src/crc.i: lib/sd_card/src/crc.c.i
@@ -586,7 +2103,7 @@ lib/sd_card/src/crc.i: lib/sd_card/src/crc.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/crc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/crc.c.i
 .PHONY : lib/sd_card/src/crc.c.i
 
 lib/sd_card/src/crc.s: lib/sd_card/src/crc.c.s
@@ -594,7 +2111,7 @@ lib/sd_card/src/crc.s: lib/sd_card/src/crc.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/crc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/crc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/crc.c.s
 .PHONY : lib/sd_card/src/crc.c.s
 
 lib/sd_card/src/f_util.o: lib/sd_card/src/f_util.c.o
@@ -602,7 +2119,7 @@ lib/sd_card/src/f_util.o: lib/sd_card/src/f_util.c.o
 
 # target to build an object file
 lib/sd_card/src/f_util.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/f_util.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/f_util.c.o
 .PHONY : lib/sd_card/src/f_util.c.o
 
 lib/sd_card/src/f_util.i: lib/sd_card/src/f_util.c.i
@@ -610,7 +2127,7 @@ lib/sd_card/src/f_util.i: lib/sd_card/src/f_util.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/f_util.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/f_util.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/f_util.c.i
 .PHONY : lib/sd_card/src/f_util.c.i
 
 lib/sd_card/src/f_util.s: lib/sd_card/src/f_util.c.s
@@ -618,7 +2135,7 @@ lib/sd_card/src/f_util.s: lib/sd_card/src/f_util.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/f_util.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/f_util.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/f_util.c.s
 .PHONY : lib/sd_card/src/f_util.c.s
 
 lib/sd_card/src/ff_stdio.o: lib/sd_card/src/ff_stdio.c.o
@@ -626,7 +2143,7 @@ lib/sd_card/src/ff_stdio.o: lib/sd_card/src/ff_stdio.c.o
 
 # target to build an object file
 lib/sd_card/src/ff_stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/ff_stdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/ff_stdio.c.o
 .PHONY : lib/sd_card/src/ff_stdio.c.o
 
 lib/sd_card/src/ff_stdio.i: lib/sd_card/src/ff_stdio.c.i
@@ -634,7 +2151,7 @@ lib/sd_card/src/ff_stdio.i: lib/sd_card/src/ff_stdio.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/ff_stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/ff_stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/ff_stdio.c.i
 .PHONY : lib/sd_card/src/ff_stdio.c.i
 
 lib/sd_card/src/ff_stdio.s: lib/sd_card/src/ff_stdio.c.s
@@ -642,7 +2159,7 @@ lib/sd_card/src/ff_stdio.s: lib/sd_card/src/ff_stdio.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/ff_stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/ff_stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/ff_stdio.c.s
 .PHONY : lib/sd_card/src/ff_stdio.c.s
 
 lib/sd_card/src/file_stream.o: lib/sd_card/src/file_stream.c.o
@@ -650,7 +2167,7 @@ lib/sd_card/src/file_stream.o: lib/sd_card/src/file_stream.c.o
 
 # target to build an object file
 lib/sd_card/src/file_stream.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/file_stream.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/file_stream.c.o
 .PHONY : lib/sd_card/src/file_stream.c.o
 
 lib/sd_card/src/file_stream.i: lib/sd_card/src/file_stream.c.i
@@ -658,7 +2175,7 @@ lib/sd_card/src/file_stream.i: lib/sd_card/src/file_stream.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/file_stream.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/file_stream.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/file_stream.c.i
 .PHONY : lib/sd_card/src/file_stream.c.i
 
 lib/sd_card/src/file_stream.s: lib/sd_card/src/file_stream.c.s
@@ -666,7 +2183,7 @@ lib/sd_card/src/file_stream.s: lib/sd_card/src/file_stream.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/file_stream.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/file_stream.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/file_stream.c.s
 .PHONY : lib/sd_card/src/file_stream.c.s
 
 lib/sd_card/src/glue.o: lib/sd_card/src/glue.c.o
@@ -674,7 +2191,7 @@ lib/sd_card/src/glue.o: lib/sd_card/src/glue.c.o
 
 # target to build an object file
 lib/sd_card/src/glue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/glue.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/glue.c.o
 .PHONY : lib/sd_card/src/glue.c.o
 
 lib/sd_card/src/glue.i: lib/sd_card/src/glue.c.i
@@ -682,7 +2199,7 @@ lib/sd_card/src/glue.i: lib/sd_card/src/glue.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/glue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/glue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/glue.c.i
 .PHONY : lib/sd_card/src/glue.c.i
 
 lib/sd_card/src/glue.s: lib/sd_card/src/glue.c.s
@@ -690,7 +2207,7 @@ lib/sd_card/src/glue.s: lib/sd_card/src/glue.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/glue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/glue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/glue.c.s
 .PHONY : lib/sd_card/src/glue.c.s
 
 lib/sd_card/src/hw_config.o: lib/sd_card/src/hw_config.c.o
@@ -698,7 +2215,7 @@ lib/sd_card/src/hw_config.o: lib/sd_card/src/hw_config.c.o
 
 # target to build an object file
 lib/sd_card/src/hw_config.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/hw_config.c.o
 .PHONY : lib/sd_card/src/hw_config.c.o
 
 lib/sd_card/src/hw_config.i: lib/sd_card/src/hw_config.c.i
@@ -706,7 +2223,7 @@ lib/sd_card/src/hw_config.i: lib/sd_card/src/hw_config.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/hw_config.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/hw_config.c.i
 .PHONY : lib/sd_card/src/hw_config.c.i
 
 lib/sd_card/src/hw_config.s: lib/sd_card/src/hw_config.c.s
@@ -714,7 +2231,7 @@ lib/sd_card/src/hw_config.s: lib/sd_card/src/hw_config.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/hw_config.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/hw_config.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/hw_config.c.s
 .PHONY : lib/sd_card/src/hw_config.c.s
 
 lib/sd_card/src/my_debug.o: lib/sd_card/src/my_debug.c.o
@@ -722,7 +2239,7 @@ lib/sd_card/src/my_debug.o: lib/sd_card/src/my_debug.c.o
 
 # target to build an object file
 lib/sd_card/src/my_debug.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_debug.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/my_debug.c.o
 .PHONY : lib/sd_card/src/my_debug.c.o
 
 lib/sd_card/src/my_debug.i: lib/sd_card/src/my_debug.c.i
@@ -730,7 +2247,7 @@ lib/sd_card/src/my_debug.i: lib/sd_card/src/my_debug.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/my_debug.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_debug.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/my_debug.c.i
 .PHONY : lib/sd_card/src/my_debug.c.i
 
 lib/sd_card/src/my_debug.s: lib/sd_card/src/my_debug.c.s
@@ -738,7 +2255,7 @@ lib/sd_card/src/my_debug.s: lib/sd_card/src/my_debug.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/my_debug.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_debug.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/my_debug.c.s
 .PHONY : lib/sd_card/src/my_debug.c.s
 
 lib/sd_card/src/my_rtc.o: lib/sd_card/src/my_rtc.c.o
@@ -746,7 +2263,7 @@ lib/sd_card/src/my_rtc.o: lib/sd_card/src/my_rtc.c.o
 
 # target to build an object file
 lib/sd_card/src/my_rtc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_rtc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/my_rtc.c.o
 .PHONY : lib/sd_card/src/my_rtc.c.o
 
 lib/sd_card/src/my_rtc.i: lib/sd_card/src/my_rtc.c.i
@@ -754,7 +2271,7 @@ lib/sd_card/src/my_rtc.i: lib/sd_card/src/my_rtc.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/my_rtc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_rtc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/my_rtc.c.i
 .PHONY : lib/sd_card/src/my_rtc.c.i
 
 lib/sd_card/src/my_rtc.s: lib/sd_card/src/my_rtc.c.s
@@ -762,7 +2279,7 @@ lib/sd_card/src/my_rtc.s: lib/sd_card/src/my_rtc.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/my_rtc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/my_rtc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/my_rtc.c.s
 .PHONY : lib/sd_card/src/my_rtc.c.s
 
 lib/sd_card/src/sd_timeouts.o: lib/sd_card/src/sd_timeouts.c.o
@@ -770,7 +2287,7 @@ lib/sd_card/src/sd_timeouts.o: lib/sd_card/src/sd_timeouts.c.o
 
 # target to build an object file
 lib/sd_card/src/sd_timeouts.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/sd_timeouts.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/sd_timeouts.c.o
 .PHONY : lib/sd_card/src/sd_timeouts.c.o
 
 lib/sd_card/src/sd_timeouts.i: lib/sd_card/src/sd_timeouts.c.i
@@ -778,7 +2295,7 @@ lib/sd_card/src/sd_timeouts.i: lib/sd_card/src/sd_timeouts.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/sd_timeouts.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/sd_timeouts.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/sd_timeouts.c.i
 .PHONY : lib/sd_card/src/sd_timeouts.c.i
 
 lib/sd_card/src/sd_timeouts.s: lib/sd_card/src/sd_timeouts.c.s
@@ -786,7 +2303,7 @@ lib/sd_card/src/sd_timeouts.s: lib/sd_card/src/sd_timeouts.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/sd_timeouts.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/sd_timeouts.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/sd_timeouts.c.s
 .PHONY : lib/sd_card/src/sd_timeouts.c.s
 
 lib/sd_card/src/util.o: lib/sd_card/src/util.c.o
@@ -794,7 +2311,7 @@ lib/sd_card/src/util.o: lib/sd_card/src/util.c.o
 
 # target to build an object file
 lib/sd_card/src/util.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/util.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/util.c.o
 .PHONY : lib/sd_card/src/util.c.o
 
 lib/sd_card/src/util.i: lib/sd_card/src/util.c.i
@@ -802,7 +2319,7 @@ lib/sd_card/src/util.i: lib/sd_card/src/util.c.i
 
 # target to preprocess a source file
 lib/sd_card/src/util.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/util.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/util.c.i
 .PHONY : lib/sd_card/src/util.c.i
 
 lib/sd_card/src/util.s: lib/sd_card/src/util.c.s
@@ -810,7 +2327,7 @@ lib/sd_card/src/util.s: lib/sd_card/src/util.c.s
 
 # target to generate assembly for a file
 lib/sd_card/src/util.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/lib/sd_card/src/util.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/lib/sd_card/src/util.c.s
 .PHONY : lib/sd_card/src/util.c.s
 
 main.o: main.c.o
@@ -818,7 +2335,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -826,7 +2343,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -834,7 +2351,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/main.c.s
 .PHONY : main.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.o: usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o
@@ -842,7 +2359,7 @@ usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.o: usr/local/picosdk/
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.i: usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -850,7 +2367,7 @@ usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.i: usr/local/picosdk/
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.s: usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -858,7 +2375,7 @@ usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.s: usr/local/picosdk/
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.o: usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
@@ -866,7 +2383,7 @@ usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.o: usr/local/picosdk/lib/
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.i: usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -874,7 +2391,7 @@ usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.i: usr/local/picosdk/lib/
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.s: usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -882,7 +2399,7 @@ usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.s: usr/local/picosdk/lib/
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.o: usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
@@ -890,7 +2407,7 @@ usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.o: usr/local/picosdk/lib/
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.i: usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -898,7 +2415,7 @@ usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.i: usr/local/picosdk/lib/
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.s: usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -906,7 +2423,7 @@ usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.s: usr/local/picosdk/lib/
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
@@ -914,7 +2431,7 @@ usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: usr/local/picosdk/l
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -922,7 +2439,7 @@ usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: usr/local/picosdk/l
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -930,7 +2447,7 @@ usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: usr/local/picosdk/l
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.o: usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o
@@ -938,7 +2455,7 @@ usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.o: usr/local/picosdk/lib/
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.i: usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -946,7 +2463,7 @@ usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.i: usr/local/picosdk/lib/
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.s: usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -954,7 +2471,7 @@ usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.s: usr/local/picosdk/lib/
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.o: usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o
@@ -962,7 +2479,7 @@ usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.o: usr/local/picosdk/li
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.i: usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -970,7 +2487,7 @@ usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.i: usr/local/picosdk/li
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.s: usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -978,7 +2495,7 @@ usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.s: usr/local/picosdk/li
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.o: usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o
@@ -986,7 +2503,7 @@ usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.o: usr/local/picosdk/lib/
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.i: usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -994,7 +2511,7 @@ usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.i: usr/local/picosdk/lib/
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.s: usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -1002,7 +2519,7 @@ usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.s: usr/local/picosdk/lib/
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
@@ -1010,7 +2527,7 @@ usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: usr/local/picosd
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -1018,7 +2535,7 @@ usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: usr/local/picosd
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -1026,7 +2543,7 @@ usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: usr/local/picosd
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.o: usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o
@@ -1034,7 +2551,7 @@ usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.o: usr/local/picosdk/lib/
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.i: usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -1042,7 +2559,7 @@ usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.i: usr/local/picosdk/lib/
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.s: usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -1050,7 +2567,7 @@ usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.s: usr/local/picosdk/lib/
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
@@ -1058,7 +2575,7 @@ usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: usr/local/picosd
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -1066,7 +2583,7 @@ usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: usr/local/picosd
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -1074,7 +2591,7 @@ usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: usr/local/picosd
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.o: usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
@@ -1082,7 +2599,7 @@ usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.o: usr/local/picosd
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.i: usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -1090,7 +2607,7 @@ usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.i: usr/local/picosd
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.s: usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -1098,7 +2615,7 @@ usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.s: usr/local/picosd
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/class/video/video_device.o: usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o
@@ -1106,7 +2623,7 @@ usr/local/picosdk/lib/tinyusb/src/class/video/video_device.o: usr/local/picosdk/
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.o
 
 usr/local/picosdk/lib/tinyusb/src/class/video/video_device.i: usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -1114,7 +2631,7 @@ usr/local/picosdk/lib/tinyusb/src/class/video/video_device.i: usr/local/picosdk/
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.i
 
 usr/local/picosdk/lib/tinyusb/src/class/video/video_device.s: usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -1122,7 +2639,7 @@ usr/local/picosdk/lib/tinyusb/src/class/video/video_device.s: usr/local/picosdk/
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/class/video/video_device.c.s
 
 usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.o: usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o
@@ -1130,7 +2647,7 @@ usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.o: usr/local/picosdk/lib/tiny
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.o
 
 usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.i: usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -1138,7 +2655,7 @@ usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.i: usr/local/picosdk/lib/tiny
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.s: usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -1146,7 +2663,7 @@ usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.s: usr/local/picosdk/lib/tiny
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 usr/local/picosdk/lib/tinyusb/src/device/usbd.o: usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o
@@ -1154,7 +2671,7 @@ usr/local/picosdk/lib/tinyusb/src/device/usbd.o: usr/local/picosdk/lib/tinyusb/s
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/device/usbd.c.o
 
 usr/local/picosdk/lib/tinyusb/src/device/usbd.i: usr/local/picosdk/lib/tinyusb/src/device/usbd.c.i
@@ -1162,7 +2679,7 @@ usr/local/picosdk/lib/tinyusb/src/device/usbd.i: usr/local/picosdk/lib/tinyusb/s
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/device/usbd.c.i
 
 usr/local/picosdk/lib/tinyusb/src/device/usbd.s: usr/local/picosdk/lib/tinyusb/src/device/usbd.c.s
@@ -1170,7 +2687,7 @@ usr/local/picosdk/lib/tinyusb/src/device/usbd.s: usr/local/picosdk/lib/tinyusb/s
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/device/usbd.c.s
 
 usr/local/picosdk/lib/tinyusb/src/device/usbd_control.o: usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o
@@ -1178,7 +2695,7 @@ usr/local/picosdk/lib/tinyusb/src/device/usbd_control.o: usr/local/picosdk/lib/t
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.o
 
 usr/local/picosdk/lib/tinyusb/src/device/usbd_control.i: usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -1186,7 +2703,7 @@ usr/local/picosdk/lib/tinyusb/src/device/usbd_control.i: usr/local/picosdk/lib/t
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.i
 
 usr/local/picosdk/lib/tinyusb/src/device/usbd_control.s: usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -1194,7 +2711,7 @@ usr/local/picosdk/lib/tinyusb/src/device/usbd_control.s: usr/local/picosdk/lib/t
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/device/usbd_control.c.s
 
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
@@ -1202,7 +2719,7 @@ usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: usr/
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -1210,7 +2727,7 @@ usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: usr/
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -1218,7 +2735,7 @@ usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: usr/
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
@@ -1226,7 +2743,7 @@ usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: usr/
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -1234,7 +2751,7 @@ usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: usr/
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -1242,7 +2759,7 @@ usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: usr/
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 usr/local/picosdk/lib/tinyusb/src/tusb.o: usr/local/picosdk/lib/tinyusb/src/tusb.c.o
@@ -1250,7 +2767,7 @@ usr/local/picosdk/lib/tinyusb/src/tusb.o: usr/local/picosdk/lib/tinyusb/src/tusb
 
 # target to build an object file
 usr/local/picosdk/lib/tinyusb/src/tusb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.o
 .PHONY : usr/local/picosdk/lib/tinyusb/src/tusb.c.o
 
 usr/local/picosdk/lib/tinyusb/src/tusb.i: usr/local/picosdk/lib/tinyusb/src/tusb.c.i
@@ -1258,7 +2775,7 @@ usr/local/picosdk/lib/tinyusb/src/tusb.i: usr/local/picosdk/lib/tinyusb/src/tusb
 
 # target to preprocess a source file
 usr/local/picosdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.i
 .PHONY : usr/local/picosdk/lib/tinyusb/src/tusb.c.i
 
 usr/local/picosdk/lib/tinyusb/src/tusb.s: usr/local/picosdk/lib/tinyusb/src/tusb.c.s
@@ -1266,7 +2783,7 @@ usr/local/picosdk/lib/tinyusb/src/tusb.s: usr/local/picosdk/lib/tinyusb/src/tusb
 
 # target to generate assembly for a file
 usr/local/picosdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/lib/tinyusb/src/tusb.c.s
 .PHONY : usr/local/picosdk/lib/tinyusb/src/tusb.c.s
 
 usr/local/picosdk/src/common/hardware_claim/claim.o: usr/local/picosdk/src/common/hardware_claim/claim.c.o
@@ -1274,7 +2791,7 @@ usr/local/picosdk/src/common/hardware_claim/claim.o: usr/local/picosdk/src/commo
 
 # target to build an object file
 usr/local/picosdk/src/common/hardware_claim/claim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.o
 .PHONY : usr/local/picosdk/src/common/hardware_claim/claim.c.o
 
 usr/local/picosdk/src/common/hardware_claim/claim.i: usr/local/picosdk/src/common/hardware_claim/claim.c.i
@@ -1282,7 +2799,7 @@ usr/local/picosdk/src/common/hardware_claim/claim.i: usr/local/picosdk/src/commo
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.i
 .PHONY : usr/local/picosdk/src/common/hardware_claim/claim.c.i
 
 usr/local/picosdk/src/common/hardware_claim/claim.s: usr/local/picosdk/src/common/hardware_claim/claim.c.s
@@ -1290,7 +2807,7 @@ usr/local/picosdk/src/common/hardware_claim/claim.s: usr/local/picosdk/src/commo
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/hardware_claim/claim.c.s
 .PHONY : usr/local/picosdk/src/common/hardware_claim/claim.c.s
 
 usr/local/picosdk/src/common/pico_sync/critical_section.o: usr/local/picosdk/src/common/pico_sync/critical_section.c.o
@@ -1298,7 +2815,7 @@ usr/local/picosdk/src/common/pico_sync/critical_section.o: usr/local/picosdk/src
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_sync/critical_section.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.o
 .PHONY : usr/local/picosdk/src/common/pico_sync/critical_section.c.o
 
 usr/local/picosdk/src/common/pico_sync/critical_section.i: usr/local/picosdk/src/common/pico_sync/critical_section.c.i
@@ -1306,7 +2823,7 @@ usr/local/picosdk/src/common/pico_sync/critical_section.i: usr/local/picosdk/src
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.i
 .PHONY : usr/local/picosdk/src/common/pico_sync/critical_section.c.i
 
 usr/local/picosdk/src/common/pico_sync/critical_section.s: usr/local/picosdk/src/common/pico_sync/critical_section.c.s
@@ -1314,7 +2831,7 @@ usr/local/picosdk/src/common/pico_sync/critical_section.s: usr/local/picosdk/src
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/critical_section.c.s
 .PHONY : usr/local/picosdk/src/common/pico_sync/critical_section.c.s
 
 usr/local/picosdk/src/common/pico_sync/lock_core.o: usr/local/picosdk/src/common/pico_sync/lock_core.c.o
@@ -1322,7 +2839,7 @@ usr/local/picosdk/src/common/pico_sync/lock_core.o: usr/local/picosdk/src/common
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_sync/lock_core.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.o
 .PHONY : usr/local/picosdk/src/common/pico_sync/lock_core.c.o
 
 usr/local/picosdk/src/common/pico_sync/lock_core.i: usr/local/picosdk/src/common/pico_sync/lock_core.c.i
@@ -1330,7 +2847,7 @@ usr/local/picosdk/src/common/pico_sync/lock_core.i: usr/local/picosdk/src/common
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.i
 .PHONY : usr/local/picosdk/src/common/pico_sync/lock_core.c.i
 
 usr/local/picosdk/src/common/pico_sync/lock_core.s: usr/local/picosdk/src/common/pico_sync/lock_core.c.s
@@ -1338,7 +2855,7 @@ usr/local/picosdk/src/common/pico_sync/lock_core.s: usr/local/picosdk/src/common
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/lock_core.c.s
 .PHONY : usr/local/picosdk/src/common/pico_sync/lock_core.c.s
 
 usr/local/picosdk/src/common/pico_sync/mutex.o: usr/local/picosdk/src/common/pico_sync/mutex.c.o
@@ -1346,7 +2863,7 @@ usr/local/picosdk/src/common/pico_sync/mutex.o: usr/local/picosdk/src/common/pic
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_sync/mutex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.o
 .PHONY : usr/local/picosdk/src/common/pico_sync/mutex.c.o
 
 usr/local/picosdk/src/common/pico_sync/mutex.i: usr/local/picosdk/src/common/pico_sync/mutex.c.i
@@ -1354,7 +2871,7 @@ usr/local/picosdk/src/common/pico_sync/mutex.i: usr/local/picosdk/src/common/pic
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.i
 .PHONY : usr/local/picosdk/src/common/pico_sync/mutex.c.i
 
 usr/local/picosdk/src/common/pico_sync/mutex.s: usr/local/picosdk/src/common/pico_sync/mutex.c.s
@@ -1362,7 +2879,7 @@ usr/local/picosdk/src/common/pico_sync/mutex.s: usr/local/picosdk/src/common/pic
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/mutex.c.s
 .PHONY : usr/local/picosdk/src/common/pico_sync/mutex.c.s
 
 usr/local/picosdk/src/common/pico_sync/sem.o: usr/local/picosdk/src/common/pico_sync/sem.c.o
@@ -1370,7 +2887,7 @@ usr/local/picosdk/src/common/pico_sync/sem.o: usr/local/picosdk/src/common/pico_
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_sync/sem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/sem.c.o
 .PHONY : usr/local/picosdk/src/common/pico_sync/sem.c.o
 
 usr/local/picosdk/src/common/pico_sync/sem.i: usr/local/picosdk/src/common/pico_sync/sem.c.i
@@ -1378,7 +2895,7 @@ usr/local/picosdk/src/common/pico_sync/sem.i: usr/local/picosdk/src/common/pico_
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/sem.c.i
 .PHONY : usr/local/picosdk/src/common/pico_sync/sem.c.i
 
 usr/local/picosdk/src/common/pico_sync/sem.s: usr/local/picosdk/src/common/pico_sync/sem.c.s
@@ -1386,7 +2903,7 @@ usr/local/picosdk/src/common/pico_sync/sem.s: usr/local/picosdk/src/common/pico_
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_sync/sem.c.s
 .PHONY : usr/local/picosdk/src/common/pico_sync/sem.c.s
 
 usr/local/picosdk/src/common/pico_time/time.o: usr/local/picosdk/src/common/pico_time/time.c.o
@@ -1394,7 +2911,7 @@ usr/local/picosdk/src/common/pico_time/time.o: usr/local/picosdk/src/common/pico
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_time/time.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_time/time.c.o
 .PHONY : usr/local/picosdk/src/common/pico_time/time.c.o
 
 usr/local/picosdk/src/common/pico_time/time.i: usr/local/picosdk/src/common/pico_time/time.c.i
@@ -1402,7 +2919,7 @@ usr/local/picosdk/src/common/pico_time/time.i: usr/local/picosdk/src/common/pico
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_time/time.c.i
 .PHONY : usr/local/picosdk/src/common/pico_time/time.c.i
 
 usr/local/picosdk/src/common/pico_time/time.s: usr/local/picosdk/src/common/pico_time/time.c.s
@@ -1410,7 +2927,7 @@ usr/local/picosdk/src/common/pico_time/time.s: usr/local/picosdk/src/common/pico
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_time/time.c.s
 .PHONY : usr/local/picosdk/src/common/pico_time/time.c.s
 
 usr/local/picosdk/src/common/pico_time/timeout_helper.o: usr/local/picosdk/src/common/pico_time/timeout_helper.c.o
@@ -1418,7 +2935,7 @@ usr/local/picosdk/src/common/pico_time/timeout_helper.o: usr/local/picosdk/src/c
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_time/timeout_helper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.o
 .PHONY : usr/local/picosdk/src/common/pico_time/timeout_helper.c.o
 
 usr/local/picosdk/src/common/pico_time/timeout_helper.i: usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
@@ -1426,7 +2943,7 @@ usr/local/picosdk/src/common/pico_time/timeout_helper.i: usr/local/picosdk/src/c
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : usr/local/picosdk/src/common/pico_time/timeout_helper.c.i
 
 usr/local/picosdk/src/common/pico_time/timeout_helper.s: usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
@@ -1434,7 +2951,7 @@ usr/local/picosdk/src/common/pico_time/timeout_helper.s: usr/local/picosdk/src/c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : usr/local/picosdk/src/common/pico_time/timeout_helper.c.s
 
 usr/local/picosdk/src/common/pico_util/datetime.o: usr/local/picosdk/src/common/pico_util/datetime.c.o
@@ -1442,7 +2959,7 @@ usr/local/picosdk/src/common/pico_util/datetime.o: usr/local/picosdk/src/common/
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_util/datetime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_util/datetime.c.o
 .PHONY : usr/local/picosdk/src/common/pico_util/datetime.c.o
 
 usr/local/picosdk/src/common/pico_util/datetime.i: usr/local/picosdk/src/common/pico_util/datetime.c.i
@@ -1450,7 +2967,7 @@ usr/local/picosdk/src/common/pico_util/datetime.i: usr/local/picosdk/src/common/
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_util/datetime.c.i
 .PHONY : usr/local/picosdk/src/common/pico_util/datetime.c.i
 
 usr/local/picosdk/src/common/pico_util/datetime.s: usr/local/picosdk/src/common/pico_util/datetime.c.s
@@ -1458,7 +2975,7 @@ usr/local/picosdk/src/common/pico_util/datetime.s: usr/local/picosdk/src/common/
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_util/datetime.c.s
 .PHONY : usr/local/picosdk/src/common/pico_util/datetime.c.s
 
 usr/local/picosdk/src/common/pico_util/pheap.o: usr/local/picosdk/src/common/pico_util/pheap.c.o
@@ -1466,7 +2983,7 @@ usr/local/picosdk/src/common/pico_util/pheap.o: usr/local/picosdk/src/common/pic
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_util/pheap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_util/pheap.c.o
 .PHONY : usr/local/picosdk/src/common/pico_util/pheap.c.o
 
 usr/local/picosdk/src/common/pico_util/pheap.i: usr/local/picosdk/src/common/pico_util/pheap.c.i
@@ -1474,7 +2991,7 @@ usr/local/picosdk/src/common/pico_util/pheap.i: usr/local/picosdk/src/common/pic
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_util/pheap.c.i
 .PHONY : usr/local/picosdk/src/common/pico_util/pheap.c.i
 
 usr/local/picosdk/src/common/pico_util/pheap.s: usr/local/picosdk/src/common/pico_util/pheap.c.s
@@ -1482,7 +2999,7 @@ usr/local/picosdk/src/common/pico_util/pheap.s: usr/local/picosdk/src/common/pic
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_util/pheap.c.s
 .PHONY : usr/local/picosdk/src/common/pico_util/pheap.c.s
 
 usr/local/picosdk/src/common/pico_util/queue.o: usr/local/picosdk/src/common/pico_util/queue.c.o
@@ -1490,7 +3007,7 @@ usr/local/picosdk/src/common/pico_util/queue.o: usr/local/picosdk/src/common/pic
 
 # target to build an object file
 usr/local/picosdk/src/common/pico_util/queue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_util/queue.c.o
 .PHONY : usr/local/picosdk/src/common/pico_util/queue.c.o
 
 usr/local/picosdk/src/common/pico_util/queue.i: usr/local/picosdk/src/common/pico_util/queue.c.i
@@ -1498,7 +3015,7 @@ usr/local/picosdk/src/common/pico_util/queue.i: usr/local/picosdk/src/common/pic
 
 # target to preprocess a source file
 usr/local/picosdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_util/queue.c.i
 .PHONY : usr/local/picosdk/src/common/pico_util/queue.c.i
 
 usr/local/picosdk/src/common/pico_util/queue.s: usr/local/picosdk/src/common/pico_util/queue.c.s
@@ -1506,7 +3023,7 @@ usr/local/picosdk/src/common/pico_util/queue.s: usr/local/picosdk/src/common/pic
 
 # target to generate assembly for a file
 usr/local/picosdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/common/pico_util/queue.c.s
 .PHONY : usr/local/picosdk/src/common/pico_util/queue.c.s
 
 usr/local/picosdk/src/rp2040/pico_platform/platform.o: usr/local/picosdk/src/rp2040/pico_platform/platform.c.o
@@ -1514,7 +3031,7 @@ usr/local/picosdk/src/rp2040/pico_platform/platform.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2040/pico_platform/platform.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.o
 .PHONY : usr/local/picosdk/src/rp2040/pico_platform/platform.c.o
 
 usr/local/picosdk/src/rp2040/pico_platform/platform.i: usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
@@ -1522,7 +3039,7 @@ usr/local/picosdk/src/rp2040/pico_platform/platform.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2040/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
 .PHONY : usr/local/picosdk/src/rp2040/pico_platform/platform.c.i
 
 usr/local/picosdk/src/rp2040/pico_platform/platform.s: usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
@@ -1530,7 +3047,7 @@ usr/local/picosdk/src/rp2040/pico_platform/platform.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2040/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : usr/local/picosdk/src/rp2040/pico_platform/platform.c.s
 
 usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.o: usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
@@ -1538,7 +3055,7 @@ usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
 
 usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.i: usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i
@@ -1546,7 +3063,7 @@ usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.i
 
 usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.s: usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s
@@ -1554,7 +3071,7 @@ usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.o: usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
@@ -1562,7 +3079,7 @@ usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.o: usr/local/picos
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.i: usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -1570,7 +3087,7 @@ usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.i: usr/local/picos
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.s: usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -1578,7 +3095,7 @@ usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.s: usr/local/picos
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.o: usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o
@@ -1586,7 +3103,7 @@ usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.o: usr/local/picosdk/src
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.i: usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -1594,7 +3111,7 @@ usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.i: usr/local/picosdk/src
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.s: usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -1602,7 +3119,7 @@ usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.s: usr/local/picosdk/src
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_divider/divider.o: usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
@@ -1610,7 +3127,7 @@ usr/local/picosdk/src/rp2_common/hardware_divider/divider.o: usr/local/picosdk/s
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_divider/divider.S.o
 
 usr/local/picosdk/src/rp2_common/hardware_dma/dma.o: usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
@@ -1618,7 +3135,7 @@ usr/local/picosdk/src/rp2_common/hardware_dma/dma.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_dma/dma.i: usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i
@@ -1626,7 +3143,7 @@ usr/local/picosdk/src/rp2_common/hardware_dma/dma.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_dma/dma.s: usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
@@ -1634,7 +3151,7 @@ usr/local/picosdk/src/rp2_common/hardware_dma/dma.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_dma/dma.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_flash/flash.o: usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o
@@ -1642,7 +3159,7 @@ usr/local/picosdk/src/rp2_common/hardware_flash/flash.o: usr/local/picosdk/src/r
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_flash/flash.i: usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i
@@ -1650,7 +3167,7 @@ usr/local/picosdk/src/rp2_common/hardware_flash/flash.i: usr/local/picosdk/src/r
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_flash/flash.s: usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s
@@ -1658,7 +3175,7 @@ usr/local/picosdk/src/rp2_common/hardware_flash/flash.s: usr/local/picosdk/src/r
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_flash/flash.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.o: usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o
@@ -1666,7 +3183,7 @@ usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.i: usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -1674,7 +3191,7 @@ usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.s: usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1682,7 +3199,7 @@ usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.o: usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o
@@ -1690,7 +3207,7 @@ usr/local/picosdk/src/rp2_common/hardware_irq/irq.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.i: usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1698,7 +3215,7 @@ usr/local/picosdk/src/rp2_common/hardware_irq/irq.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.s: usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1706,7 +3223,7 @@ usr/local/picosdk/src/rp2_common/hardware_irq/irq.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_irq/irq.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.o: usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -1714,7 +3231,7 @@ usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.o: usr/local/pic
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 usr/local/picosdk/src/rp2_common/hardware_pio/pio.o: usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o
@@ -1722,7 +3239,7 @@ usr/local/picosdk/src/rp2_common/hardware_pio/pio.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_pio/pio.i: usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i
@@ -1730,7 +3247,7 @@ usr/local/picosdk/src/rp2_common/hardware_pio/pio.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_pio/pio.s: usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s
@@ -1738,7 +3255,7 @@ usr/local/picosdk/src/rp2_common/hardware_pio/pio.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pio/pio.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.o: usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o
@@ -1746,7 +3263,7 @@ usr/local/picosdk/src/rp2_common/hardware_pll/pll.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.i: usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1754,7 +3271,7 @@ usr/local/picosdk/src/rp2_common/hardware_pll/pll.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.s: usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1762,7 +3279,7 @@ usr/local/picosdk/src/rp2_common/hardware_pll/pll.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_pll/pll.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.o: usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o
@@ -1770,7 +3287,7 @@ usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.i: usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i
@@ -1778,7 +3295,7 @@ usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.s: usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s
@@ -1786,7 +3303,7 @@ usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_rtc/rtc.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.o: usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
@@ -1794,7 +3311,7 @@ usr/local/picosdk/src/rp2_common/hardware_spi/spi.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.i: usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
@@ -1802,7 +3319,7 @@ usr/local/picosdk/src/rp2_common/hardware_spi/spi.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.s: usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
@@ -1810,7 +3327,7 @@ usr/local/picosdk/src/rp2_common/hardware_spi/spi.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_spi/spi.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.o: usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o
@@ -1818,7 +3335,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync/sync.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.i: usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1826,7 +3343,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync/sync.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.s: usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1834,7 +3351,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync/sync.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync/sync.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -1842,7 +3359,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: usr/l
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -1850,7 +3367,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: usr/l
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -1858,7 +3375,7 @@ usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: usr/l
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.o: usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o
@@ -1866,7 +3383,7 @@ usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.o: usr/local/picosdk/src/r
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.i: usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
@@ -1874,7 +3391,7 @@ usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.i: usr/local/picosdk/src/r
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.s: usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
@@ -1882,7 +3399,7 @@ usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.s: usr/local/picosdk/src/r
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.o: usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o
@@ -1890,7 +3407,7 @@ usr/local/picosdk/src/rp2_common/hardware_timer/timer.o: usr/local/picosdk/src/r
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.i: usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1898,7 +3415,7 @@ usr/local/picosdk/src/rp2_common/hardware_timer/timer.i: usr/local/picosdk/src/r
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.s: usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1906,7 +3423,7 @@ usr/local/picosdk/src/rp2_common/hardware_timer/timer.s: usr/local/picosdk/src/r
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_timer/timer.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.o: usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o
@@ -1914,7 +3431,7 @@ usr/local/picosdk/src/rp2_common/hardware_uart/uart.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.i: usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1922,7 +3439,7 @@ usr/local/picosdk/src/rp2_common/hardware_uart/uart.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.s: usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1930,7 +3447,7 @@ usr/local/picosdk/src/rp2_common/hardware_uart/uart.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_uart/uart.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.o: usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o
@@ -1938,7 +3455,7 @@ usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.i: usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1946,7 +3463,7 @@ usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.s: usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1954,7 +3471,7 @@ usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.o: usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -1962,7 +3479,7 @@ usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.o: usr/local/picosdk
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.i: usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1970,7 +3487,7 @@ usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.i: usr/local/picosdk
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.s: usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1978,7 +3495,7 @@ usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.s: usr/local/picosdk
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.o: usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
@@ -1986,7 +3503,7 @@ usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.o: usr/local/picos
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.i: usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
@@ -1994,7 +3511,7 @@ usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.i: usr/local/picos
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.s: usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
@@ -2002,7 +3519,7 @@ usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.s: usr/local/picos
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.o: usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o
@@ -2010,7 +3527,7 @@ usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.i: usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -2018,7 +3535,7 @@ usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.s: usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -2026,7 +3543,7 @@ usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.o: usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o
@@ -2034,7 +3551,7 @@ usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.o: usr/local/picosdk/s
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.o
 
 usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.i: usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i
@@ -2042,7 +3559,7 @@ usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.i: usr/local/picosdk/s
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.i
 
 usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.s: usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s
@@ -2050,7 +3567,7 @@ usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.s: usr/local/picosdk/s
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_aon_timer/aon_timer.c.s
 
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.o: usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o
@@ -2058,7 +3575,7 @@ usr/local/picosdk/src/rp2_common/pico_atomic/atomic.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.o
 
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.i: usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
@@ -2066,7 +3583,7 @@ usr/local/picosdk/src/rp2_common/pico_atomic/atomic.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.i
 
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.s: usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
@@ -2074,7 +3591,7 @@ usr/local/picosdk/src/rp2_common/pico_atomic/atomic.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_atomic/atomic.c.s
 
 usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -2082,7 +3599,7 @@ usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: usr/local/picosdk
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.o: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -2090,7 +3607,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.o: usr/local/picosdk/src/r
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.i: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -2098,7 +3615,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.i: usr/local/picosdk/src/r
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.s: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -2106,7 +3623,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.s: usr/local/picosdk/src/r
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.o: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -2114,7 +3631,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.o: usr/local/picosdk/
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.i: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -2122,7 +3639,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.i: usr/local/picosdk/
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.s: usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -2130,7 +3647,7 @@ usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.s: usr/local/picosdk/
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.o: usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -2138,7 +3655,7 @@ usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.o: usr/loc
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.i: usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -2146,7 +3663,7 @@ usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.i: usr/loc
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.s: usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -2154,7 +3671,7 @@ usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.s: usr/loc
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 usr/local/picosdk/src/rp2_common/pico_crt0/crt0.o: usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -2162,7 +3679,7 @@ usr/local/picosdk/src/rp2_common/pico_crt0/crt0.o: usr/local/picosdk/src/rp2_com
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_crt0/crt0.S.o
 
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.o: usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -2170,7 +3687,7 @@ usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.o: usr/local/picosd
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.i: usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -2178,7 +3695,7 @@ usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.i: usr/local/picosd
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.s: usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -2186,7 +3703,7 @@ usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.s: usr/local/picosd
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.o: usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o
@@ -2194,7 +3711,7 @@ usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.o: usr/local/pico
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_divider/divider_hardware.S.o
 
 usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
@@ -2202,7 +3719,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: usr/local/pi
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
@@ -2210,7 +3727,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: usr/local
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
@@ -2218,7 +3735,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: usr/local
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
@@ -2226,7 +3743,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: usr/local
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
 usr/local/picosdk/src/rp2_common/pico_double/double_math.o: usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o
@@ -2234,7 +3751,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_math.o: usr/local/picosdk/sr
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_math.c.o
 
 usr/local/picosdk/src/rp2_common/pico_double/double_math.i: usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
@@ -2242,7 +3759,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_math.i: usr/local/picosdk/sr
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_math.c.i
 
 usr/local/picosdk/src/rp2_common/pico_double/double_math.s: usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
@@ -2250,7 +3767,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_math.s: usr/local/picosdk/sr
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_math.c.s
 
 usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
@@ -2258,7 +3775,7 @@ usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: usr/lo
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
 usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o: usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
@@ -2266,7 +3783,7 @@ usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_u
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 
 usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -2274,7 +3791,7 @@ usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_u
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -2282,7 +3799,7 @@ usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_u
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 usr/local/picosdk/src/rp2_common/pico_flash/flash.o: usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o
@@ -2290,7 +3807,7 @@ usr/local/picosdk/src/rp2_common/pico_flash/flash.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_flash/flash.c.o
 
 usr/local/picosdk/src/rp2_common/pico_flash/flash.i: usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
@@ -2298,7 +3815,7 @@ usr/local/picosdk/src/rp2_common/pico_flash/flash.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_flash/flash.c.i
 
 usr/local/picosdk/src/rp2_common/pico_flash/flash.s: usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
@@ -2306,7 +3823,7 @@ usr/local/picosdk/src/rp2_common/pico_flash/flash.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_flash/flash.c.s
 
 usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
@@ -2314,7 +3831,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: usr/local/pico
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
@@ -2322,7 +3839,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: usr/local/p
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
@@ -2330,7 +3847,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: usr/local/p
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
@@ -2338,7 +3855,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: usr/local/p
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
 usr/local/picosdk/src/rp2_common/pico_float/float_math.o: usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o
@@ -2346,7 +3863,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_math.o: usr/local/picosdk/src/
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_math.c.o
 
 usr/local/picosdk/src/rp2_common/pico_float/float_math.i: usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
@@ -2354,7 +3871,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_math.i: usr/local/picosdk/src/
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_math.c.i
 
 usr/local/picosdk/src/rp2_common/pico_float/float_math.s: usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
@@ -2362,7 +3879,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_math.s: usr/local/picosdk/src/
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_math.c.s
 
 usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
@@ -2370,7 +3887,7 @@ usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: usr/loca
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
 usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
@@ -2378,7 +3895,7 @@ usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: usr/loca
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.o: usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o
@@ -2386,7 +3903,7 @@ usr/local/picosdk/src/rp2_common/pico_malloc/malloc.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.o
 
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.i: usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
@@ -2394,7 +3911,7 @@ usr/local/picosdk/src/rp2_common/pico_malloc/malloc.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.i
 
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.s: usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
@@ -2402,7 +3919,7 @@ usr/local/picosdk/src/rp2_common/pico_malloc/malloc.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_malloc/malloc.c.s
 
 usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
@@ -2410,7 +3927,7 @@ usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: usr/local/picosdk
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
 usr/local/picosdk/src/rp2_common/pico_multicore/multicore.o: usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o
@@ -2418,7 +3935,7 @@ usr/local/picosdk/src/rp2_common/pico_multicore/multicore.o: usr/local/picosdk/s
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.o
 
 usr/local/picosdk/src/rp2_common/pico_multicore/multicore.i: usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i
@@ -2426,7 +3943,7 @@ usr/local/picosdk/src/rp2_common/pico_multicore/multicore.i: usr/local/picosdk/s
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.i
 
 usr/local/picosdk/src/rp2_common/pico_multicore/multicore.s: usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s
@@ -2434,7 +3951,7 @@ usr/local/picosdk/src/rp2_common/pico_multicore/multicore.s: usr/local/picosdk/s
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_multicore/multicore.c.s
 
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.o: usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
@@ -2442,7 +3959,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_common/common.o: usr/local/picosd
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.o
 
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.i: usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
@@ -2450,7 +3967,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_common/common.i: usr/local/picosd
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.i
 
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.s: usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
@@ -2458,7 +3975,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_common/common.s: usr/local/picosd
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_common/common.c.s
 
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.o: usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o
@@ -2466,7 +3983,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.o: usr/local/picosdk/
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.i: usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
@@ -2474,7 +3991,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.i: usr/local/picosdk/
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.s: usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
@@ -2482,7 +3999,7 @@ usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.s: usr/local/picosdk/
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 usr/local/picosdk/src/rp2_common/pico_printf/printf.o: usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o
@@ -2490,7 +4007,7 @@ usr/local/picosdk/src/rp2_common/pico_printf/printf.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_printf/printf.c.o
 
 usr/local/picosdk/src/rp2_common/pico_printf/printf.i: usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
@@ -2498,7 +4015,7 @@ usr/local/picosdk/src/rp2_common/pico_printf/printf.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_printf/printf.c.i
 
 usr/local/picosdk/src/rp2_common/pico_printf/printf.s: usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
@@ -2506,7 +4023,7 @@ usr/local/picosdk/src/rp2_common/pico_printf/printf.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_printf/printf.c.s
 
 usr/local/picosdk/src/rp2_common/pico_rand/rand.o: usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
@@ -2514,7 +4031,7 @@ usr/local/picosdk/src/rp2_common/pico_rand/rand.o: usr/local/picosdk/src/rp2_com
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.c.o
 
 usr/local/picosdk/src/rp2_common/pico_rand/rand.i: usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
@@ -2522,7 +4039,7 @@ usr/local/picosdk/src/rp2_common/pico_rand/rand.i: usr/local/picosdk/src/rp2_com
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.c.i
 
 usr/local/picosdk/src/rp2_common/pico_rand/rand.s: usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
@@ -2530,7 +4047,7 @@ usr/local/picosdk/src/rp2_common/pico_rand/rand.s: usr/local/picosdk/src/rp2_com
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_rand/rand.c.s
 
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o: usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
@@ -2538,7 +4055,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime/runtime.o: usr/local/picosdk/src/r
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.o
 
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.i: usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -2546,7 +4063,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime/runtime.i: usr/local/picosdk/src/r
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.i
 
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.s: usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -2554,7 +4071,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime/runtime.s: usr/local/picosdk/src/r
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime/runtime.c.s
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.o: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -2562,7 +4079,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.o: usr/local/pic
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.i: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -2570,7 +4087,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.i: usr/local/pic
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.s: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -2578,7 +4095,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.s: usr/local/pic
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -2586,7 +4103,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: usr/lo
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -2594,7 +4111,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: usr/lo
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -2602,7 +4119,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: usr/lo
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -2610,7 +4127,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: u
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -2618,7 +4135,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: u
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -2626,7 +4143,7 @@ usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: u
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -2634,7 +4151,7 @@ usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -2642,7 +4159,7 @@ usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -2650,7 +4167,7 @@ usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.o: usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o
@@ -2658,7 +4175,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio/stdio.o: usr/local/picosdk/src/rp2_c
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.o
 
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.i: usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -2666,7 +4183,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio/stdio.i: usr/local/picosdk/src/rp2_c
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.i
 
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.s: usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -2674,7 +4191,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio/stdio.s: usr/local/picosdk/src/rp2_c
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio/stdio.c.s
 
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.o: usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
@@ -2682,7 +4199,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.o: usr/local/pic
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.i: usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -2690,7 +4207,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.i: usr/local/pic
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.s: usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -2698,7 +4215,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.s: usr/local/pic
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
@@ -2706,7 +4223,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: usr/local/picosdk/s
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -2714,7 +4231,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: usr/local/picosdk/s
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -2722,7 +4239,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: usr/local/picosdk/s
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
@@ -2730,7 +4247,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: usr/loc
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -2738,7 +4255,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: usr/loc
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -2746,7 +4263,7 @@ usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: usr/loc
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.o: usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -2754,7 +4271,7 @@ usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.o: usr/local/picosdk/src/rp2
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.i: usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -2762,7 +4279,7 @@ usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.i: usr/local/picosdk/src/rp2
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.s: usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -2770,7 +4287,7 @@ usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.s: usr/local/picosdk/src/rp2
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.o: usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o
@@ -2778,7 +4295,7 @@ usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.o: usr/local/picosdk/s
 
 # target to build an object file
 usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o
 .PHONY : usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.o
 
 usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.i: usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -2786,7 +4303,7 @@ usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.i: usr/local/picosdk/s
 
 # target to preprocess a source file
 usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.s: usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -2794,7 +4311,7 @@ usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.s: usr/local/picosdk/s
 
 # target to generate assembly for a file
 usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pin_auth.dir/build.make CMakeFiles/pin_auth.dir/usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : usr/local/picosdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 # Help Target
@@ -2810,14 +4327,133 @@ help:
 	@echo "... pico_status_led_ws2812_pio_h"
 	@echo "... pioasmBuild"
 	@echo "... sd_custom_driver_rp2040_sdio_pio_h"
+	@echo "... arena_allocator_non_persistent_arena_buffer_allocator_test"
+	@echo "... arena_allocator_persistent_arena_buffer_allocator_test"
+	@echo "... arena_allocator_recording_single_arena_buffer_allocator_test"
+	@echo "... arena_allocator_single_arena_buffer_allocator_test"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
 	@echo "... config"
+	@echo "... detection_responder_test"
+	@echo "... fake_micro_context_test"
+	@echo "... flatbuffer_utils_test"
 	@echo "... font"
+	@echo "... hello_world"
+	@echo "... hello_world_test"
+	@echo "... hexdump_test"
+	@echo "... image_provider_test"
+	@echo "... kernels_activations_test"
+	@echo "... kernels_add_n_test"
+	@echo "... kernels_add_test"
+	@echo "... kernels_arg_min_max_test"
+	@echo "... kernels_batch_matmul_test"
+	@echo "... kernels_batch_to_space_nd_test"
+	@echo "... kernels_broadcast_args_test"
+	@echo "... kernels_broadcast_to_test"
+	@echo "... kernels_call_once_test"
+	@echo "... kernels_cast_test"
+	@echo "... kernels_ceil_test"
+	@echo "... kernels_circular_buffer_test"
+	@echo "... kernels_comparisons_test"
+	@echo "... kernels_concatenation_test"
+	@echo "... kernels_conv_test"
+	@echo "... kernels_cumsum_test"
+	@echo "... kernels_decompress_test"
+	@echo "... kernels_depth_to_space_test"
+	@echo "... kernels_depthwise_conv_test"
+	@echo "... kernels_dequantize_test"
+	@echo "... kernels_detection_postprocess_test"
+	@echo "... kernels_div_test"
+	@echo "... kernels_elementwise_test"
+	@echo "... kernels_elu_test"
+	@echo "... kernels_embedding_lookup_test"
+	@echo "... kernels_exp_test"
+	@echo "... kernels_expand_dims_test"
+	@echo "... kernels_fill_test"
+	@echo "... kernels_floor_div_test"
+	@echo "... kernels_floor_mod_test"
+	@echo "... kernels_floor_test"
+	@echo "... kernels_fully_connected_test"
+	@echo "... kernels_gather_nd_test"
+	@echo "... kernels_gather_test"
+	@echo "... kernels_hard_swish_test"
+	@echo "... kernels_if_test"
+	@echo "... kernels_l2_pool_2d_test"
+	@echo "... kernels_l2norm_test"
+	@echo "... kernels_leaky_relu_test"
+	@echo "... kernels_log_softmax_test"
+	@echo "... kernels_logical_test"
+	@echo "... kernels_logistic_test"
+	@echo "... kernels_lstm_eval_test"
+	@echo "... kernels_maximum_minimum_test"
+	@echo "... kernels_mirror_pad_test"
+	@echo "... kernels_mul_test"
+	@echo "... kernels_neg_test"
+	@echo "... kernels_pack_test"
+	@echo "... kernels_pad_test"
+	@echo "... kernels_pooling_test"
+	@echo "... kernels_prelu_test"
+	@echo "... kernels_quantization_util_test"
+	@echo "... kernels_quantize_test"
+	@echo "... kernels_reduce_test"
+	@echo "... kernels_reshape_test"
+	@echo "... kernels_resize_bilinear_test"
+	@echo "... kernels_resize_nearest_neighbor_test"
+	@echo "... kernels_round_test"
+	@echo "... kernels_select_test"
+	@echo "... kernels_shape_test"
+	@echo "... kernels_slice_test"
+	@echo "... kernels_softmax_test"
+	@echo "... kernels_space_to_batch_nd_test"
+	@echo "... kernels_space_to_depth_test"
+	@echo "... kernels_split_test"
+	@echo "... kernels_split_v_test"
+	@echo "... kernels_squared_difference_test"
+	@echo "... kernels_squeeze_test"
+	@echo "... kernels_strided_slice_test"
+	@echo "... kernels_sub_test"
+	@echo "... kernels_svdf_test"
+	@echo "... kernels_tanh_test"
+	@echo "... kernels_transpose_conv_test"
+	@echo "... kernels_transpose_test"
+	@echo "... kernels_unidirectional_sequence_lstm_test"
+	@echo "... kernels_unpack_test"
+	@echo "... kernels_while_test"
+	@echo "... kernels_zeros_like_test"
 	@echo "... lcd"
-	@echo "... main"
+	@echo "... memory_arena_threshold_test"
+	@echo "... memory_helpers_test"
+	@echo "... memory_planner_greedy_memory_planner_test"
+	@echo "... memory_planner_linear_memory_planner_test"
+	@echo "... memory_planner_non_persistent_buffer_planner_shim_test"
+	@echo "... micro_allocation_info_test"
+	@echo "... micro_allocator_test"
+	@echo "... micro_interpreter_context_test"
+	@echo "... micro_log_test"
+	@echo "... micro_mutable_op_resolver_test"
+	@echo "... micro_resource_variable_test"
+	@echo "... micro_time_test"
+	@echo "... micro_utils_test"
+	@echo "... output_handler_test"
+	@echo "... person_detection"
+	@echo "... person_detection_benchmark"
+	@echo "... person_detection_test"
+	@echo "... pico-tflmicro"
+	@echo "... pico-tflmicro_test"
+	@echo "... pin_auth"
 	@echo "... processing"
+	@echo "... recording_micro_allocator_test"
+	@echo "... span_test"
+	@echo "... static_vector_test"
 	@echo "... testing"
+	@echo "... testing_helpers_test"
+	@echo "... testing_util_test"
+	@echo "... lib/auth_ui/pin_auth_ui.o"
+	@echo "... lib/auth_ui/pin_auth_ui.i"
+	@echo "... lib/auth_ui/pin_auth_ui.s"
+	@echo "... lib/ml/digit_inference.o"
+	@echo "... lib/ml/digit_inference.i"
+	@echo "... lib/ml/digit_inference.s"
 	@echo "... lib/sd_card/ff15/source/ff.o"
 	@echo "... lib/sd_card/ff15/source/ff.i"
 	@echo "... lib/sd_card/ff15/source/ff.s"

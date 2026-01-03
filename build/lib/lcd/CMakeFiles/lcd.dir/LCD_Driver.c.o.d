@@ -1,7 +1,5 @@
-lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o: \
- /home/mles_project/lib/lcd/LCD_Driver.c \
- /home/mles_project/lib/lcd/LCD_Driver.h \
- /home/mles_project/lib/lcd/../config/DEV_Config.h \
+lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o: /home/lib/lcd/LCD_Driver.c \
+ /home/lib/lcd/LCD_Driver.h /home/lib/lcd/../config/DEV_Config.h \
  /usr/local/picosdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
@@ -19,9 +17,9 @@ lib/lcd/CMakeFiles/lcd.dir/LCD_Driver.c.o: \
  /usr/arm-none-eabi/include/sys/_intsup.h \
  /usr/arm-none-eabi/include/sys/_stdint.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
- /home/mles_project/build/generated/pico_base/pico/version.h \
+ /home/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
+ /home/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \

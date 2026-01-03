@@ -1,14 +1,13 @@
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/hw_config.c.o: \
- /home/mles_project/lib/sd_card/src/hw_config.c \
- /usr/arm-none-eabi/include/assert.h /usr/arm-none-eabi/include/_ansi.h \
- /usr/arm-none-eabi/include/newlib.h \
+ /home/lib/sd_card/src/hw_config.c /usr/arm-none-eabi/include/assert.h \
+ /usr/arm-none-eabi/include/_ansi.h /usr/arm-none-eabi/include/newlib.h \
  /usr/arm-none-eabi/include/_newlib_version.h \
  /usr/arm-none-eabi/include/sys/config.h \
  /usr/arm-none-eabi/include/machine/ieeefp.h \
  /usr/arm-none-eabi/include/sys/features.h \
- /home/mles_project/lib/sd_card/include/hw_config.h \
+ /home/lib/sd_card/include/hw_config.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
- /home/mles_project/lib/sd_card/sd_driver/sd_card.h \
+ /home/lib/sd_card/sd_driver/sd_card.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
@@ -34,9 +33,9 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/hw_config.c.o: \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/assert.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
- /home/mles_project/build/generated/pico_base/pico/version.h \
+ /home/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
+ /home/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
@@ -76,10 +75,9 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/hw_config.c.o: \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
  /usr/local/picosdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
  /usr/local/picosdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
- /home/mles_project/lib/sd_card/ff15/source/ff.h \
- /home/mles_project/lib/sd_card/include/ffconf.h \
- /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.h \
- /home/mles_project/lib/sd_card/sd_driver/SPI/my_spi.h \
+ /home/lib/sd_card/ff15/source/ff.h /home/lib/sd_card/include/ffconf.h \
+ /home/lib/sd_card/sd_driver/SDIO/rp2040_sdio.h \
+ /home/lib/sd_card/sd_driver/SPI/my_spi.h \
  /usr/local/picosdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /usr/local/picosdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h \
@@ -97,18 +95,16 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/hw_config.c.o: \
  /usr/local/picosdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
- /home/mles_project/lib/sd_card/include/my_debug.h \
- /usr/arm-none-eabi/include/stdio.h \
+ /home/lib/sd_card/include/my_debug.h /usr/arm-none-eabi/include/stdio.h \
  /usr/arm-none-eabi/include/sys/reent.h \
  /usr/arm-none-eabi/include/sys/lock.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
- /home/mles_project/lib/sd_card/include/sd_timeouts.h \
- /home/mles_project/lib/sd_card/sd_driver/SPI/sd_card_spi.h \
- /home/mles_project/lib/sd_card/ff15/source/diskio.h \
- /home/mles_project/lib/sd_card/ff15/source/ff.h \
- /home/mles_project/lib/sd_card/sd_driver/sd_card_constants.h \
- /home/mles_project/lib/sd_card/sd_driver/sd_regs.h \
- /home/mles_project/lib/sd_card/include/util.h \
+ /home/lib/sd_card/include/sd_timeouts.h \
+ /home/lib/sd_card/sd_driver/SPI/sd_card_spi.h \
+ /home/lib/sd_card/ff15/source/diskio.h \
+ /home/lib/sd_card/ff15/source/ff.h \
+ /home/lib/sd_card/sd_driver/sd_card_constants.h \
+ /home/lib/sd_card/sd_driver/sd_regs.h /home/lib/sd_card/include/util.h \
  /usr/arm-none-eabi/include/string.h \
  /usr/arm-none-eabi/include/sys/_locale.h \
  /usr/arm-none-eabi/include/strings.h \

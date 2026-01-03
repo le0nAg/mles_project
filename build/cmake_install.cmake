@@ -1,4 +1,4 @@
-# Install script for directory: /home/mles_project
+# Install script for directory: /home
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mles_project/build/pico-sdk/cmake_install.cmake")
-  include("/home/mles_project/build/lib/sd_card/cmake_install.cmake")
-  include("/home/mles_project/build/lib/config/cmake_install.cmake")
-  include("/home/mles_project/build/lib/lcd/cmake_install.cmake")
-  include("/home/mles_project/build/lib/font/cmake_install.cmake")
-  include("/home/mles_project/build/lib/processing/cmake_install.cmake")
-  include("/home/mles_project/build/lib/testing/cmake_install.cmake")
+  include("/home/build/pico-sdk/cmake_install.cmake")
+  include("/home/build/lib/sd_card/cmake_install.cmake")
+  include("/home/build/lib/config/cmake_install.cmake")
+  include("/home/build/lib/lcd/cmake_install.cmake")
+  include("/home/build/lib/font/cmake_install.cmake")
+  include("/home/build/lib/processing/cmake_install.cmake")
+  include("/home/build/lib/testing/cmake_install.cmake")
+  include("/home/build/lib/ml/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mles_project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,5 +1,5 @@
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.o: \
- /home/mles_project/lib/sd_card/src/util.c \
+ /home/lib/sd_card/src/util.c \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
@@ -35,8 +35,7 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.o: \
  /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
  /usr/arm-none-eabi/include/sys/sched.h \
  /usr/arm-none-eabi/include/machine/types.h \
- /usr/arm-none-eabi/include/sys/stdio.h \
- /home/mles_project/lib/sd_card/include/util.h \
+ /usr/arm-none-eabi/include/sys/stdio.h /home/lib/sd_card/include/util.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/RP2040.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/core_cm0plus.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_version.h \
@@ -46,4 +45,4 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/util.c.o: \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/m-profile/armv7m_mpu.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/system_RP2040.h \
- /home/mles_project/lib/sd_card/include/my_debug.h
+ /home/lib/sd_card/include/my_debug.h

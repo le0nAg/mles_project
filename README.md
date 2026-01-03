@@ -16,7 +16,6 @@ sudo picocom -b 115200 /dev/ttyACM0
 
 ## TODO List
 
-- [ ] Topological-preserving downsampling
-- [ ] Script.py for fast image translation and feature analysis
-- [ ] Performance optimizations (processing and memory)
+- [x] Topological-preserving downsampling
+- [x] Performance optimizations (processing and memory)
 - [ ] add a .gitignore 

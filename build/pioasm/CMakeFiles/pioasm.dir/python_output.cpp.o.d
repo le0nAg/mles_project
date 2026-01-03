@@ -135,5 +135,4 @@ CMakeFiles/pioasm.dir/python_output.cpp.o: \
  /usr/include/c++/12.2.1/utility \
  /usr/include/c++/12.2.1/bits/stl_relops.h \
  /usr/local/picosdk/tools/pioasm/gen/location.h \
- /usr/include/c++/12.2.1/iostream \
- /home/mles_project/build/pioasm/version.h
+ /usr/include/c++/12.2.1/iostream /home/build/pioasm/version.h

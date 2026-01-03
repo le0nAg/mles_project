@@ -12,5 +12,6 @@ uint32_t sd_writer_pending_count(void);
 bool sd_writer_is_busy(void);
 void generate_uuid(char out[37]);
 bool sd_write_async_json(const char *json_str, const char *filename);
+bool sd_writer_is_ready(void);
 
 #endif

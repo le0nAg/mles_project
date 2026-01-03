@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mles_project
+CMAKE_SOURCE_DIR = /home
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mles_project/build
+CMAKE_BINARY_DIR = /home/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mles_project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles /home/mles_project/build/lib/processing//CMakeFiles/progress.marks
-	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mles_project/build/CMakeFiles 0
+	cd /home/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/build/CMakeFiles /home/build/lib/processing//CMakeFiles/progress.marks
+	cd /home/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/clean
+	cd /home/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/preinstall
+	cd /home/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/preinstall
+	cd /home/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mles_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/processing/CMakeFiles/processing.dir/rule:
-	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/CMakeFiles/processing.dir/rule
+	cd /home/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/processing/CMakeFiles/processing.dir/rule
 .PHONY : lib/processing/CMakeFiles/processing.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ processing: lib/processing/CMakeFiles/processing.dir/rule
 
 # fast build rule for target.
 processing/fast:
-	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/build
+	cd /home/build && $(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/build
 .PHONY : processing/fast
 
 processing.o: processing.c.o
@@ -135,7 +135,7 @@ processing.o: processing.c.o
 
 # target to build an object file
 processing.c.o:
-	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/processing.c.o
+	cd /home/build && $(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/processing.c.o
 .PHONY : processing.c.o
 
 processing.i: processing.c.i
@@ -143,7 +143,7 @@ processing.i: processing.c.i
 
 # target to preprocess a source file
 processing.c.i:
-	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/processing.c.i
+	cd /home/build && $(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/processing.c.i
 .PHONY : processing.c.i
 
 processing.s: processing.c.s
@@ -151,7 +151,7 @@ processing.s: processing.c.s
 
 # target to generate assembly for a file
 processing.c.s:
-	cd /home/mles_project/build && $(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/processing.c.s
+	cd /home/build && $(MAKE) $(MAKESILENT) -f lib/processing/CMakeFiles/processing.dir/build.make lib/processing/CMakeFiles/processing.dir/processing.c.s
 .PHONY : processing.c.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mles_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

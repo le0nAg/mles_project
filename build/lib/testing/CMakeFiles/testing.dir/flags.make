@@ -4,7 +4,7 @@
 # compile C with /usr/bin/arm-none-eabi-gcc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mles_project/lib/testing
+C_INCLUDES = -I/home/lib/testing
 
 C_FLAGS = -mcpu=cortex-m0plus -mthumb -g -O3 -DNDEBUG
 

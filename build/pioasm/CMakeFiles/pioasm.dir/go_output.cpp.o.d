@@ -125,4 +125,4 @@ CMakeFiles/pioasm.dir/go_output.cpp.o: \
  /usr/include/c++/12.2.1/utility \
  /usr/include/c++/12.2.1/bits/stl_relops.h \
  /usr/local/picosdk/tools/pioasm/gen/location.h \
- /home/mles_project/build/pioasm/version.h
+ /home/build/pioasm/version.h

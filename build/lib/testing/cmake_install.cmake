@@ -1,4 +1,4 @@
-# Install script for directory: /home/mles_project/lib/testing
+# Install script for directory: /home/lib/testing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

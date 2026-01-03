@@ -1,4 +1,4 @@
-# Install script for directory: /home/mles_project/lib/lcd
+# Install script for directory: /home/lib/lcd
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

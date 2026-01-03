@@ -1,6 +1,5 @@
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/src/crc.c.o: \
- /home/mles_project/lib/sd_card/src/crc.c \
- /home/mles_project/lib/sd_card/include/crc.h \
+ /home/lib/sd_card/src/crc.c /home/lib/sd_card/include/crc.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \

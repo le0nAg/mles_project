@@ -404,31 +404,40 @@ static void core1_sd_writer(void)
             break;
         }
 
-        // Copy bitmap data from shared buffer
-        uint32_t bitmap_size = cmd.width * cmd.height;
-        uint8_t *local_bitmap = (uint8_t *)malloc(bitmap_size);
-
-        if (!local_bitmap) {
-            printf("Core1: ERROR - Failed to allocate bitmap buffer\r\n");
-            continue;
-        }
-
-        mutex_enter_blocking(&bitmap_mutex);
-        memcpy(local_bitmap, shared_bitmap_buffer, bitmap_size);
-        mutex_exit(&bitmap_mutex);
-
         // Process command
         bool success = false;
 
         switch (cmd.cmd_type) {
             case SD_CMD_WRITE_TEXT:
-                printf("Core1: Writing text file '%s'...\r\n", cmd.filename);
-                success = write_on_sd(local_bitmap, cmd.width, cmd.height, cmd.filename);
-                break;
+            case SD_CMD_WRITE_BINARY: {
+                // Copy bitmap data from shared buffer (only for bitmap commands)
+                uint32_t bitmap_size = cmd.width * cmd.height;
+                uint8_t *local_bitmap = (uint8_t *)malloc(bitmap_size);
 
-            case SD_CMD_WRITE_BINARY:
-                printf("Core1: Writing binary file '%s'...\r\n", cmd.filename);
-                success = write_on_sd_bit_pack(local_bitmap, cmd.width, cmd.height, cmd.filename);
+                if (!local_bitmap) {
+                    printf("Core1: ERROR - Failed to allocate bitmap buffer\r\n");
+                    continue;
+                }
+
+                mutex_enter_blocking(&bitmap_mutex);
+                memcpy(local_bitmap, shared_bitmap_buffer, bitmap_size);
+                mutex_exit(&bitmap_mutex);
+
+                if (cmd.cmd_type == SD_CMD_WRITE_TEXT) {
+                    printf("Core1: Writing text file '%s'...\r\n", cmd.filename);
+                    success = write_on_sd(local_bitmap, cmd.width, cmd.height, cmd.filename);
+                } else {
+                    printf("Core1: Writing binary file '%s'...\r\n", cmd.filename);
+                    success = write_on_sd_bit_pack(local_bitmap, cmd.width, cmd.height, cmd.filename);
+                }
+
+                free(local_bitmap);
+                break;
+            }
+
+            case SD_CMD_WRITE_JSON:
+                printf("Core1: Writing JSON file '%s'...\r\n", cmd.filename);
+                success = write_json_to_sd(cmd.json_data, cmd.filename);
                 break;
 
             default:
@@ -441,8 +450,6 @@ static void core1_sd_writer(void)
         } else {
             printf("Core1: Write failed\r\n");
         }
-
-        free(local_bitmap);
     }
 
     // Unmount on shutdown
@@ -614,4 +621,8 @@ bool sd_write_async_json(const char *json_str, const char *filename)
 
     printf("Core0: Queued JSON write to '%s'\r\n", filename);
     return true;
+}
+
+bool sd_writer_is_ready(void) {
+    return core1_running;
 }

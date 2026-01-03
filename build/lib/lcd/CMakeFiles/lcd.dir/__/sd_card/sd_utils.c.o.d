@@ -1,6 +1,5 @@
 lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: \
- /home/mles_project/lib/sd_card/sd_utils.c \
- /home/mles_project/lib/sd_card/sd_utils.h \
+ /home/lib/sd_card/sd_utils.c /home/lib/sd_card/sd_utils.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
@@ -9,11 +8,9 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: \
  /usr/arm-none-eabi/include/sys/_intsup.h \
  /usr/arm-none-eabi/include/sys/_stdint.h \
  /usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h \
- /home/mles_project/lib/sd_card/ff15/source/ff.h \
- /home/mles_project/lib/sd_card/include/ffconf.h \
- /home/mles_project/lib/sd_card/include/f_util.h \
- /usr/arm-none-eabi/include/stdio.h /usr/arm-none-eabi/include/_ansi.h \
- /usr/arm-none-eabi/include/newlib.h \
+ /home/lib/sd_card/ff15/source/ff.h /home/lib/sd_card/include/ffconf.h \
+ /home/lib/sd_card/include/f_util.h /usr/arm-none-eabi/include/stdio.h \
+ /usr/arm-none-eabi/include/_ansi.h /usr/arm-none-eabi/include/newlib.h \
  /usr/arm-none-eabi/include/sys/config.h \
  /usr/arm-none-eabi/include/machine/ieeefp.h \
  /usr/arm-none-eabi/include/sys/cdefs.h \
@@ -52,9 +49,9 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: \
  /usr/local/picosdk/src/common/pico_sync/include/pico/lock_core.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/types.h \
- /home/mles_project/build/generated/pico_base/pico/version.h \
+ /home/build/generated/pico_base/pico/version.h \
  /usr/local/picosdk/src/common/pico_base_headers/include/pico/config.h \
- /home/mles_project/build/generated/pico_base/pico/config_autogen.h \
+ /home/build/generated/pico_base/pico/config_autogen.h \
  /usr/local/picosdk/src/boards/include/boards/pico.h \
  /usr/local/picosdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /usr/local/picosdk/src/rp2040/pico_platform/include/pico/platform.h \
@@ -79,8 +76,8 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
  /usr/local/picosdk/src/common/pico_util/include/pico/util/queue.h \
- /home/mles_project/lib/sd_card/include/hw_config.h \
- /home/mles_project/lib/sd_card/sd_driver/sd_card.h \
+ /home/lib/sd_card/include/hw_config.h \
+ /home/lib/sd_card/sd_driver/sd_card.h \
  /usr/local/picosdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
@@ -97,8 +94,8 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
  /usr/local/picosdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
- /home/mles_project/lib/sd_card/sd_driver/SDIO/rp2040_sdio.h \
- /home/mles_project/lib/sd_card/sd_driver/SPI/my_spi.h \
+ /home/lib/sd_card/sd_driver/SDIO/rp2040_sdio.h \
+ /home/lib/sd_card/sd_driver/SPI/my_spi.h \
  /usr/local/picosdk/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /usr/local/picosdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
  /usr/local/picosdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
@@ -115,14 +112,13 @@ lib/lcd/CMakeFiles/lcd.dir/__/sd_card/sd_utils.c.o: \
  /usr/local/picosdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /usr/local/picosdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /usr/local/picosdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
- /home/mles_project/lib/sd_card/include/my_debug.h \
- /home/mles_project/lib/sd_card/include/sd_timeouts.h \
- /home/mles_project/lib/sd_card/sd_driver/SPI/sd_card_spi.h \
- /home/mles_project/lib/sd_card/ff15/source/diskio.h \
- /home/mles_project/lib/sd_card/ff15/source/ff.h \
- /home/mles_project/lib/sd_card/sd_driver/sd_card_constants.h \
- /home/mles_project/lib/sd_card/sd_driver/sd_regs.h \
- /home/mles_project/lib/sd_card/include/util.h \
+ /home/lib/sd_card/include/my_debug.h \
+ /home/lib/sd_card/include/sd_timeouts.h \
+ /home/lib/sd_card/sd_driver/SPI/sd_card_spi.h \
+ /home/lib/sd_card/ff15/source/diskio.h \
+ /home/lib/sd_card/ff15/source/ff.h \
+ /home/lib/sd_card/sd_driver/sd_card_constants.h \
+ /home/lib/sd_card/sd_driver/sd_regs.h /home/lib/sd_card/include/util.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Include/RP2040.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/core_cm0plus.h \
  /usr/local/picosdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include/cmsis_version.h \

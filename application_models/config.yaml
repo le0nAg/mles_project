@@ -1,0 +1,41 @@
+# Configuration for PIN Digit Recognition Model Training
+# RPI Pico target: <50KB INT8, <1ms inference
+
+# Model selection
+model: mcunet_tiny  # Options: mcunet_tiny, tflm_tiny, tflm_small
+early_exit: true    # Enable early exit for faster confident predictions
+
+# Quantization
+qat: true           # Quantization-aware training
+
+# Training hyperparameters
+epochs: 15
+batch_size: 64
+learning_rate: 0.001
+lr_schedule: cosine  # Options: constant, step, cosine
+optimizer: adam      # Options: adam, sgd, rmsprop
+
+# Early exit settings
+early_exit_weight: 0.3   # Loss weight for early exit branch
+label_smoothing: 0.1
+
+# Data settings
+samples_dir: ../samples
+augment_custom: true
+augmentations_per_sample: 10  # Augmentations per custom sample
+custom_weight: 3.0            # Repeat factor for custom samples
+
+# Output
+output_dir: checkpoints
+
+# Model-specific constraints (for reference)
+# RPI Pico RP2040:
+#   - RAM: 264 KB (shared code + data)
+#   - Flash: 2 MB
+#   - CPU: Dual Cortex-M0+ @ 133 MHz
+#   - No FPU -> INT8 strongly preferred
+# 
+# Target specs:
+#   - Model size: <50 KB (INT8)
+#   - Inference: <10 ms per digit
+#   - Accuracy: >97% on MNIST + custom

@@ -1,5 +1,5 @@
-/home/mles_project/build/pioasm-install/pioasm/pioasm
-/home/mles_project/build/pioasm-install/pioasm/pioasmTargets.cmake
-/home/mles_project/build/pioasm-install/pioasm/pioasmTargets-release.cmake
-/home/mles_project/build/pioasm-install/pioasm/pioasmConfig.cmake
-/home/mles_project/build/pioasm-install/pioasm/pioasmConfigVersion.cmake
+/home/build/pioasm-install/pioasm/pioasm
+/home/build/pioasm-install/pioasm/pioasmTargets.cmake
+/home/build/pioasm-install/pioasm/pioasmTargets-release.cmake
+/home/build/pioasm-install/pioasm/pioasmConfig.cmake
+/home/build/pioasm-install/pioasm/pioasmConfigVersion.cmake
